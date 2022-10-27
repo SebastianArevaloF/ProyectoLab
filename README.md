@@ -5,7 +5,7 @@
 # GRUPO: 2
 # INTEGRANTES
 # 1.
-# 2.
+# 2. César Rodríguez Pardo 21.382.225-K
 # 3.
 # 4. Benjamín Zúñiga Jofré 21.337.525-3
 # DESCRIPCIÓN DEL PROGRAMA 
