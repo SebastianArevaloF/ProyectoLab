@@ -6,7 +6,7 @@
 # INTEGRANTES
 # 1. Sebastián Arévalo Farías 21.224.453-8
 # 2.
-# 3.
+# 3. Benjamín Navarro Rejas 21.331.312-6
 # 4. Benjamín Zúñiga Jofré 21.337.525-3
 # DESCRIPCIÓN DEL PROGRAMA 
 
