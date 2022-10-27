@@ -4,11 +4,21 @@
 # PROFESOR DE LABORATORIO:
 # GRUPO: 2
 # INTEGRANTES
-# 1. Sebastián Arévalo Farías 21.224.453-8
-# 2. César Rodríguez Pardo 21.382.225-K
-# 3. Benjamín Navarro Rejas 21.331.312-6
+# 1.
+# 2.
+# 3.
 # 4. Benjamín Zúñiga Jofré 21.337.525-3
 # DESCRIPCIÓN DEL PROGRAMA 
 
 # ENTRADAS
 planta = input("Ingrese el tipo de planta: ") 
+temperatura = int(input("Ingresar grados: "))
+
+# PROCESAMIENTO
+
+if planta == "coryphanta":
+    if 25 > temperatura > 15:
+        hora_riego = "8 de la tarde"
+    if temperatura < 15:
+        hora_riego = "No regar hoy"
+# SALIDAS
