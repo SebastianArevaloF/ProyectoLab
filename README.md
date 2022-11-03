@@ -10,5 +10,25 @@
 # 4. Benjamín Zúñiga Jofré 21.337.525-3
 # DESCRIPCIÓN DEL PROGRAMA 
 
-# ENTRADAS
-planta = input("Ingrese el tipo de planta: ") 
+#CONSTANTES
+
+plantas = ["Epipremnum","epipremnum","Coryphanta","coryphanta"]
+
+#ENTRADAS
+
+print("Hola!, las plantas trabajadas en este programa son Epipremnum y Coryphanta")
+
+planta_usuario = input("Ingrese el nombre de su planta: ")
+
+while planta_usuario not in plantas:
+    planta_usuario = input("Quizas quisiste escribir Epipremnum o Coryphanta, que deseas escribir?: ")
+
+#PROCESAMIENTO
+
+if planta_usuario == "Epipremnum" or "epipremnum":
+    print("Recuerda que este genero de plantas debe encontrarse en su temperatura ideal para su buen desarrollo y cuidado, este debe ser entre 16°C a 21°C")
+    
+if planta_usuario == "Coryphanta" or "coryphanta":
+    print("Recuerda que este genero de plantas debe encontrarse en su temperatura ideal para su buen desarrollo y cuidado, este debe ser entre 20°C a 35°C")
+    
+grados = input("Cual es la temperatura actual?: ")
