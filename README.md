@@ -17,8 +17,11 @@ genero_e = ["Epipremnum","epipremnum"] #SE DEFINEN LOS STRINGS RECONOCIBLES POR 
 genero_c = ["Coryphanta","coryphanta"] #GENERO E = GENERO EPIPREMNUM Y GENERO C = GENERO CORYPHANTA
 
 pregunta_1 = ["Informacion de mi planta","informacion de mi planta","Informacion de mi Planta","Informacion","informacion","informasion de mi planta","Informacion De Mi Planta","Informacion de mi planta."]
+
 pregunta_2 = ["Cuando es optimo regarla","cuando es optimo regarla","cuando es optimo regar mi planta","Cuando es optimo reglar mi planta"]
+
 pregunta_3 = ["Beneficios de mi planta","beneficios de mi planta","beneficios que me da mi planta","Beneficios que me da mi planta"]
+
 pregunta_4 = ["Cuidados de mi planta","cuidados de mi planta","cuidado de mi planta","Cuidado de mi planta"]  #SE DEFINEN LOS STRINGS RECONOCIBLES PARA RESPONDER LO QUE DESEA EL USUARIO
 
 #ENTRADAS
