@@ -13,6 +13,7 @@
 #CONSTANTES
 
 genero_e = ["Epipremnum","epipremnum"] #SE DEFINEN LOS STRINGS RECONOCIBLES POR EL PROGRAMA 
+
 genero_c = ["Coryphanta","coryphanta"] #GENERO E = GENERO EPIPREMNUM Y GENERO C = GENERO CORYPHANTA
 
 pregunta_1 = ["Informacion de mi planta","informacion de mi planta","Informacion de mi Planta","Informacion","informacion","informasion de mi planta","Informacion De Mi Planta","Informacion de mi planta."]
