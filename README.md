@@ -37,32 +37,39 @@ planta_usuario = input("Escriba el genero de plantas deseado para obtener divers
 
 #PROCESAMIENTO
 
-while planta_usuario not in generos_todos: #SE ESCRIBEN 2 CICLOS WHILE POR SI EL USUARIO NO ESCRIBE EL NOMBRE DEL GENERO DE SU PLANTA CORRECTAMENTE
-    planta_usuario = input("Quizas quisiste escribir Epipremnum o Coryphanta, que deseas escribir?: ")
+i = 0
 
-preguntas = input("Esta aplicacion te puede dar informacion de tu planta, cuando es optimo regarla, beneficios de tenerla o cuidados, que te gustaria recibir?: ")
+while i == 0: #SE ESCRIBE UN CICLO WHILE QUE MANTENGA A TODO EL DESARROLLO, YA QUE ASI SI EL USUARIO QUIERE, PUEDE VOLVER A RESPONDER LA PREGUNTA SI QUIERE MAS INFORMACION
+    
+    while planta_usuario not in generos_todos: #SE ESCRIBEN 2 CICLOS WHILE POR SI EL USUARIO NO ESCRIBE EL NOMBRE DEL GENERO DE SU PLANTA CORRECTAMENTE
+        planta_usuario = input("Quizas quisiste escribir Epipremnum o Coryphanta, que deseas escribir?: ")
 
-while preguntas not in preguntas_todas:
-    preguntas = input("Escribiste algo que aun no podemos procesar, por favor escribe otra cosa!: ")
+    preguntas = input("Se te puede brindar informacion de tu planta, cuando es optimo regarla, beneficios de tenerla o cuidados, que te gustaria recibir?: ")
 
-#SALIDA
+    while preguntas not in preguntas_todas:
+        preguntas = input("Escribiste algo que aun no podemos procesar, por favor escribe otra cosa!: ")
+        
+    if planta_usuario in genero_e: #SE ESCRIBEN 2 CONDICIONALES PARA RESPONDER LAS PREGUNTAS SEGUN EL GENERO QUE ESCRIBIO EL USUARIO
+        if preguntas in pregunta_1:
+            print("La Epipremnum, tambien conocida como potos, perteneciente a la familia Araceae, puede tener tallos de hasta 4cm de diámetro!, esta no florece de manera natural, si no, de manera inducida.")
+        elif preguntas in pregunta_2:
+            print("Los riegos deben ser frecuentes en la epoca calida (manteniendo humedad alta rociando las hojas y se deben reducir a partir de otoño, en invierno se deben mantener escasos, la temperatura ideal del agua para regarla son los 20°C a 25°C")
+        elif preguntas in pregunta_3:
+            print("Este genero tan curioso de plantas, es perfecto para poder decorar cualquier parte de tu casa, como también ayuda considerablemente a eliminar muchas de las toxinas del aire que no podemos apreciar a simple vista!")
+        elif preguntas in pregunta_4:
+            print("A esta curiosa planta, le gusta mucho mantenerse en un ambiente humedo, es por esto que siempre debes manter la tierra de esa manera!, evita mantenerla a luz directa del sol ya que esto no le gusta, mantenla cerca de la ventana evitando lo anterior dicho!")
 
-if planta_usuario in genero_e: #SE ESCRIBEN 2 CONDICIONALES PARA RESPONDER LAS PREGUNTAS SEGUN EL GENERO QUE ESCRIBIO EL USUARIO
-    if preguntas in pregunta_1:
-        print("La Epipremnum, tambien conocida como potos, perteneciente a la familia Araceae, puede tener tallos de hasta 4cm de diámetro!, esta no florece de manera natural, si no, de manera inducida.")
-    elif preguntas in pregunta_2:
-        print("Los riegos deben ser frecuentes en la epoca calida (manteniendo humedad alta rociando las hojas y se deben reducir a partir de otoño, en invierno se deben mantener escasos, la temperatura ideal del agua para regarla son los 20°C a 25°C")
-    elif preguntas in pregunta_3:
-        print("Este genero tan curioso de plantas, es perfecto para poder decorar cualquier parte de tu casa, como también ayuda considerablemente a eliminar muchas de las toxinas del aire que no podemos apreciar a simple vista!")
-    elif preguntas in pregunta_4:
-        print("A esta curiosa planta, le gusta mucho mantenerse en un ambiente humedo, es por esto que siempre debes manter la tierra de esa manera!, evita mantenerla a luz directa del sol ya que esto no le gusta, mantenla cerca de la ventana evitando lo anterior dicho!")
+    if planta_usuario in genero_c:
+        if preguntas in pregunta_1:
+            print("La Coryphanta, tambien conocida como cactus, es un genero nativo de Mexico, siendo uno de los mas extensos. Esta puede crecer aproximadamente de 5-6 cm, cuando se desarrolla forma una flor central grande!")
+        elif preguntas in pregunta_2:
+            print("Los riegos deben ser de forma moderada en primavera y verano, siempre manteniendo el suelo seca de esta misma, en la epoca fria, los riegos deben suspenderse en pos del cuidado de la planta")
+        elif preguntas in pregunta_3:
+           print("Este puntiagudo genero de plantas, son excelentes purificadores de aire, siendo esto perfecto a la hora de cuidar nuestra salud, tambien son plantas que requieren muy poco cuidado debido a su poca necesidad de agua, siendo estas perfectas para gente que no puede dedicar todo su tiempo en una planta!")
+        elif preguntas in pregunta_4:
+            print("A esta pequeña planta, le encanta tener luz directa, aunque tambien pueden recibir por periodos causando el mismo efecto de estar todo el dia en la luz solar!, la tierra organica mezclada con fibra de coco, hojas secas, corteza y turba, es lo mejor para su perfecto desarrollo!")
+    mas_preguntas = input("Le gustaría saber más? (Si/No): ")
 
-if planta_usuario in genero_c:
-    if preguntas in pregunta_1:
-        print("La Coryphanta, tambien conocida como cactus, es un genero nativo de Mexico, siendo uno de los mas extensos. Esta puede crecer aproximadamente de 5-6 cm, cuando se desarrolla forma una flor central grande!")
-    elif preguntas in pregunta_2:
-        print("Los riegos deben ser de forma moderada en primavera y verano, siempre manteniendo el suelo seca de esta misma, en la epoca fria, los riegos deben suspenderse en pos del cuidado de la planta")
-    elif preguntas in pregunta_3
-        print("Este puntiagudo genero de plantas, son excelentes purificadores de aire, siendo esto perfecto a la hora de cuidar nuestra salud, tambien son plantas que requieren muy poco cuidado debido a su poca necesidad de agua, siendo estas perfectas para gente que no puede dedicar todo su tiempo en una planta!")
-    elif preguntas in pregunta_4
-        print("A esta pequeña planta, le encanta tener luz directa, aunque tambien pueden recibir por periodos causando el mismo efecto de estar todo el dia en la luz solar!, la tierra organica mezclada con fibra de coco, hojas secas, corteza y turba, es lo mejor para su perfecto desarrollo!")
+    if mas_preguntas in respuestas_negativas:
+        print("Esperamos que le haya servido y ayudado la informacion!")
+        i = i + 1
