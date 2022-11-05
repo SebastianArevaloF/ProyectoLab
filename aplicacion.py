@@ -49,7 +49,7 @@ while i == 0: #SE ESCRIBE UN CICLO WHILE QUE MANTENGA A TODO EL DESARROLLO, YA Q
         print("2)", cory)
         planta_usuario = input("Por favor ingresar su alternativa otra vez: ")
 
-    if planta_usuario == genero_e:
+    if planta_usuario == "1":
     	print("El género escogido fue:", epi)
     else:
         print("El género escogido fue:", cory)
@@ -60,10 +60,10 @@ while i == 0: #SE ESCRIBE UN CICLO WHILE QUE MANTENGA A TODO EL DESARROLLO, YA Q
     print("2)", info_2)
     print("3)", info_3)
     print("4)", info_4)
-    preguntas = input("Por favor escribir la alternativa según la informacíon que le gustaría recibir: ")
+    preguntas = input("Por favor escribir el número de la alternativa según la informacíon que le gustaría recibir: ")
 
     while preguntas not in preguntas_todas:
-        print("Quizás quisiste ingresar 1, 2, 3 o 4")
+        print("Quizás quisiste ingresar 1, 2, 3 o 4.")
         preguntas = input("Por favor ingresar su respuesta nuevamente:  ")
     
     if planta_usuario in genero_e: #SE ESCRIBEN 2 CONDICIONALES PARA RESPONDER LAS PREGUNTAS SEGUN EL GENERO QUE ESCRIBIO EL USUARIO
@@ -85,8 +85,11 @@ while i == 0: #SE ESCRIBE UN CICLO WHILE QUE MANTENGA A TODO EL DESARROLLO, YA Q
            print("Este puntiagudo genero de plantas, son excelentes purificadores de aire, siendo esto perfecto a la hora de cuidar nuestra salud, tambien son plantas que requieren muy poco cuidado debido a su poca necesidad de agua, siendo estas perfectas para gente que no puede dedicar todo su tiempo en una planta!")
         elif preguntas in pregunta_4:
             print("A esta pequeña planta, le encanta tener luz directa, aunque tambien pueden recibir por periodos causando el mismo efecto de estar todo el dia en la luz solar!, la tierra organica mezclada con fibra de coco, hojas secas, corteza y turba, es lo mejor para su perfecto desarrollo!")
-    mas_preguntas = input("Le gustaría saber más? (Si/No): ")
+    mas_preguntas = input("¿Le gustaría saber más? (Si/No): ")
 
+    while mas_preguntas not in respuestas_negativas and respuestas_afirmativas:
+        print("Por favor ingresar una respuesta valida") 
+        mas_preguntas = input("¿Le gustaría saber más? (Si/No):")
     if mas_preguntas in respuestas_negativas:
         print("Esperamos que le haya servido y ayudado la informacion!")
         i = i + 1
