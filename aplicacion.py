@@ -1,22 +1,40 @@
-#CONSTANTES
+#VARIABLES
 
-genero_e = ["Epipremnum","epipremnum"] #SE DEFINEN LOS STRINGS RECONOCIBLES POR EL PROGRAMA
-genero_c = ["Coryphanta","coryphanta"] #GENERO E = GENERO EPIPREMNUM Y GENERO C = GENERO CORYPHANTA
-generos_todos = ["Coryphanta","coryphanta","Epipremnum","epipremnum"] #SE ESCRIBEN TODOS LOS STRINGS DENTRO DE UN MISMO STRING PARA EVITAR PROBLEMAS
+# Géneros de plantas
+genero_e = ["1"] #SE DEFINEN LOS STRINGS RECONOCIBLES POR EL PROGRAMA
+genero_c = ["2"] #GENERO E = GENERO EPIPREMNUM Y GENERO C = GENERO CORYPHANTA
+generos_todos = "12" #SE ESCRIBEN TODOS LOS STRINGS DENTRO DE UN MISMO STRING PARA EVITAR PROBLEMAS
 
-pregunta_1 = ["Informacion de mi planta","informacion de mi planta","Informacion de mi Planta","Informacion","informacion","informasion de mi planta","Informacion De Mi Planta","Informacion de mi planta."]
-pregunta_2 = ["Cuando es optimo regarla","cuando es optimo regarla","cuando es optimo regar mi planta","Cuando es optimo reglar mi planta"] #SE DEFINEN LOS STRINGS RECONOCIBLES PARA RESPONDER LO QUE DESEA EL USUARIO, P1,P2,P3 O P4.
-pregunta_3 = ["Beneficios de mi planta","beneficios de mi planta","beneficios que me da mi planta","Beneficios que me da mi planta","Beneficios","beneficios"]
-pregunta_4 = ["Cuidados de mi planta","cuidados de mi planta","cuidado de mi planta","Cuidado de mi planta"]
-preguntas_todas = ["Informacion de mi planta","informacion de mi planta","Informacion de mi Planta","Informacion","informacion","informasion de mi planta"] #SE ESCRIBEN TODOS LOS STRINGS DENTRO DE UN MISMO STRING PARA EVITAR PROBLEMAS "Informacion De Mi Planta","Informacion de mi planta.","Cuando es optimo regarla","cuando es optimo regarla","cuando es optimo regar mi planta", "Cuando es optimo reglar mi planta","Beneficios de mi planta","beneficios de mi planta","beneficios que me da mi planta","Beneficios que me da mi planta", "Beneficios","beneficios","Cuidados de mi planta","cuidados de mi planta","cuidado de mi planta","Cuidado de mi planta"]
+# Preguntas
+pregunta_1 = "1"
+pregunta_2 = "2" 
+pregunta_3 = "3"
+pregunta_4 = "4"
+preguntas_todas = "1234" #SE ESCRIBEN TODOS LOS STRINGS DENTRO DE UN MISMO STRING PARA EVITAR PROBLEMAS 
 
-respuestas_afirmativas = ["Si","si"] #STRINGS AFIRMATIVOS Y NEGATIVOS respuestas_negativas = ["No","no"]
+#STRINGS AFIRMATIVOS Y NEGATIVOS 
+respuestas_afirmativas = ["Si","si"] #STRINGS AFIRMATIVOS Y NEGATIVOS 
+respuestas_negativas = ["No","no"]
+
+#Alternativas
+# Aquí van algunos strings que se repiten en los prints para no tener que escribirlos cada vez
+# Generos
+epi = "Epipremnum"
+cory = "Coryphanta"
+#info
+info_1 = "Información de tu planta"
+info_2 = "Cuando es optimo regarla"
+info_3 = "Beneficios de tener la planta"
+info_4 = "Cuidados para la planta"
 
 #ENTRADAS
 
-print("Hola!, esta app te dará información sobre generos de plantas que tu desees, como cuidados, beneficios, etc., Siendo estos el genero de plantas: Epipremnum y Coryphanta") #INICIO DEL PROGRAMA
+print("Hola!, esta app te podrá dar información sobre algunos generos de plantas , como sus cuidados, beneficios, etc.") #INICIO DEL PROGRAMA
+print("Generos de plantas:")
+print("1)", epi)
+print("2)", cory)
 
-planta_usuario = input("Escriba el genero de plantas deseado para obtener diversa informacion: ") #PRIMER INPUT PARA SABER DE QUE GENERO DESEA RECIBIR INFORMACION EL USUARIO
+planta_usuario = input("Por favor escriba el número de la alternativa deseada: ") #PRIMER INPUT PARA SABER DE QUE GENERO DESEA RECIBIR INFORMACION EL USUARIO
 
 
 #PROCESAMIENTO
@@ -26,12 +44,27 @@ i = 0
 while i == 0: #SE ESCRIBE UN CICLO WHILE QUE MANTENGA A TODO EL DESARROLLO, YA QUE ASI SI EL USUARIO QUIERE, PUEDE VOLVER A RESPONDER LA PREGUNTA SI QUIERE MAS INFORMACION
 
     while planta_usuario not in generos_todos: #SE ESCRIBEN 2 CICLOS WHILE POR SI EL USUARIO NO ESCRIBE EL NOMBRE DEL GENERO DE SU PLANTA CORRECTAMENTE
-        planta_usuario = input("Quizas quisiste escribir Epipremnum o Coryphanta, que deseas escribir?: ")
+        print(("Quizas quisiste escribir 1 o 2"))
+        print("1)", epi)
+        print("2)", cory)
+        planta_usuario = input("Por favor ingresar su alternativa otra vez: ")
 
-    preguntas = input("Se te puede brindar informacion de tu planta, cuando es optimo regarla, beneficios de tenerla o cuidados, que te gustaria recibir?: ")
+    if planta_usuario == genero_e:
+    	print("El género escogido fue:", epi)
+    else:
+        print("El género escogido fue:", cory)
+	
+	# Sección de información
+    print("Te podemos brindar:")
+    print("1)", info_1)
+    print("2)", info_2)
+    print("3)", info_3)
+    print("4)", info_4)
+    preguntas = input("Por favor escribir la alternativa según la informacíon que le gustaría recibir: ")
 
     while preguntas not in preguntas_todas:
-        preguntas = input("Escribiste algo que aun no podemos procesar, por favor escribe otra cosa!: ")
+        print("Quizás quisiste ingresar 1, 2, 3 o 4")
+        preguntas = input("Por favor ingresar su respuesta nuevamente:  ")
     
     if planta_usuario in genero_e: #SE ESCRIBEN 2 CONDICIONALES PARA RESPONDER LAS PREGUNTAS SEGUN EL GENERO QUE ESCRIBIO EL USUARIO
         if preguntas in pregunta_1:
