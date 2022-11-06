@@ -106,6 +106,8 @@ while i == 0: #SE ESCRIBE UN CICLO WHILE QUE MANTENGA A TODO EL DESARROLLO, YA Q
     while mas_preguntas not in respuestas_todas:
         print("Por favor ingresar una respuesta valida") 
         mas_preguntas = input("¿Le gustaría saber más? (Si/No):")
+        mas_preguntas = mas_preguntas.upper()
+        
     if mas_preguntas in respuestas_negativas:
         print("Esperamos que le haya servido y ayudado la informacion!")
         i = i + 1
