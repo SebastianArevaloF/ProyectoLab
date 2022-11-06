@@ -1,3 +1,16 @@
+# FUNDAMENTOS DE PROGRAMACIÓN PARA INGENIERÍA
+# SECCIÓN DEL CURSO: L-19 
+# PROFESOR DE TEORÍA: Gery Simken
+# PROFESOR DE LABORATORIO: Gery Gerena
+# GRUPO: 2
+# INTEGRANTES
+# 1. Sebastián Arévalo Farías 21.224.453-8
+# 2. Benjamín Navarro Rejas 21.331.312-6
+# 3. Benjamín Zúñiga Jofré 21.337.525-3
+# 4. César Rodríguez Pardo 21.382.225-K
+# El programa puede entregar:
+# informacion diversa, como cuidados, beneficios, etc., de 2 (a expandir si alcanza el tiempo) géneros específico de planta (Epipremnum y Coryphanta).
+
 #VARIABLES
 
 # Géneros de plantas
