@@ -12,9 +12,10 @@ pregunta_3 = "3"
 pregunta_4 = "4"
 preguntas_todas = "1234" #SE ESCRIBEN TODOS LOS STRINGS DENTRO DE UN MISMO STRING PARA EVITAR PROBLEMAS 
 
-#STRINGS AFIRMATIVOS Y NEGATIVOS 
-respuestas_afirmativas = ["Si","si"] #STRINGS AFIRMATIVOS Y NEGATIVOS 
-respuestas_negativas = ["No","no"]
+#STRINGS AFIRMATIVOS Y NEGATIVOS
+respuestas_afirmativas = ["SI"] 
+respuestas_negativas = ["NO"]
+respuestas_todas = ["SI","NO"]
 
 #Alternativas
 # Aquí van algunos strings que se repiten en los prints para no tener que escribirlos cada vez
@@ -85,9 +86,11 @@ while i == 0: #SE ESCRIBE UN CICLO WHILE QUE MANTENGA A TODO EL DESARROLLO, YA Q
            print("Este puntiagudo genero de plantas, son excelentes purificadores de aire, siendo esto perfecto a la hora de cuidar nuestra salud, tambien son plantas que requieren muy poco cuidado debido a su poca necesidad de agua, siendo estas perfectas para gente que no puede dedicar todo su tiempo en una planta!")
         elif preguntas in pregunta_4:
             print("A esta pequeña planta, le encanta tener luz directa, aunque tambien pueden recibir por periodos causando el mismo efecto de estar todo el dia en la luz solar!, la tierra organica mezclada con fibra de coco, hojas secas, corteza y turba, es lo mejor para su perfecto desarrollo!")
-    mas_preguntas = input("¿Le gustaría saber más? (Si/No): ")
 
-    while mas_preguntas not in respuestas_negativas and respuestas_afirmativas:
+    mas_preguntas = input("¿Le gustaría saber más? (Si/No): ")
+    mas_preguntas = mas_preguntas.upper()
+    
+    while mas_preguntas not in respuestas_todas:
         print("Por favor ingresar una respuesta valida") 
         mas_preguntas = input("¿Le gustaría saber más? (Si/No):")
     if mas_preguntas in respuestas_negativas:
