@@ -11,3 +11,16 @@
 # DESCRIPCIÓN DEL PROGRAMA 
 # El programa puede entregar informacion diversa, como cuidados, beneficios, etc., de 2 (a expandir si alcanza el tiempo) géneros específico de planta (Epipremnum y Coryphanta).
 
+
+# SCRIPT DE PRUEBA
+
+# INGRESE LOS SIGUIENTES NÚMEROS DE ACUERDO A
+# LA PREGUNTA QUE SALE EN PANTALLA PARA PROBAR
+# UN EJEMPLO DE LA FUNCIONALIDAD DE LA APLICACIÓN
+
+# GÉNEROS DE PLANTA: 1    (EPIPREMNUM)
+# INFORMACIÓN QUE DESEA RECIBIR: 2    (CUÁNDO ES ÓPTIMO REGARLA)
+# DESEA SABER MÁS: SI
+# GÉNEROS DE PLANTA: 2    (CORYPHANTHA)
+# INFORMACIÓN QUE DESEA RECIBIR: 4    (CUIDADOS PARA LA PLANTA)
+# DESEA SABER MÁS: NO
