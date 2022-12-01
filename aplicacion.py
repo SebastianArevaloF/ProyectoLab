@@ -25,7 +25,7 @@ PREGUNTA_2 = "2"
 PREGUNTA_3 = "3"
 PREGUNTA_4 = "4"
 #SE ESCRIBEN TODOS LOS STRINGS DENTRO DE UN MISMO STRING PARA EVITAR PROBLEMAS
-PREGUNTA_TODAS = "1234" 
+PREGUNTA_TODAS = "1234"
 #STRINGS AFIRMATIVOS Y NEGATIVOS
 respuestas_afirmativas = ["SI"]
 respuestas_negativas = ["NO"]
@@ -77,13 +77,14 @@ while i == 0:
     print("2)", INFO_2)
     print("3)", INFO_3)
     print("4)", INFO_4)
-    preguntas = input("Por favor escribir el número de la alternativa según la informacíon que le gustaría recibir: ")
+    preguntas = input("Por favor escribir el número de la alternativa"
+	" según la informacíon que le gustaría recibir: ")
 
     while preguntas not in PREGUNTA_TODAS:
         print("Quizás quisiste ingresar 1, 2, 3 o 4.")
         preguntas = input("Por favor ingresar su respuesta nuevamente:  ")
 #SE ESCRIBEN 2 CONDICIONALES PARA RESPONDER LAS PREGUNTAS SEGUN EL GENERO QUE ESCRIBIO EL USUARIO
-    if planta_usuario in genero_e: 
+    if planta_usuario in genero_e:
         if preguntas in PREGUNTA_1:
             print("La Epipremnum, tambien conocida como potos, perteneciente a la familia Araceae,"
 			" puede tener tallos de hasta 4cm de diámetro!, esta no florece de manera natural,"
