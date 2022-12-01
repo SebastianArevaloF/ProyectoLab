@@ -9,7 +9,7 @@
 # 3. Benjamín Zúñiga Jofré 21.337.525-3
 # 4. César Rodríguez Pardo 21.382.225-K
 # El programa puede entregar:
-# informacion diversa, como cuidados, beneficios, etc., de 2 
+# informacion diversa, como cuidados, beneficios, etc., de 2
 # (a expandir si alcanza el tiempo) géneros específico de planta (Epipremnum y Coryphanta).
 
 #VARIABLES
