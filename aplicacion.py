@@ -24,8 +24,8 @@ PREGUNTA_1 = "1"
 PREGUNTA_2 = "2"
 PREGUNTA_3 = "3"
 PREGUNTA_4 = "4"
-PREGUNTA_TODAS = "1234" #SE ESCRIBEN TODOS LOS STRINGS DENTRO DE UN MISMO STRING PARA EVITAR PROBLEMAS
-
+#SE ESCRIBEN TODOS LOS STRINGS DENTRO DE UN MISMO STRING PARA EVITAR PROBLEMAS
+PREGUNTA_TODAS = "1234" 
 #STRINGS AFIRMATIVOS Y NEGATIVOS
 respuestas_afirmativas = ["SI"]
 respuestas_negativas = ["NO"]
@@ -43,11 +43,11 @@ INFO_3 = "Beneficios de tener la planta"
 INFO_4 = "Cuidados para la planta"
 
 #ENTRADAS
-
-print("Hola!, esta app te podrá dar información sobre algunos generos de plantas , como sus cuidados, beneficios, etc.") #INICIO DEL PROGRAMA
+#INICIO DEL PROGRAMA
 print("Generos de plantas:")
-print("1)", epi)
-print("2)", cory)
+print("Hola!, esta app te podrá dar información sobre algunos generos de plantas , como sus cuidados, beneficios, etc.")
+print("1)", EPI)
+print("2)", CORY)
 
 #PRIMER INPUT PARA SABER DE QUE GENERO DESEA RECIBIR INFORMACION EL USUARIO
 planta_usuario = input("Por favor escriba el número de la alternativa deseada: ")
@@ -82,26 +82,46 @@ while i == 0:
     while preguntas not in PREGUNTA_TODAS:
         print("Quizás quisiste ingresar 1, 2, 3 o 4.")
         preguntas = input("Por favor ingresar su respuesta nuevamente:  ")
-    
-    if planta_usuario in genero_e: #SE ESCRIBEN 2 CONDICIONALES PARA RESPONDER LAS PREGUNTAS SEGUN EL GENERO QUE ESCRIBIO EL USUARIO
+#SE ESCRIBEN 2 CONDICIONALES PARA RESPONDER LAS PREGUNTAS SEGUN EL GENERO QUE ESCRIBIO EL USUARIO
+    if planta_usuario in genero_e: 
         if preguntas in PREGUNTA_1:
-            print("La Epipremnum, tambien conocida como potos, perteneciente a la familia Araceae, puede tener tallos de hasta 4cm de diámetro!, esta no florece de manera natural, si no, de manera inducida.")
+            print("La Epipremnum, tambien conocida como potos, perteneciente a la familia Araceae,"
+			" puede tener tallos de hasta 4cm de diámetro!, esta no florece de manera natural,"
+			" si no, de manera inducida.")
         elif preguntas in PREGUNTA_2:
-            print("Los riegos deben ser frecuentes en la epoca calida (manteniendo humedad alta rociando las hojas y se deben reducir a partir de otoño, en invierno se deben mantener escasos, la temperatura ideal del agua para regarla son los 20°C a 25°C")
+            print("Los riegos deben ser frecuentes en la epoca calida"
+			" (manteniendo humedad alta rociando las hojas y se deben reducir a partir de otoño,"
+			" en invierno se deben mantener escasos, la temperatura ideal del agua para"
+			" regarla son los 20°C a 25°C")
         elif preguntas in PREGUNTA_3:
-            print("Este genero tan curioso de plantas, es perfecto para poder decorar cualquier parte de tu casa, como también ayuda considerablemente a eliminar muchas de las toxinas del aire que no podemos apreciar a simple vista!")
+            print("Este genero tan curioso de plantas, es perfecto para poder decorar cualquier"
+			" parte de tu casa, como también ayuda considerablemente a eliminar muchas"
+			" de las toxinas del aire que no podemos apreciar a simple vista")
         elif preguntas in PREGUNTA_4:
-            print("A esta curiosa planta, le gusta mucho mantenerse en un ambiente humedo, es por esto que siempre debes manter la tierra de esa manera!, evita mantenerla a luz directa del sol ya que esto no le gusta, mantenla cerca de la ventana evitando lo anterior dicho!")
+            print("A esta curiosa planta, le gusta mucho mantenerse en un ambiente humedo,"
+			" es por esto que siempre debes manter la tierra de esa manera!, evita mantenerla"
+			" a luz directa del sol ya que esto no le gusta, mantenla cerca de la ventana"
+			" evitando lo anterior dicho!")
 
     if planta_usuario in genero_c:
         if preguntas in PREGUNTA_1:
-            print("La Coryphanta, tambien conocida como cactus, es un genero nativo de Mexico, siendo uno de los mas extensos. Esta puede crecer aproximadamente de 5-6 cm, cuando se desarrolla forma una flor central grande!")
+            print("La Coryphanta, tambien conocida como cactus, es un genero nativo de Mexico,"
+			" siendo uno de los mas extensos. Esta puede crecer aproximadamente de 5-6 cm,"
+			" cuando se desarrolla forma una flor central grande!")
         elif preguntas in PREGUNTA_2:
-            print("Los riegos deben ser de forma moderada en primavera y verano, siempre manteniendo el suelo seca de esta misma, en la epoca fria, los riegos deben suspenderse en pos del cuidado de la planta")
+            print("El riego debe ser de forma moderada en primavera y verano, siempre manteniendo"
+			" el suelo seca de esta misma, en la epoca fria, los riegos deben suspenderse"
+			" en pos del cuidado de la planta")
         elif preguntas in PREGUNTA_3:
-           print("Este puntiagudo genero de plantas, son excelentes purificadores de aire, siendo esto perfecto a la hora de cuidar nuestra salud, tambien son plantas que requieren muy poco cuidado debido a su poca necesidad de agua, siendo estas perfectas para gente que no puede dedicar todo su tiempo en una planta!")
+            print("Este puntiagudo genero de plantas, son excelentes purificadores de aire,"
+			" siendo esto perfecto a la hora de cuidar nuestra salud, tambien son plantas"
+			" que requieren muy poco cuidado debido a su poca necesidad de agua, siendo estas"
+			" perfectas para gente que no puede dedicar todo su tiempo en una planta!")
         elif preguntas in PREGUNTA_4:
-            print("A esta pequeña planta, le encanta tener luz directa, aunque tambien pueden recibir por periodos causando el mismo efecto de estar todo el dia en la luz solar!, la tierra organica mezclada con fibra de coco, hojas secas, corteza y turba, es lo mejor para su perfecto desarrollo!")
+            print("A esta pequeña planta, le encanta tener luz directa,"
+			" aunque tambien pueden recibir por periodos causando el mismo efecto"
+			" de estar todo el dia en la luz solar!, la tierra organica mezclada con"
+			" fibra de coco, hojas secas, corteza y turba, es lo mejor para su perfecto desarrollo!")
 
     mas_preguntas = input("¿Le gustaría saber más? (Si/No): ")
     mas_preguntas = mas_preguntas.upper()
@@ -110,7 +130,7 @@ while i == 0:
         print("Por favor ingresar una respuesta valida")
         mas_preguntas = input("¿Le gustaría saber más? (Si/No):")
         mas_preguntas = mas_preguntas.upper()
-       
+
     if mas_preguntas in respuestas_negativas:
         print("Esperamos que le haya servido y ayudado la informacion!")
         i = i + 1
