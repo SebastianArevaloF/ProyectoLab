@@ -25,10 +25,10 @@ def ventana_epipremnum():
         epipremnum.withdraw()
         info = tk.Label(
             info_e,
-            text="La Epipremnum, tambien conocida como potos,\n"
-            "perteneciente a la familia Araceae\n"
-            "puede tener tallos de hasta 4cm de diámetro!,\n"
-            "esta no florece de manera natural,"
+            text="La Epipremnum, tambien conocida como potos,\n \
+            perteneciente a la familia Araceae\n"
+            "puede tener tallos de hasta 4cm de diámetro!,\n \
+            esta no florece de manera natural,"
             "si no, de manera inducida.",
             padx=10,
             pady=10
@@ -64,7 +64,7 @@ def ventana_epipremnum():
             rely=1,
         )
 
-    # Ventana cuando es optimo
+    # Ventana cuándo es optimo
     def info2():
         info_e = tk.Toplevel()
         info_e.geometry("360x660")
@@ -75,7 +75,7 @@ def ventana_epipremnum():
             info_e,
             text="Los riegos deben ser frecuentes en la epoca cálida,\n"
             "manteniendo humedad alta rociando las hojas y se deben reducir\n"
-            "a partir de otoño,en invierno se deben mantener escasos,\n"
+            "a partir de otoño, en invierno se deben mantener escasos,\n"
             "la temperatura ideal del agua pararegarla son los 20°C a 25°C",
             padx=10,
             pady=10
@@ -119,8 +119,8 @@ def ventana_epipremnum():
         epipremnum.withdraw()
         info = tk.Label(
             info_e,
-            text="Este genero tan curioso de plantas,\n"
-            "es perfecto para poder decorar\n"
+            text="Este genero tan curioso de plantas,\
+            es perfecto para poder decorar\n"
             "cualquier parte de tu casa, como también ayuda\n"
             "considerablemente a eliminar muchas de las toxinas del aire\n"
             "que no podemos apreciar a simple vista!",
@@ -169,10 +169,10 @@ def ventana_epipremnum():
             info_e,
             text="A esta curiosa planta, le gusta mucho mantenerse en un\n"
             "ambiente humedo, es por esto que siempre debes manter la tierra\n"
-            "de esa manera,evita mantenerla a \n"
-            "luz directa del sol ya que esto\n"
-            "no le gusta, mantenla cerca de la ventana \n"
-            "evitando lo anterior dicho",
+            "de esa manera,evita mantenerla a \
+            luz directa del sol ya que esto\n"
+            "no le gusta, mantenla cerca de la ventana \
+            evitando lo anterior dicho",
             padx=10,
             pady=10
         )
@@ -234,7 +234,7 @@ def ventana_epipremnum():
     # Botón cuándo es óptimo
     boton_2 = tk.Button(
         epipremnum,
-        text="Cuando es optimo regar la planta",
+        text="Cuándo es óptimo regar la planta",
         command=info2,
         height=4,
         width=32,
@@ -350,7 +350,7 @@ def ventana_coryphanta():
             rely=1,
         )
 
-    # Ventana cuando es optimo
+    # Ventana cuándo es óptimo
     def info2():
         info_e = tk.Toplevel()
         info_e.geometry("360x660")
@@ -460,8 +460,8 @@ def ventana_coryphanta():
             "aunque tambien pueden recibir por periodos causando el mismo\n"
             "efecto de estar todo el dia en la luz solar,\n"
             "la tierra organica mezclada con fibra de coco,\n"
-            "hojas secas, corteza y turba,\n"
-            "es lo mejor para su perfecto desarrollo",
+            "hojas secas, corteza y turba,\
+            es lo mejor para su perfecto desarrollo",
             padx=10,
             pady=10
         )
@@ -520,7 +520,7 @@ def ventana_coryphanta():
     # Botón cuándo es óptimo
     boton_2 = tk.Button(
         coryphanta,
-        text="Cuando es optimo regar la planta",
+        text="Cuándo es óptimo regar la planta",
         command=info2,
         height=4,
         width=32,
