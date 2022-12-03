@@ -1,3 +1,4 @@
+#Importacion de funciones
 import tkinter as tk
 
 # Ventana principal
