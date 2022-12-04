@@ -40,7 +40,7 @@ def segunda_ventana():
     dialogo_robot_2_2 = Label(segunda_ventana,text="¿Cual te gustaria seleccionar?")
     dialogo_robot_2_2.place(x=80,y=30,width=200,height=25)
 
-    def epipremnum_ventana():
+    def epipremnum_ventana(): #SE DEFINE UNA FUNCION PARA LA VENTANA DEL GENERO EN ESPECIFICO Y 4 EXTRAS DENTRO DE LA YA MENCIONADA, ASÍ PARA DAR PASO A LA VENTANA DE INFORMACION QUE PUEDA DESEAR EL USUARIO
         epipremnum_ventana = Tk()
         epipremnum_ventana.title("Aplicación")
         epipremnum_ventana.geometry("360x660")
