@@ -24,13 +24,13 @@ ventana_principal.config(bg="yellow green")
 # CAMBIO DE ICONO DE LA APP POR DEFINIR
 
 # BIENVENIDA Y DIALOGOS DEL ROBOT EN VENTANA PRINCIPAL
-bienvenida = Label(ventana_principal, text="Hola! bienvenido a NOMBRE APP")
+bienvenida = Label(ventana_principal, text="Hola! bienvenido a EcoAqua")
 bienvenida.config(bg="dark sea green")
 bienvenida.place(x=80, y=30, width=200, height=25)
 
 
-dialogo_robot_1_1 = Label(ventana_principal, text="Soy NOMBRE ROBOT")
-dialogo_robot_1_1.place(x=80, y=60, width=200, height=25)
+dialogo_robot_1_1 = Label(ventana_principal, text="Soy Coryphanter 3000")
+dialogo_robot_1_1.place(x=110, y=60, width=150, height=25)
 dialogo_robot_1_1.config(bg="dark sea green")
 
 dialogo_robot_1_2 = Label(ventana_principal, text="Estoy aquí para ayudarte en el cuidado de tu planta")
@@ -56,11 +56,6 @@ def segunda_ventana():
     dialogo_robot_2_2 = Label(segunda_ventana, text="¿Cual te gustaria seleccionar?")
     dialogo_robot_2_2.place(x=80, y=30, width=200, height=25)
     dialogo_robot_2_2.config(bg="dark sea green")
-    '''
-    epi_imagen = ImageTk.PhotoImage(Image.open("imagen_epi.png"))
-    epi_label = Label(image=epi_imagen)
-    epi_label.place(x=60,y=60)
-    '''
 
     def epipremnum_ventana():   # SE DEFINE UNA FUNCION PARA LA VENTANA DEL GENERO EN ESPECIFICO Y 4 EXTRAS DENTRO DE LA YA MENCIONADA, ASÍ PARA DAR PASO A LA VENTANA DE INFORMACION QUE PUEDA DESEAR EL USUARIO
         epipremnum_ventana = Tk()
@@ -163,19 +158,19 @@ def segunda_ventana():
 
         boton_e_riego = Button(epipremnum_ventana, text="¿Cómo regar esta planta?", command=riego_e_ventana)
         boton_e_riego.config(bg="dark sea green")
-        boton_e_riego.place(x=115, y=55, width=139, height=25)
+        boton_e_riego.place(x=115, y=65, width=139, height=25)
 
         boton_e_info = Button(epipremnum_ventana, text="Información sobre esta planta", command=info_e_ventana)
         boton_e_info.config(bg="dark sea green")
-        boton_e_info.place(x=100, y=115, width=165, height=25)
+        boton_e_info.place(x=100, y=145, width=165, height=25)
 
         boton_e_beneficios = Button(epipremnum_ventana, text="Beneficios de tener esta planta", command=beneficios_e_ventana)
         boton_e_beneficios.config(bg="dark sea green")
-        boton_e_beneficios.place(x=100, y=175, width=167, height=25)
+        boton_e_beneficios.place(x=100, y=225, width=167, height=25)
 
         boton_e_cuidados = Button(epipremnum_ventana, text="Cuidados de esta planta", command=cuidados_e_ventana)
         boton_e_cuidados.config(bg="dark sea green")
-        boton_e_cuidados.place(x=115, y=235, width=133, height=25)
+        boton_e_cuidados.place(x=115, y=305, width=133, height=25)
 
     def coryphanta_ventana():
         coryphanta_ventana = Tk()
@@ -279,19 +274,19 @@ def segunda_ventana():
 
         boton_c_riego = Button(coryphanta_ventana, text="¿Cómo regar esta planta?", command=riego_c_ventana)
         boton_c_riego.config(bg="dark sea green")
-        boton_c_riego.place(x=115, y=55, width=139, height=25)
+        boton_c_riego.place(x=115, y=65, width=139, height=25)
 
         boton_c_info = Button(coryphanta_ventana, text="Información sobre esta planta", command=info_c_ventana)
         boton_c_info.config(bg="dark sea green")
-        boton_c_info.place(x=100, y=115, width=165, height=25)
+        boton_c_info.place(x=100, y=145, width=165, height=25)
 
         boton_c_beneficios = Button(coryphanta_ventana, text="Beneficios de tener esta planta", command=beneficios_c_ventana)
         boton_c_beneficios.config(bg="dark sea green")
-        boton_c_beneficios.place(x=100, y=175, width=167, height=25)
+        boton_c_beneficios.place(x=100, y=225, width=167, height=25)
 
         boton_c_cuidados = Button(coryphanta_ventana, text="Cuidados de esta planta", command=cuidados_c_ventana)
         boton_c_cuidados.config(bg="dark sea green")
-        boton_c_cuidados.place(x=115, y=235, width=133, height=25)
+        boton_c_cuidados.place(x=115, y=305, width=133, height=25)
 
         boton_cerrar = Button(coryphanta_ventana, text="Cerrar", command=coryphanta_ventana.destroy)
         boton_cerrar.config(bg="light coral")
@@ -303,7 +298,7 @@ def segunda_ventana():
 
     boton_coryphanta = Button(segunda_ventana, text="Género Coryphanta", command=coryphanta_ventana)
     boton_coryphanta.config(bg="dark sea green")
-    boton_coryphanta.place(x=120, y=150, width=125, height=25)
+    boton_coryphanta.place(x=120, y=350, width=125, height=25)
     # BOTON CERRAR
     boton_cerrar = Button(segunda_ventana, text="Cerrar", command=segunda_ventana.destroy)
     boton_cerrar.config(bg="light coral")
@@ -315,7 +310,6 @@ def segunda_ventana():
 
     ventana_principal.withdraw()
 # BOTON CERRAR VENTANA PRINCIPAL
-
 
 boton_cerrar = Button(ventana_principal, text="Cerrar", command=ventana_principal.destroy)
 boton_cerrar.config(bg="light coral")
