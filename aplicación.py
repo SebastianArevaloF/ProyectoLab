@@ -349,3 +349,4 @@ robot_label.config(bg="dark sea green")
 robot_label.place(x=110,y=130)
 
 ventana_principal.mainloop()
+
