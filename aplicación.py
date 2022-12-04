@@ -86,7 +86,6 @@ def segunda_ventana():
             epipremnum_ventana.withdraw()
             riego_e_ventana.config(bg="yellow green")
             
-            
             dialogo_robot_e_2 = Label(riego_e_ventana,text="Los riegos deben ser frecuentes en la epoca cálida,\n"
             "manteniendo humedad alta rociando las hojas y se deben reducir\n"
             "a partir de otoño, en invierno se deben mantener escasos,\n"
@@ -111,7 +110,8 @@ def segunda_ventana():
             
             dialogo_robot_e_3 = Label(info_e_ventana,text="La Epipremnum, tambien conocida como potos,\n \
             perteneciente a la familia Araceae puede tener tallos de\n hasta 4cm de diámetro!, esta no florece de manera natural,\nsi no, de manera inducida.")
-            dialogo_robot_e_3.place(x=-68,y=-200,width=500,height=500)
+            dialogo_robot_e_3.config(bg="dark sea green")
+            dialogo_robot_e_3.place(x=6,y=10,width=350,height=70)
 
             boton_atras = Button(info_e_ventana,text="Atrás",command=lambda: [info_e_ventana.destroy(), epipremnum_ventana.deiconify()])
             boton_atras.config(bg="dark khaki")
@@ -133,7 +133,8 @@ def segunda_ventana():
             como también ayuda considerablemente a eliminar \n \
             de las toxinas de aire que no podemos apreciar a\n \
             simple vista!")
-            dialogo_robot_e_4.place(x=-68,y=-200,width=500,height=500)
+            dialogo_robot_e_4.config(bg="dark sea green")
+            dialogo_robot_e_4.place(x=6,y=10,width=350,height=70)
 
             boton_atras = Button(beneficios_e_ventana,text="Atrás",command=lambda: [beneficios_e_ventana.destroy(), epipremnum_ventana.deiconify()])
             boton_atras.config(bg="dark khaki")
@@ -154,7 +155,8 @@ def segunda_ventana():
             "ambiente humedo, es por esto que siempre debes manter la tierra\n"
             "de esa manera,evita mantenerla a luz directa del sol ya que\n \
             esto no le gusta, mantenla cerca de la ventana evitando lo anterior dicho")
-            dialogo_robot_e_5.place(x=-68,y=-200,width=500,height=500)
+            dialogo_robot_e_5.config(bg="dark sea green")
+            dialogo_robot_e_5.place(x=6,y=10,width=350,height=70)
 
             boton_atras = Button(cuidados_e_ventana,text="Atrás",command=lambda: [cuidados_e_ventana.destroy(), epipremnum_ventana.deiconify()])
             boton_atras.config(bg="dark khaki")
@@ -186,6 +188,7 @@ def segunda_ventana():
         coryphanta_ventana.geometry("360x660")
         segunda_ventana.withdraw()
         
+        
         dialogo_robot_c_1 = Label(coryphanta_ventana,text="¿Qué te gustaría saber?")
         dialogo_robot_c_1.config(bg="dark sea green")
         dialogo_robot_c_1.place(x=120,y=20,width=130,height=25)
@@ -201,11 +204,14 @@ def segunda_ventana():
             riego_c_ventana.title("Aplicación")
             riego_c_ventana.geometry("360x660")
             coryphanta_ventana.withdraw()
+            riego_c_ventana.config(bg="yellow green")
+            
             dialogo_robot_c_2 = Label(riego_c_ventana,text="Los riegos deben ser de forma moderada en primavera\n"
             "y verano, siempre manteniendo el suelo seca de esta misma,\n"
             "en la epoca fria, los riegos deben suspenderse\n"
             "en pos del cuidado de la planta")
-            dialogo_robot_c_2.place(x=-68,y=-200,width=500,height=500)
+            dialogo_robot_c_2.config(bg="dark sea green")
+            dialogo_robot_c_2.place(x=6,y=10,width=350,height=70)
 
             boton_atras = Button(riego_c_ventana,text="Atrás",command=lambda: [riego_c_ventana.destroy(), coryphanta_ventana.deiconify()])
             boton_atras.config(bg="dark khaki")
@@ -220,12 +226,14 @@ def segunda_ventana():
             info_c_ventana.title("Aplicación")
             info_c_ventana.geometry("360x660")
             coryphanta_ventana.withdraw()
+            info_c_ventana.config(bg="yellow green")
             
             dialogo_robot_c_3 = Label(info_c_ventana,text="¿La Coryphanta, tambien conocida como cactus,\n"
             "es un genero nativo de Mexico, siendo uno de los mas extensos.\n"
             "Esta puede crecer aproximadamente de 5-6 cm,\n"
             "cuando se desarrolla forma una flor central grande")
-            dialogo_robot_c_3.place(x=-68,y=-200,width=500,height=500)
+            dialogo_robot_c_3.config(bg="dark sea green")
+            dialogo_robot_c_3.place(x=6,y=10,width=350,height=70)
 
             boton_atras = Button(info_c_ventana,text="Atrás",command=lambda: [info_c_ventana.destroy(), coryphanta_ventana.deiconify()])
             boton_atras.config(bg="dark khaki")
@@ -240,6 +248,7 @@ def segunda_ventana():
             beneficios_c_ventana.title("Aplicación")
             beneficios_c_ventana.geometry("360x660")
             coryphanta_ventana.withdraw()
+            beneficios_c_ventana.config(bg="yellow green")
             
             dialogo_robot_c_4 = Label(beneficios_c_ventana,text="Este puntiagudo genero de plantas, son excelentes\n"
             "purificadores de aire, siendo esto perfecto a la hora de\n"
@@ -247,7 +256,8 @@ def segunda_ventana():
             "muy poco cuidado debido a su poca necesidad de agua,\n"
             "siendo estas perfectas para gente que no puede dedicar\n"
             "todo su tiempo en una planta")
-            dialogo_robot_c_4.place(x=-68,y=-200,width=500,height=500)
+            dialogo_robot_c_4.config(bg="dark sea green")
+            dialogo_robot_c_4.place(x=15,y=10,width=330,height=100)
 
             boton_atras = Button(beneficios_c_ventana,text="Atrás",command=lambda: [beneficios_c_ventana.destroy(), coryphanta_ventana.deiconify()])
             boton_atras.config(bg="dark khaki")
@@ -262,13 +272,15 @@ def segunda_ventana():
             cuidados_c_ventana.title("Aplicación")
             cuidados_c_ventana.geometry("360x660")
             coryphanta_ventana.withdraw()
+            cuidados_c_ventana.config(bg="yellow green")
             
             dialogo_robot_c_5 = Label(cuidados_c_ventana,text="A esta pequeña planta, le encanta tener luz directa,\n"
             "aunque tambien pueden recibir por periodos causando el mismo\n"
             "efecto de estar todo el dia en la luz solar,\n"
             "la tierra organica mezclada con fibra de coco,\n"
             "hojas secas, corteza y turba son lo mejor para su perfecto desarrollo")
-            dialogo_robot_c_5.place(x=-68,y=-200,width=500,height=500)
+            dialogo_robot_c_5.config(bg="dark sea green")
+            dialogo_robot_c_5.place(x=0,y=10,width=360,height=80)
 
             boton_atras = Button(cuidados_c_ventana,text="Atrás",command=lambda: [cuidados_c_ventana.destroy(), coryphanta_ventana.deiconify()])
             boton_atras.config(bg="dark khaki")
