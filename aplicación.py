@@ -52,6 +52,12 @@ def segunda_ventana():
     dialogo_robot_2_2 = Label(segunda_ventana,text="¿Cual te gustaria seleccionar?")
     dialogo_robot_2_2.place(x=80,y=30,width=200,height=25)
     dialogo_robot_2_2.config(bg="dark sea green")
+    
+    '''
+    epi_imagen = ImageTk.PhotoImage(Image.open("imagen_epi.png"))
+    epi_label = Label(image=epi_imagen)
+    epi_label.place(x=60,y=60)
+    '''
 
     def epipremnum_ventana(): #SE DEFINE UNA FUNCION PARA LA VENTANA DEL GENERO EN ESPECIFICO Y 4 EXTRAS DENTRO DE LA YA MENCIONADA, ASÍ PARA DAR PASO A LA VENTANA DE INFORMACION QUE PUEDA DESEAR EL USUARIO
         epipremnum_ventana = Tk()
@@ -66,6 +72,10 @@ def segunda_ventana():
         boton_atras = Button(epipremnum_ventana,text="Atrás",command=lambda: [epipremnum_ventana.destroy(), segunda_ventana.deiconify()])
         boton_atras.config(bg="dark khaki")
         boton_atras.place(x=0,y=638,width=50,height=25)
+
+        boton_cerrar = Button(epipremnum_ventana,text="Cerrar",command=epipremnum_ventana.destroy)
+        boton_cerrar.config(bg="light coral")
+        boton_cerrar.place(x=310,y=640,width=50,height=25)
         
         epipremnum_ventana.config(bg="yellow green")
         
@@ -81,11 +91,16 @@ def segunda_ventana():
             "manteniendo humedad alta rociando las hojas y se deben reducir\n"
             "a partir de otoño, en invierno se deben mantener escasos,\n"
             "la temperatura ideal del agua pararegarla son los 20°C a 25°C")
-            dialogo_robot_e_2.place(x=-68,y=-200,width=500,height=500)
+            dialogo_robot_e_2.config(bg="dark sea green")
+            dialogo_robot_e_2.place(x=6,y=10,width=350,height=70)
             
             boton_atras = Button(riego_e_ventana,text="Atrás",command=lambda: [riego_e_ventana.destroy(), epipremnum_ventana.deiconify()])
             boton_atras.config(bg="dark khaki")
             boton_atras.place(x=0,y=638,width=50,height=25)
+
+            boton_cerrar = Button(riego_e_ventana,text="Cerrar",command=riego_e_ventana.destroy)
+            boton_cerrar.config(bg="light coral")
+            boton_cerrar.place(x=310,y=640,width=50,height=25)
             
         def info_e_ventana():
             info_e_ventana = Tk()
@@ -101,6 +116,10 @@ def segunda_ventana():
             boton_atras = Button(info_e_ventana,text="Atrás",command=lambda: [info_e_ventana.destroy(), epipremnum_ventana.deiconify()])
             boton_atras.config(bg="dark khaki")
             boton_atras.place(x=0,y=638,width=50,height=25)
+
+            boton_cerrar = Button(info_e_ventana,text="Cerrar",command=info_e_ventana.destroy)
+            boton_cerrar.config(bg="light coral")
+            boton_cerrar.place(x=310,y=640,width=50,height=25)
             
         def beneficios_e_ventana():
             beneficios_e_ventana = Tk()
@@ -119,6 +138,10 @@ def segunda_ventana():
             boton_atras = Button(beneficios_e_ventana,text="Atrás",command=lambda: [beneficios_e_ventana.destroy(), epipremnum_ventana.deiconify()])
             boton_atras.config(bg="dark khaki")
             boton_atras.place(x=0,y=638,width=50,height=25)
+
+            boton_cerrar = Button(beneficios_e_ventana,text="Cerrar",command=beneficios_e_ventana.destroy)
+            boton_cerrar.config(bg="light coral")
+            boton_cerrar.place(x=310,y=640,width=50,height=25)
             
         def cuidados_e_ventana():
             cuidados_e_ventana = Tk()
@@ -137,6 +160,10 @@ def segunda_ventana():
             boton_atras.config(bg="dark khaki")
             boton_atras.place(x=0,y=638,width=50,height=25)
 
+            boton_cerrar = Button(cuidados_e_ventana,text="Cerrar",command=cuidados_e_ventana.destroy)
+            boton_cerrar.config(bg="light coral")
+            boton_cerrar.place(x=310,y=640,width=50,height=25)
+
         boton_e_riego = Button(epipremnum_ventana,text="¿Cómo regar esta planta?",command=riego_e_ventana)
         boton_e_riego.config(bg="dark sea green")
         boton_e_riego.place(x=115,y=55,width=139,height=25)
@@ -152,7 +179,7 @@ def segunda_ventana():
         boton_e_cuidados = Button(epipremnum_ventana,text="Cuidados de esta planta",command=cuidados_e_ventana)
         boton_e_cuidados.config(bg="dark sea green")
         boton_e_cuidados.place(x=115,y=235,width=133,height=25)
-
+        
     def coryphanta_ventana():
         coryphanta_ventana = Tk()
         coryphanta_ventana.title("Aplicación")
@@ -168,7 +195,7 @@ def segunda_ventana():
         boton_atras.place(x=0,y=638,width=50,height=25)
 
         coryphanta_ventana.config(bg="yellow green")
-
+        
         def riego_c_ventana():
             riego_c_ventana = Tk()
             riego_c_ventana.title("Aplicación")
@@ -183,7 +210,11 @@ def segunda_ventana():
             boton_atras = Button(riego_c_ventana,text="Atrás",command=lambda: [riego_c_ventana.destroy(), coryphanta_ventana.deiconify()])
             boton_atras.config(bg="dark khaki")
             boton_atras.place(x=0,y=638,width=50,height=25)
-            
+
+            boton_cerrar = Button(riego_c_ventana,text="Cerrar",command=riego_c_ventana.destroy)
+            boton_cerrar.config(bg="light coral")
+            boton_cerrar.place(x=310,y=640,width=50,height=25)
+
         def info_c_ventana():
             info_c_ventana = Tk()
             info_c_ventana.title("Aplicación")
@@ -199,7 +230,11 @@ def segunda_ventana():
             boton_atras = Button(info_c_ventana,text="Atrás",command=lambda: [info_c_ventana.destroy(), coryphanta_ventana.deiconify()])
             boton_atras.config(bg="dark khaki")
             boton_atras.place(x=0,y=638,width=50,height=25)
-            
+
+            boton_cerrar = Button(info_c_ventana,text="Cerrar",command=info_c_ventana.destroy)
+            boton_cerrar.config(bg="light coral")
+            boton_cerrar.place(x=310,y=640,width=50,height=25)
+ 
         def beneficios_c_ventana():
             beneficios_c_ventana = Tk()
             beneficios_c_ventana.title("Aplicación")
@@ -217,7 +252,11 @@ def segunda_ventana():
             boton_atras = Button(beneficios_c_ventana,text="Atrás",command=lambda: [beneficios_c_ventana.destroy(), coryphanta_ventana.deiconify()])
             boton_atras.config(bg="dark khaki")
             boton_atras.place(x=0,y=638,width=50,height=25)
-            
+
+            boton_cerrar = Button(beneficios_c_ventana,text="Cerrar",command=beneficios_c_ventana.destroy)
+            boton_cerrar.config(bg="light coral")
+            boton_cerrar.place(x=310,y=640,width=50,height=25)
+
         def cuidados_c_ventana():
             cuidados_c_ventana = Tk()
             cuidados_c_ventana.title("Aplicación")
@@ -234,7 +273,11 @@ def segunda_ventana():
             boton_atras = Button(cuidados_c_ventana,text="Atrás",command=lambda: [cuidados_c_ventana.destroy(), coryphanta_ventana.deiconify()])
             boton_atras.config(bg="dark khaki")
             boton_atras.place(x=0,y=638,width=50,height=25)
-            
+
+            boton_cerrar = Button(cuidados_c_ventana,text="Cerrar",command=cuidados_c_ventana.destroy)
+            boton_cerrar.config(bg="light coral")
+            boton_cerrar.place(x=310,y=640,width=50,height=25)
+
 
         boton_c_riego = Button(coryphanta_ventana,text="¿Cómo regar esta planta?",command=riego_c_ventana)
         boton_c_riego.config(bg="dark sea green")
@@ -251,6 +294,10 @@ def segunda_ventana():
         boton_c_cuidados = Button(coryphanta_ventana,text="Cuidados de esta planta",command=cuidados_c_ventana)
         boton_c_cuidados.config(bg="dark sea green")
         boton_c_cuidados.place(x=115,y=235,width=133,height=25)
+
+        boton_cerrar = Button(coryphanta_ventana,text="Cerrar",command=coryphanta_ventana.destroy)
+        boton_cerrar.config(bg="light coral")
+        boton_cerrar.place(x=310,y=640,width=50,height=25)
         
     #BOTONES DE SELECCION DE GENEROS
     boton_epipremnum = Button(segunda_ventana,text="Género Epipremnum",command=epipremnum_ventana)
@@ -261,6 +308,11 @@ def segunda_ventana():
     boton_coryphanta.config(bg="dark sea green")
     boton_coryphanta.place(x=120,y=150,width=125,height=25)
     
+    #BOTON CERRAR
+    boton_cerrar = Button(segunda_ventana,text="Cerrar",command=segunda_ventana.destroy)
+    boton_cerrar.config(bg="light coral")
+    boton_cerrar.place(x=310,y=640,width=50,height=25)
+    
     #BOTON PARA RETROCEDER PAGINAS
     boton_atras = Button(segunda_ventana,text="Atrás",command=lambda: [segunda_ventana.destroy(), ventana_principal.deiconify()])
     boton_atras.config(bg="dark khaki")
@@ -268,6 +320,11 @@ def segunda_ventana():
 
     ventana_principal.withdraw()
     
+#BOTON CERRAR VENTANA PRINCIPAL
+boton_cerrar = Button(ventana_principal,text="Cerrar",command=ventana_principal.destroy)
+boton_cerrar.config(bg="light coral")
+boton_cerrar.place(x=310,y=640,width=50,height=25)
+
 #BOTON CONTINUAR VENTANA PRINCIPAL
 boton_continuar = Button(ventana_principal,text="Continuar",command=segunda_ventana)
 boton_continuar.config(bg="dark sea green")
