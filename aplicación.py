@@ -15,11 +15,11 @@
 
 # CONSTANTES
 '''
-Para la simplificacion de cada variable relacionada al dialogo 
-del robot, se escribira  
-dialogo_ventana_NUMERO DE LA VENTANA_NUMERO DE 
+Para la simplificacion de cada variable relacionada al dialogo
+del robot, se escribira
+dialogo_ventana_NUMERO DE LA VENTANA_NUMERO DE
 DIALOGO, si es una ventana de un genero
-se escribira dialogo_robot_x_y, 
+se escribira dialogo_robot_x_y,
 siendo x la primera letra del genero e y el numero de dialogo
 '''
 # IMPORTACION DE FUNCIONES
@@ -235,9 +235,11 @@ def segunda_ventana():
             "cuando se desarrolla forma una flor central grande")
             dialogo_robot_c_3.config(bg="dark sea green")
             dialogo_robot_c_3.place(x=6, y=10, width=350, height=70)
+
             boton_atras = Button(info_c_ventana, text="Atrás", command=lambda: [info_c_ventana.destroy(), coryphanta_ventana.deiconify()])
             boton_atras.config(bg="dark khaki")
             boton_atras.place(x=0, y=638, width=50, height=25)
+
             boton_cerrar = Button(info_c_ventana, text="Cerrar", command=info_c_ventana.destroy)
             boton_cerrar.config(bg="light coral")
             boton_cerrar.place(x=310, y=640, width=50, height=25)
@@ -287,6 +289,7 @@ def segunda_ventana():
             boton_cerrar.config(bg="light coral")
             boton_cerrar.place(x=310, y=640, width=50, height=25)
 
+        # BOTONES PARA CADA UNA DE LA INFORMACION DESEADA Y BOTON PARA CERRAR
         boton_c_riego = Button(coryphanta_ventana, text="¿Cómo regar esta planta?", command=riego_c_ventana)
         boton_c_riego.config(bg="dark sea green")
         boton_c_riego.place(x=115, y=65, width=139, height=25)
@@ -306,7 +309,179 @@ def segunda_ventana():
         boton_cerrar = Button(coryphanta_ventana, text="Cerrar", command=coryphanta_ventana.destroy)
         boton_cerrar.config(bg="light coral")
         boton_cerrar.place(x=310, y=640, width=50, height=25)
-    # BOTONES DE SELECCION DE GENEROS
+
+    # TERCERA VENTANA
+    def tercera_ventana():
+        tercera_ventana = Tk()
+        tercera_ventana.title("Aplicación")
+        tercera_ventana.geometry("360x660")
+        tercera_ventana.config(bg="yellow green")
+
+        dialogo_robot_3_1 = Label(tercera_ventana, text="Poseo informacion de los siguientes géneros de plantas")
+        dialogo_robot_3_1.place(x=35, y=10, width=300, height=25)
+        dialogo_robot_3_1.config(bg="dark sea green")
+        dialogo_robot_3_2 = Label(tercera_ventana, text="¿Cual te gustaria seleccionar?")
+        dialogo_robot_3_2.place(x=80, y=30, width=200, height=25)
+        dialogo_robot_3_2.config(bg="dark sea green")
+        segunda_ventana.withdraw()
+
+        def ficus_ventana():
+            ficus_ventana = Tk()
+            ficus_ventana.title("Aplicación")
+            ficus_ventana.geometry("360x660")
+            tercera_ventana.withdraw()
+            dialogo_robot_f_1 = Label(ficus_ventana, text="¿Qué te gustaría saber?")
+            dialogo_robot_f_1.config(bg="dark sea green")
+            dialogo_robot_f_1.place(x=120, y=20, width=130, height=25)
+
+            boton_atras = Button(ficus_ventana, text="Atrás", command=lambda: [ficus_ventana.destroy(), tercera_ventana.deiconify()])
+            boton_atras.config(bg="dark khaki")
+            boton_atras.place(x=0, y=638, width=50, height=25)
+
+            ficus_ventana.config(bg="yellow green")
+
+            def riego_f_ventana():
+                riego_f_ventana = Tk()
+                riego_f_ventana.title("Aplicación")
+                riego_f_ventana.geometry("360x660")
+                ficus_ventana.withdraw()
+                riego_f_ventana.config(bg="yellow green")
+                dialogo_robot_f_2 = Label(riego_f_ventana, text="Los riegos deben ser de forma moderada en primavera\n"
+                "y verano, siempre manteniendo el suelo seca de esta misma,\n"
+                "en la epoca fria, los riegos deben suspenderse\n"
+                "en pos del cuidado de la planta")
+                dialogo_robot_f_2.config(bg="dark sea green")
+                dialogo_robot_f_2.place(x=6, y=10, width=350, height=70)
+
+                boton_atras = Button(riego_f_ventana, text="Atrás", command=lambda: [riego_f_ventana.destroy(), ficus_ventana.deiconify()])
+                boton_atras.config(bg="dark khaki")
+                boton_atras.place(x=0, y=638, width=50, height=25)
+
+                boton_cerrar = Button(riego_f_ventana, text="Cerrar", command=riego_f_ventana.destroy)
+                boton_cerrar.config(bg="light coral")
+                boton_cerrar.place(x=310, y=640, width=50, height=25)
+
+            def info_f_ventana():
+                info_f_ventana = Tk()
+                info_f_ventana.title("Aplicación")
+                info_f_ventana.geometry("360x660")
+                ficus_ventana.withdraw()
+                info_f_ventana.config(bg="yellow green")
+                dialogo_robot_f_3 = Label(info_f_ventana, text="¿La Coryphanta, tambien conocida como cactus,\n"
+                "es un genero nativo de Mexico, siendo uno de los mas extensos.\n"
+                "Esta puede crecer aproximadamente de 5-6 cm,\n"
+                "cuando se desarrolla forma una flor central grande")
+                dialogo_robot_f_3.config(bg="dark sea green")
+                dialogo_robot_f_3.place(x=6, y=10, width=350, height=70)
+
+                boton_atras = Button(info_f_ventana, text="Atrás", command=lambda: [info_f_ventana.destroy(), ficus_ventana.deiconify()])
+                boton_atras.config(bg="dark khaki")
+                boton_atras.place(x=0, y=638, width=50, height=25)
+
+                boton_cerrar = Button(info_f_ventana, text="Cerrar", command=info_f_ventana.destroy)
+                boton_cerrar.config(bg="light coral")
+                boton_cerrar.place(x=310, y=640, width=50, height=25)
+
+            def beneficios_f_ventana():
+                beneficios_f_ventana = Tk()
+                beneficios_f_ventana.title("Aplicación")
+                beneficios_f_ventana.geometry("360x660")
+                ficus_ventana.withdraw()
+                beneficios_f_ventana.config(bg="yellow green")
+                dialogo_robot_f_4 = Label(beneficios_f_ventana, text="Este puntiagudo genero de plantas, son excelentes\n"
+                "purificadores de aire, siendo esto perfecto a la hora de\n"
+                "cuidar nuestra salud, tambien son plantas que requieren\n"
+                "muy poco cuidado debido a su poca necesidad de agua,\n"
+                "siendo estas perfectas para gente que no puede dedicar\n"
+                "todo su tiempo en una planta")
+                dialogo_robot_f_4.config(bg="dark sea green")
+                dialogo_robot_f_4.place(x=15, y=10, width=330, height=100)
+
+                boton_atras = Button(beneficios_f_ventana, text="Atrás", command=lambda: [beneficios_f_ventana.destroy(), ficus_ventana.deiconify()])
+                boton_atras.config(bg="dark khaki")
+                boton_atras.place(x=0, y=638, width=50, height=25)
+
+                boton_cerrar = Button(beneficios_f_ventana, text="Cerrar", command=beneficios_f_ventana.destroy)
+                boton_cerrar.config(bg="light coral")
+                boton_cerrar.place(x=310, y=640, width=50, height=25)
+
+            def cuidados_f_ventana():
+                cuidados_f_ventana = Tk()
+                cuidados_f_ventana.title("Aplicación")
+                cuidados_f_ventana.geometry("360x660")
+                ficus_ventana.withdraw()
+                cuidados_f_ventana.config(bg="yellow green")
+                dialogo_robot_f_5 = Label(cuidados_f_ventana, text="A esta pequeña planta, le encanta tener luz directa,\n"
+                "aunque tambien pueden recibir por periodos causando el mismo\n"
+                "efecto de estar todo el dia en la luz solar,\n"
+                "la tierra organica mezclada con fibra de coco,\n"
+                "hojas secas, corteza y turba son lo mejor para su perfecto desarrollo")
+                dialogo_robot_f_5.config(bg="dark sea green")
+                dialogo_robot_f_5.place(x=0, y=10, width=360, height=80)
+
+                boton_atras = Button(cuidados_f_ventana, text="Atrás", command=lambda: [cuidados_f_ventana.destroy(), ficus_ventana.deiconify()])
+                boton_atras.config(bg="dark khaki")
+                boton_atras.place(x=0, y=638, width=50, height=25)
+
+                boton_cerrar = Button(cuidados_f_ventana, text="Cerrar", command=cuidados_f_ventana.destroy)
+                boton_cerrar.config(bg="light coral")
+                boton_cerrar.place(x=310, y=640, width=50, height=25)
+            # BOTONES PARA CADA UNA DE LA INFORMACION DESEADA Y BOTON PARA CERRAR
+            boton_f_riego = Button(ficus_ventana, text="¿Cómo regar esta planta?", command=riego_f_ventana)
+            boton_f_riego.config(bg="dark sea green")
+            boton_f_riego.place(x=115, y=65, width=139, height=25)
+
+            boton_f_info = Button(ficus_ventana, text="Información sobre esta planta", command=info_f_ventana)
+            boton_f_info.config(bg="dark sea green")
+            boton_f_info.place(x=100, y=145, width=165, height=25)
+
+            boton_f_beneficios = Button(ficus_ventana, text="Beneficios de tener esta planta", command=beneficios_f_ventana)
+            boton_f_beneficios.config(bg="dark sea green")
+            boton_f_beneficios.place(x=100, y=225, width=167, height=25)
+
+            boton_f_cuidados = Button(ficus_ventana, text="Cuidados de esta planta", command=cuidados_f_ventana)
+            boton_f_cuidados.config(bg="dark sea green")
+            boton_f_cuidados.place(x=115, y=305, width=133, height=25)
+
+            boton_cerrar = Button(ficus_ventana, text="Cerrar", command=ficus_ventana.destroy)
+            boton_cerrar.config(bg="light coral")
+            boton_cerrar.place(x=310, y=640, width=50, height=25)
+
+        def aloe_ventana():
+            aloe_ventana = Tk()
+            aloe_ventana.title("Aplicación")
+            aloe_ventana.geometry("360x660")
+            tercera_ventana.withdraw()
+            dialogo_robot_a_1 = Label(aloe_ventana, text="¿Qué te gustaría saber?")
+            dialogo_robot_a_1.config(bg="dark sea green")
+            dialogo_robot_a_1.place(x=120, y=20, width=130, height=25)
+
+            boton_atras = Button(aloe_ventana, text="Atrás", command=lambda: [aloe_ventana.destroy(), tercera_ventana.deiconify()])
+            boton_atras.config(bg="dark khaki")
+            boton_atras.place(x=0, y=638, width=50, height=25)
+
+            aloe_ventana.config(bg="yellow green")
+
+        # BOTONES TERCERA VENTANA
+        # BOTONES DE SELECCION DE GENEROS FICUS Y ALOE
+        boton_ficus = Button(tercera_ventana, text="Género Ficus", command=ficus_ventana)
+        boton_ficus.config(bg="dark sea green")
+        boton_ficus.place(x=120, y=100, width=125, height=25)
+
+        boton_aloe = Button(tercera_ventana, text="Género Aloe", command=aloe_ventana)
+        boton_aloe.config(bg="dark sea green")
+        boton_aloe.place(x=120, y=350, width=125, height=25)
+        # BOTON CERRAR
+        boton_cerrar = Button(tercera_ventana, text="Cerrar", command=tercera_ventana.destroy)
+        boton_cerrar.config(bg="light coral")
+        boton_cerrar.place(x=310, y=640, width=50, height=25)
+        # BOTON PARA RETROCEDER PAGINAS
+        boton_atras = Button(tercera_ventana, text="Atrás", command=lambda: [tercera_ventana.destroy(), segunda_ventana.deiconify()])
+        boton_atras.config(bg="dark khaki")
+        boton_atras.place(x=0, y=638, width=50, height=25)
+
+    # BOTONES SEGUNDA VENTANA
+    # BOTONES DE SELECCION DE GENEROS EPIPREMNUM Y CORYPHANTA
     boton_epipremnum = Button(segunda_ventana, text="Género Epipremnum", command=epipremnum_ventana)
     boton_epipremnum.config(bg="dark sea green")
     boton_epipremnum.place(x=120, y=100, width=125, height=25)
@@ -322,21 +497,27 @@ def segunda_ventana():
     boton_atras = Button(segunda_ventana, text="Atrás", command=lambda: [segunda_ventana.destroy(), ventana_principal.deiconify()])
     boton_atras.config(bg="dark khaki")
     boton_atras.place(x=0, y=638, width=50, height=25)
+    # BOTON SIGUIENTE PÁGINA
+    boton_sig_pag = Button(segunda_ventana, text="Siguiente pagina", command=tercera_ventana)
+    boton_sig_pag.config(bg="dark khaki")
+    boton_sig_pag.place(x=50, y=638, width=100, height=25)
 
     ventana_principal.withdraw()
-# BOTON CERRAR VENTANA PRINCIPAL
+
+# BOTONES VENTANA PRINCIPAL
+# BOTON CERRAR
+
 
 boton_cerrar = Button(ventana_principal, text="Cerrar", command=ventana_principal.destroy)
 boton_cerrar.config(bg="light coral")
 boton_cerrar.place(x=310, y=640, width=50, height=25)
 
-# BOTON CONTINUAR VENTANA PRINCIPAL
+# BOTON CONTINUAR
 boton_continuar = Button(ventana_principal, text="Continuar", command=segunda_ventana)
 boton_continuar.config(bg="dark sea green")
 boton_continuar.place(x=130, y=330, width=100, height=25)
 
-# SE CREA UNA VARIABLE PARA PODER ABRIR LA IMAGEN 
-
+# IMAGEN INICIAL
 robot_imagen = ImageTk.PhotoImage(Image.open("robot.png"))
 robot_label = Label(image=robot_imagen)
 robot_label.config(bg="dark sea green")
