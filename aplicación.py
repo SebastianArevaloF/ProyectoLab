@@ -52,7 +52,9 @@ dialogo_robot_1_1 = Label(ventana_principal, text="Soy Coryphanter 3000")
 dialogo_robot_1_1.place(x=110, y=60, width=150, height=25)
 dialogo_robot_1_1.config(bg="dark sea green")
 
-dialogo_robot_1_2 = Label(ventana_principal, text="Estoy aquí para ayudarte en el cuidado de tu planta")
+dialogo_robot_1_2 = Label(ventana_principal,
+                          text="Estoy aquí para ayudarte "
+                               "en el cuidado de tu planta")
 dialogo_robot_1_2.place(x=40, y=90, width=285, height=25)
 dialogo_robot_1_2.config(bg="dark sea green")
 
@@ -224,8 +226,10 @@ def segunda_ventana():
             riego_c_ventana.config(bg="yellow green")
             coryphanta_ventana.withdraw()
 
-            dialogo_robot_c_2 = Label(riego_c_ventana, text="Los riegos deben ser de forma moderada en primavera\n"
-            "y verano, siempre manteniendo el suelo seca de esta misma,\n"
+            dialogo_robot_c_2 = Label(riego_c_ventana,
+                                      text="Los riegos deben ser de forma "
+                                           "moderada en primavera\n" + 
+                                           "y verano, siempre manteniendo el suelo seca de esta misma,\n"
             "en la epoca fria, los riegos deben suspenderse\n"
             "en pos del cuidado de la planta")
             dialogo_robot_c_2.config(bg="dark sea green")
