@@ -26,7 +26,9 @@ Se escribira dialogo_robot_x_y,
 Siendo x la primera letra del genero e y el numero de dialogo
 '''
 # IMPORTACION DE FUNCIONES
-from tkinter import Tk, Label, Button   # Se importa el modulo tkinter, con respectivas funiones para desarrollo de interfaz
+# Se importa el modulo tkinter, con respectivas funiones
+# para desarrollo de interfaz
+from tkinter import Tk, Label, Button
 from PIL import Image, ImageTk  # Se importa el modulo PIL, para imagenes
 # DEFINICION DE FUNCIONES
 
