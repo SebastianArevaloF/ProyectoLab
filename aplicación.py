@@ -129,7 +129,7 @@ def segunda_ventana():
                                            "otoño, en invierno se deben "
                                            "mantener escasos,\n"+"la "
                                            "temperatura ideal del agua "
-                                           "pararegarla son los 20°C a 25°C")
+                                           "pararegarla son los 20°C a 25°C.")
             dialogo_robot_e_2.config(bg="dark sea green")
             dialogo_robot_e_2.place(x=6, y=10, width=350, height=70)
             boton_atras = Button(riego_e_ventana,
@@ -212,10 +212,16 @@ def segunda_ventana():
             cuidados_e_ventana.config(bg="yellow green")
             epipremnum_ventana.withdraw()
 
-            dialogo_robot_e_5 = Label(cuidados_e_ventana, text="A esta curiosa planta, le gusta mucho mantenerse en un\n"
-            "ambiente humedo, es por esto que siempre debes manter la tierra\n"
-            "de esa manera,evita mantenerla a luz directa del sol ya que\n \
-            esto no le gusta, mantenla cerca de la ventana evitando lo anterior dicho")
+            dialogo_robot_e_5 = Label(cuidados_e_ventana,
+                                      text="A esta curiosa planta, le gusta "
+                                           "mucho mantenerse en un\n"
+                                           "ambiente humedo, es por esto que "
+                                           "siempre debes manter la tierra\n"
+                                           "de esa manera,evita mantenerla a "
+                                           "luz directa del sol ya que\n"
+                                           "esto no le gusta, mantenla cerca "
+                                           "de la ventana evitando lo anterior"
+                                           " dicho.")
             dialogo_robot_e_5.config(bg="dark sea green")
             dialogo_robot_e_5.place(x=6, y=10, width=350, height=70)
 
@@ -284,10 +290,12 @@ def segunda_ventana():
 
             dialogo_robot_c_2 = Label(riego_c_ventana,
                                       text="Los riegos deben ser de forma "
-                                           "moderada en primavera\n" + 
-                                           "y verano, siempre manteniendo el suelo seca de esta misma,\n"
-            "en la epoca fria, los riegos deben suspenderse\n"
-            "en pos del cuidado de la planta")
+                                           "moderada en primavera\n"+"y verano"
+                                           ", siempre manteniendo el suelo "
+                                           "seco de esta misma,\n"+"en la "
+                                           "epoca fria, los riegos deben "
+                                           "suspenderse\n"+"en pos del cuidado"
+                                           " de la planta.")
             dialogo_robot_c_2.config(bg="dark sea green")
             dialogo_robot_c_2.place(x=6, y=10, width=350, height=70)
 
@@ -310,10 +318,14 @@ def segunda_ventana():
             info_c_ventana.config(bg="yellow green")
             coryphanta_ventana.withdraw()
 
-            dialogo_robot_c_3 = Label(info_c_ventana, text="¿La Coryphanta, tambien conocida como cactus,\n"
-            "es un genero nativo de Mexico, siendo uno de los mas extensos.\n"
-            "Esta puede crecer aproximadamente de 5-6 cm,\n"
-            "cuando se desarrolla forma una flor central grande")
+            dialogo_robot_c_3 = Label(info_c_ventana,
+                                      text="¿La Coryphanta, tambien conocida "
+                                           "como cactus,\n"+"es un genero "
+                                           "nativo de Mexico, siendo uno de "
+                                           "los mas extensos.\n"+"Esta puede "
+                                           "crecer aproximadamente hasta "
+                                           "5-6 cm,\n"+"cuando se desarrolla "
+                                           "forma una flor central grande.")
             dialogo_robot_c_3.config(bg="dark sea green")
             dialogo_robot_c_3.place(x=6, y=10, width=350, height=70)
 
@@ -336,12 +348,17 @@ def segunda_ventana():
             beneficios_c_ventana.config(bg="yellow green")
             coryphanta_ventana.withdraw()
 
-            dialogo_robot_c_4 = Label(beneficios_c_ventana, text="Este puntiagudo genero de plantas, son excelentes\n"
-            "purificadores de aire, siendo esto perfecto a la hora de\n"
-            "cuidar nuestra salud, tambien son plantas que requieren\n"
-            "muy poco cuidado debido a su poca necesidad de agua,\n"
-            "siendo estas perfectas para gente que no puede dedicar\n"
-            "todo su tiempo en una planta")
+            dialogo_robot_c_4 = Label(beneficios_c_ventana,
+                                      text="Este puntiagudo genero de plantas,"
+                                           " son excelentes\n"+"purificadores "
+                                           "de aire, siendo esto perfecto a la"
+                                           "hora de\n"+"cuidar nuestra salud, "
+                                           "tambien son plantas que requieren"
+                                           "\n"+"muy poco cuidado debido a su "
+                                           "poca necesidad de agua,\n"+"siendo"
+                                           " estas perfectas para gente que no"
+                                           " puede dedicar\n"+"todo su tiempo "
+                                           "a una planta.")
             dialogo_robot_c_4.config(bg="dark sea green")
             dialogo_robot_c_4.place(x=15, y=10, width=330, height=100)
 
@@ -364,11 +381,17 @@ def segunda_ventana():
             cuidados_c_ventana.config(bg="yellow green")
             coryphanta_ventana.withdraw()
 
-            dialogo_robot_c_5 = Label(cuidados_c_ventana, text="A esta pequeña planta, le encanta tener luz directa,\n"
-            "aunque tambien pueden recibir por periodos causando el mismo\n"
-            "efecto de estar todo el dia en la luz solar,\n"
-            "la tierra organica mezclada con fibra de coco,\n"
-            "hojas secas, corteza y turba son lo mejor para su perfecto desarrollo")
+            dialogo_robot_c_5 = Label(cuidados_c_ventana,
+                                      text="A esta pequeña planta, le encanta "
+                                           "tener luz directa,\n"+"aunque "
+                                           "tambien pueden recibir por "
+                                           "periodos causando el mismo\n"
+                                           "efecto de estar todo el dia en la "
+                                           "luz solar,\n"+"la tierra organica "
+                                           "mezclada con fibra de coco,\n"
+                                           "hojas secas, corteza y turba son "
+                                           "lo mejor para su perfecto "
+                                           "desarrollo.")
             dialogo_robot_c_5.config(bg="dark sea green")
             dialogo_robot_c_5.place(x=0, y=10, width=360, height=80)
 
@@ -464,12 +487,16 @@ def segunda_ventana():
                 riego_f_ventana.config(bg="yellow green")
                 ficus_ventana.withdraw()
 
-                
-                dialogo_robot_f_2 = Label(riego_f_ventana, text="Necesitan un riego de aproximadamente dos veces \n"
-                "por semana en verano, una en invierno y en\n"
-                "regiones húmedas: cada 8 o 10 días.\n"
-                "Se debe evitar el agua muy fría y también \n"
-                "tener mucho cuidado de no escarchar las raices")
+                dialogo_robot_f_2 = Label(riego_f_ventana,
+                                          text="Necesitan un riego de "
+                                               "aproximadamente dos veces \n"
+                                               "por semana en verano, una en "
+                                               "invierno y en\n"+"regiones "
+                                               "húmedas: cada 8 o 10 días.\n"
+                                               "Se debe evitar el agua muy "
+                                               "fría y también \n"+"tener "
+                                               "mucho cuidado de no escarchar"
+                                               " las raices.")
                 dialogo_robot_f_2.config(bg="dark sea green")
                 dialogo_robot_f_2.place(x=35, y=10, width=300, height=75)
 
@@ -491,12 +518,17 @@ def segunda_ventana():
                 info_f_ventana.geometry("360x660")
                 info_f_ventana.config(bg="yellow green")
                 ficus_ventana.withdraw()
-                
-                dialogo_robot_f_3 = Label(info_f_ventana, text="Provienen de bosques tropicales.\n"
-                "Sus ramas son grandes y sus hojas bastante puntiagudas,\n"
-                "lo que añade un toque de 'jungla' tropical al ambiente.\n"
-                "Además, en su variedad existen plantas que llegan al\n"
-                "metro de altitud, tanto como a los 60 metros.")
+
+                dialogo_robot_f_3 = Label(info_f_ventana,
+                                          text="Provienen de bosques "
+                                               "tropicales.\n"+"Sus ramas son "
+                                               "grandes y sus hojas bastante "
+                                               "puntiagudas,\n"+"lo que añade "
+                                               "un toque de 'jungla' tropical "
+                                               "al ambiente.\n"+"Además, en su"
+                                               " variedad existen plantas que "
+                                               "llegan al\n"+"metro de altitud"
+                                               ", tanto como a los 60 metros.")
                 dialogo_robot_f_3.config(bg="dark sea green")
                 dialogo_robot_f_3.place(x=29, y=10, width=310, height=75)
 
@@ -519,11 +551,16 @@ def segunda_ventana():
                 beneficios_f_ventana.config(bg="yellow green")
                 ficus_ventana.withdraw()
 
-                dialogo_robot_f_4 = Label(beneficios_f_ventana, text="Son plantas que se adaptan muy bien al clima.\n"
-                "Mejoran la calidad del aire absorbiendo tóxicos.\n"
-                "Además, algunas de las plantas del género contienen\n"
-                "propiedades medicinales, siendo usada\n"
-                "para tratar diversas picaduras de insectos")
+                dialogo_robot_f_4 = Label(beneficios_f_ventana,
+                                          text="Son plantas que se adaptan muy"
+                                               " bien al clima.\n"+"Mejoran la"
+                                               " calidad del aire absorbiendo "
+                                               "tóxicos.\n"+"Además, algunas "
+                                               "de las plantas del género "
+                                               "contienen\n"+"propiedades "
+                                               "medicinales, siendo usada\n"
+                                               "para tratar diversas picaduras"
+                                               " de insectos.")
                 dialogo_robot_f_4.config(bg="dark sea green")
                 dialogo_robot_f_4.place(x=37, y=10, width=290, height=80)
 
@@ -546,10 +583,15 @@ def segunda_ventana():
                 cuidados_f_ventana.config(bg="yellow green")
                 ficus_ventana.withdraw()
 
-                dialogo_robot_f_5 = Label(cuidados_f_ventana, text="Estas plantas necesitan grandes dosis de luz,\n"
-                "pero sin que sea directa, necesitan un ambiente\n"
-                "cálido y humedo, por lo que es recomendable\n"
-                "pulverizar y limpiar sus hojas con cierta frecuencia,\n")
+                dialogo_robot_f_5 = Label(cuidados_f_ventana,
+                                          text="Estas plantas necesitan "
+                                               "grandes dosis de luz,\n"+"pero"
+                                               " sin que sea directa, "
+                                               "necesitan un ambiente\n"
+                                               "cálido y humedo, por lo que es"
+                                               "recomendable\n"+"pulverizar y "
+                                               "limpiar sus hojas con cierta "
+                                               "frecuencia.\n")
                 dialogo_robot_f_5.config(bg="dark sea green")
                 dialogo_robot_f_5.place(x=35, y=10, width=290, height=80)
 
@@ -564,7 +606,9 @@ def segunda_ventana():
                                       command=cuidados_f_ventana.destroy)
                 boton_cerrar.config(bg="light coral")
                 boton_cerrar.place(x=310, y=640, width=50, height=25)
-            # BOTONES PARA CADA UNA DE LA INFORMACION DESEADA Y BOTON PARA CERRAR
+
+            # BOTONES PARA CADA UNA DE LA INFORMACION DESEADA
+
             boton_f_riego = Button(ficus_ventana,
                                    text="¿Cómo regar esta planta?",
                                    command=riego_f_ventana)
@@ -589,6 +633,7 @@ def segunda_ventana():
             boton_f_cuidados.config(bg="dark sea green")
             boton_f_cuidados.place(x=115, y=305, width=133, height=25)
 
+            # BOTON PARA CERRAR
             boton_cerrar = Button(ficus_ventana,
                                   text="Cerrar",
                                   command=ficus_ventana.destroy)
@@ -628,33 +673,49 @@ def segunda_ventana():
         boton_aloe.config(bg="dark sea green")
         boton_aloe.place(x=120, y=350, width=125, height=25)
 
-        boton_cerrar = Button(tercera_ventana, text="Cerrar", command=tercera_ventana.destroy)
+        boton_cerrar = Button(tercera_ventana,
+                              text="Cerrar",
+                              command=tercera_ventana.destroy)
         boton_cerrar.config(bg="light coral")
         boton_cerrar.place(x=310, y=640, width=50, height=25)
 
-        boton_atras = Button(tercera_ventana, text="Atrás", command=lambda: [tercera_ventana.destroy(), segunda_ventana.deiconify()])
+        boton_atras = Button(tercera_ventana,
+                             text="Atrás",
+                             command=lambda: [tercera_ventana.destroy(),
+                                              segunda_ventana.deiconify()])
         boton_atras.config(bg="dark khaki")
         boton_atras.place(x=0, y=638, width=50, height=25)
 
     # BOTONES SEGUNDA VENTANA
 
-    boton_epipremnum = Button(segunda_ventana, text="Género Epipremnum", command=epipremnum_ventana)
+    boton_epipremnum = Button(segunda_ventana,
+                              text="Género Epipremnum",
+                              command=epipremnum_ventana)
     boton_epipremnum.config(bg="dark sea green")
     boton_epipremnum.place(x=120, y=100, width=125, height=25)
 
-    boton_coryphanta = Button(segunda_ventana, text="Género Coryphanta", command=coryphanta_ventana)
+    boton_coryphanta = Button(segunda_ventana,
+                              text="Género Coryphanta",
+                              command=coryphanta_ventana)
     boton_coryphanta.config(bg="dark sea green")
     boton_coryphanta.place(x=120, y=350, width=125, height=25)
 
-    boton_cerrar = Button(segunda_ventana, text="Cerrar", command=segunda_ventana.destroy)
+    boton_cerrar = Button(segunda_ventana,
+                          text="Cerrar",
+                          command=segunda_ventana.destroy)
     boton_cerrar.config(bg="light coral")
     boton_cerrar.place(x=310, y=640, width=50, height=25)
 
-    boton_atras = Button(segunda_ventana, text="Atrás", command=lambda: [segunda_ventana.destroy(), ventana_principal.deiconify()])
+    boton_atras = Button(segunda_ventana,
+                         text="Atrás",
+                         command=lambda: [segunda_ventana.destroy(),
+                                          ventana_principal.deiconify()])
     boton_atras.config(bg="dark khaki")
     boton_atras.place(x=0, y=638, width=50, height=25)
 
-    boton_sig_pag = Button(segunda_ventana, text="Siguiente pagina", command=tercera_ventana)
+    boton_sig_pag = Button(segunda_ventana,
+                           text="Siguiente pagina",
+                           command=tercera_ventana)
     boton_sig_pag.config(bg="dark khaki")
     boton_sig_pag.place(x=50, y=638, width=100, height=25)
 
@@ -663,11 +724,15 @@ def segunda_ventana():
 # BOTONES VENTANA PRINCIPAL
 
 
-boton_cerrar = Button(ventana_principal, text="Cerrar", command=ventana_principal.destroy)
+boton_cerrar = Button(ventana_principal,
+                      text="Cerrar",
+                      command=ventana_principal.destroy)
 boton_cerrar.config(bg="light coral")
 boton_cerrar.place(x=310, y=640, width=50, height=25)
 
-boton_continuar = Button(ventana_principal, text="Continuar", command=segunda_ventana)
+boton_continuar = Button(ventana_principal,
+                         text="Continuar",
+                         command=segunda_ventana)
 boton_continuar.config(bg="dark sea green")
 boton_continuar.place(x=130, y=330, width=100, height=25)
 
