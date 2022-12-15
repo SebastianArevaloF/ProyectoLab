@@ -157,8 +157,8 @@ def segunda_ventana():
                                            " familia Araceae puede tener "
                                            "tallos de\n"+"hasta 4cm de "
                                            "diámetro!, esta no florece de "
-                                           "manera natural,\nsi no, de manera "
-                                           "inducida.")
+                                           "manera natural,\n"+"si no, de "
+                                           "manera inducida.")
             dialogo_robot_e_3.config(bg="dark sea green")
             dialogo_robot_e_3.place(x=6, y=10, width=350, height=70)
 
@@ -489,14 +489,14 @@ def segunda_ventana():
 
                 dialogo_robot_f_2 = Label(riego_f_ventana,
                                           text="Necesitan un riego de "
-                                               "aproximadamente dos veces \n"
+                                               "aproximadamente dos veces\n"
                                                "por semana en verano, una en "
                                                "invierno y en\n"+"regiones "
                                                "húmedas: cada 8 o 10 días.\n"
                                                "Se debe evitar el agua muy "
-                                               "fría y también \n"+"tener "
-                                               "mucho cuidado de no escarchar"
-                                               " las raices.")
+                                               "fría y también\n"+"tener mucho"
+                                               " cuidado de no escarchar las "
+                                               "raices.")
                 dialogo_robot_f_2.config(bg="dark sea green")
                 dialogo_robot_f_2.place(x=35, y=10, width=300, height=75)
 
@@ -672,8 +672,8 @@ def segunda_ventana():
                                                "excepto por invierno que se "
                                                "pueden reducir a 1 por mes,\n"
                                                "siempre utilizando poca agua y"
-                                               " vertiéndola \n"+"directamente"
-                                               " sobre la tierra, sin dejar la"
+                                               " vertiéndola\n"+"directamente "
+                                               "sobre la tierra, sin dejar la"
                                                " maceta encharcada.")
                 dialogo_robot_a_2.config(bg="dark sea green")
                 dialogo_robot_a_2.place(x=25, y=10, width=320, height=75)
