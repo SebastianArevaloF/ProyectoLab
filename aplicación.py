@@ -29,7 +29,8 @@ Siendo x la primera letra del genero e y el numero de dialogo
 # Se importa el modulo tkinter, con respectivas funiones
 # para desarrollo de interfaz
 from tkinter import Tk, Label, Button
-from PIL import Image, ImageTk  # Se importa el modulo PIL, para imagenes
+# Se importa el modulo PIL, para imagenes
+from PIL import Image, ImageTk
 # DEFINICION DE FUNCIONES
 
 # PROCESAMIENTO
@@ -71,7 +72,9 @@ def segunda_ventana():
     segunda_ventana.geometry("360x660")
     segunda_ventana.config(bg="yellow green")
 
-    dialogo_robot_2_1 = Label(segunda_ventana, text="Poseo informacion de los siguientes géneros de plantas")
+    dialogo_robot_2_1 = Label(segunda_ventana,
+                              text="Poseo informacion de los siguientes "
+                                   "géneros de plantas")
     dialogo_robot_2_1.place(x=35, y=10, width=300, height=25)
     dialogo_robot_2_1.config(bg="dark sea green")
     dialogo_robot_2_2 = Label(segunda_ventana, text="¿Cual te gustaria seleccionar?")
