@@ -17,10 +17,8 @@
 '''
 Para la simplificacion de cada variable relacionada al dialogo
 Se especificaran las siguientes indicaciones:
-
 1)Para el dialogo del robot, se escribira
 dialogo_robot_"NUMERO DE LA VENTANA"_"NUMERO DE DIALOGO"
-
 2)Para el dialogo del robot hablando sobre plantas
 Se escribira dialogo_robot_x_y,
 Siendo x la primera letra del genero e y el numero de dialogo
@@ -160,7 +158,7 @@ def segunda_ventana():
                                            "manera natural,\n"+"si no, de "
                                            "manera inducida.")
             dialogo_robot_e_3.config(bg="dark sea green")
-            dialogo_robot_e_3.place(x=6, y=10, width=350, height=70)
+            dialogo_robot_e_3.place(x=15, y=10, width=330, height=70)
 
             boton_atras = Button(info_e_ventana,
                                  text="Atrás",
@@ -191,7 +189,7 @@ def segunda_ventana():
                                            "podemos apreciar a\n"+"simple "
                                            "vista!")
             dialogo_robot_e_4.config(bg="dark sea green")
-            dialogo_robot_e_4.place(x=6, y=10, width=350, height=70)
+            dialogo_robot_e_4.place(x=22, y=10, width=320, height=80)
 
             boton_atras = Button(beneficios_e_ventana,
                                  text="Atrás",
@@ -219,11 +217,11 @@ def segunda_ventana():
                                            "siempre debes manter la tierra\n"
                                            "de esa manera,evita mantenerla a "
                                            "luz directa del sol ya que\n"
-                                           "esto no le gusta, mantenla cerca "
+                                           "esto no le gusta, mantenla cerca\n "
                                            "de la ventana evitando lo anterior"
                                            " dicho.")
             dialogo_robot_e_5.config(bg="dark sea green")
-            dialogo_robot_e_5.place(x=6, y=10, width=350, height=70)
+            dialogo_robot_e_5.place(x=6, y=10, width=350, height=80)
 
             boton_atras = Button(cuidados_e_ventana,
                                  text="Atrás",
@@ -314,12 +312,12 @@ def segunda_ventana():
         def info_c_ventana():
             info_c_ventana = Tk()
             info_c_ventana.title("Aplicación")
-            info_c_ventana.geometry("360x660")
+            info_c_ventana.geometry("360x660") 
             info_c_ventana.config(bg="yellow green")
             coryphanta_ventana.withdraw()
 
             dialogo_robot_c_3 = Label(info_c_ventana,
-                                      text="¿La Coryphanta, tambien conocida "
+                                      text="La Coryphanta, tambien conocida "
                                            "como cactus,\n"+"es un genero "
                                            "nativo de Mexico, siendo uno de "
                                            "los mas extensos.\n"+"Esta puede "
@@ -899,6 +897,7 @@ boton_continuar.config(bg="dark sea green")
 boton_continuar.place(x=130, y=330, width=100, height=25)
 
 # IMAGEN INICIAL
+
 robot_imagen = ImageTk.PhotoImage(Image.open("robot.png"))
 robot_label = Label(image=robot_imagen)
 robot_label.config(bg="dark sea green")
