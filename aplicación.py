@@ -659,6 +659,168 @@ def segunda_ventana():
             boton_atras.config(bg="dark khaki")
             boton_atras.place(x=0, y=638, width=50, height=25)
 
+            def riego_a_ventana():
+                riego_a_ventana = Tk()
+                riego_a_ventana.title("Aplicación")
+                riego_a_ventana.geometry("360x660")
+                riego_a_ventana.config(bg="yellow green")
+                aloe_ventana.withdraw()
+
+                dialogo_robot_a_2 = Label(riego_a_ventana,
+                                          text="Es recomendable regar a un "
+                                               "aloe cada 15 o 20 días,\n"
+                                               "excepto por invierno que se "
+                                               "pueden reducir a 1 por mes,\n"
+                                               "siempre utilizando poca agua y"
+                                               " vertiéndola \n"+"directamente"
+                                               " sobre la tierra, sin dejar la"
+                                               " maceta encharcada.")
+                dialogo_robot_a_2.config(bg="dark sea green")
+                dialogo_robot_a_2.place(x=25, y=10, width=320, height=75)
+
+                boton_atras = Button(riego_a_ventana,
+                                     text="Atrás",
+                                     command=lambda: [riego_a_ventana.destroy(), aloe_ventana.deiconify()])
+                boton_atras.config(bg="dark khaki")
+                boton_atras.place(x=0, y=638, width=50, height=25)
+
+                boton_cerrar = Button(riego_a_ventana,
+                                      text="Cerrar",
+                                      command=riego_a_ventana.destroy)
+                boton_cerrar.config(bg="light coral")
+                boton_cerrar.place(x=310, y=640, width=50, height=25)
+
+            def info_a_ventana():
+                info_a_ventana = Tk()
+                info_a_ventana.title("Aplicación")
+                info_a_ventana.geometry("360x660")
+                info_a_ventana.config(bg="yellow green")
+                aloe_ventana.withdraw()
+
+                dialogo_robot_a_3 = Label(info_a_ventana,
+                                          text="Son plantas siempreverdes, con"
+                                               " hojas\n"+"afiladas en su "
+                                               "apice y margenes espinosos.\n"
+                                               "Es un genero que tiene la "
+                                               "capacidad de conservar el\n"
+                                               "agua de lluvia, lo que le "
+                                               "permite sobrevivir durante\n"
+                                               "largos períodos de tiempo en "
+                                               "condiciones de sequia!")
+                dialogo_robot_a_3.config(bg="dark sea green")
+                dialogo_robot_a_3.place(x=29, y=10, width=310, height=80)
+
+                boton_atras = Button(info_a_ventana,
+                                     text="Atrás",
+                                     command=lambda: [info_a_ventana.destroy(), aloe_ventana.deiconify()])
+                boton_atras.config(bg="dark khaki")
+                boton_atras.place(x=0, y=638, width=50, height=25)
+
+                boton_cerrar = Button(info_a_ventana,
+                                      text="Cerrar",
+                                      command=info_a_ventana.destroy)
+                boton_cerrar.config(bg="light coral")
+                boton_cerrar.place(x=310, y=640, width=50, height=25)
+
+            def beneficios_a_ventana():
+                beneficios_a_ventana = Tk()
+                beneficios_a_ventana.title("Aplicación")
+                beneficios_a_ventana.geometry("360x660")
+                beneficios_a_ventana.config(bg="yellow green")
+                aloe_ventana.withdraw()
+
+                dialogo_robot_a_4 = Label(beneficios_a_ventana,
+                                          text="Son plantas que tienen "
+                                               "diversos pros para la salud,\n"
+                                               "como los siguientes:\n"
+                                               "-Posee vitaminas que son "
+                                               "beneficiosas para la salud "
+                                               "humana\n"+"-Propiedades "
+                                               "antiinflamatorias\n"
+                                               "-Accion con efecto calmante "
+                                               "de gastritis y esofagitis.")
+                dialogo_robot_a_4.config(bg="dark sea green")
+                dialogo_robot_a_4.place(x=17, y=10, width=330, height=80)
+
+                boton_atras = Button(beneficios_a_ventana,
+                                     text="Atrás",
+                                     command=lambda: [beneficios_a_ventana.destroy(), aloe_ventana.deiconify()])
+                boton_atras.config(bg="dark khaki")
+                boton_atras.place(x=0, y=638, width=50, height=25)
+
+                boton_cerrar = Button(beneficios_a_ventana,
+                                      text="Cerrar",
+                                      command=beneficios_a_ventana.destroy)
+                boton_cerrar.config(bg="light coral")
+                boton_cerrar.place(x=310, y=640, width=50, height=25)
+
+            def cuidados_a_ventana():
+                cuidados_a_ventana = Tk()
+                cuidados_a_ventana.title("Aplicación")
+                cuidados_a_ventana.geometry("360x660")
+                cuidados_a_ventana.config(bg="yellow green")
+                aloe_ventana.withdraw()
+
+                dialogo_robot_a_5 = Label(cuidados_a_ventana,
+                                          text="Estas plantas necesitan mucha "
+                                               "luz\n"+"para crecer sanas y "
+                                               "florecer al máximo, siempre "
+                                               "manteniendo\n"+"en "
+                                               "consideracion la temperatura, "
+                                               "no debe ser inferior a 10°C.\n"
+                                               "Se pueden retirar las hojas y "
+                                               "espigas florales\n"+"que se "
+                                               "hayan secado para evitar "
+                                               "plagas.")
+                dialogo_robot_a_5.config(bg="dark sea green")
+                dialogo_robot_a_5.place(x=15, y=10, width=333, height=80)
+
+                boton_atras = Button(cuidados_a_ventana,
+                                     text="Atrás",
+                                     command=lambda: [cuidados_a_ventana.destroy(), aloe_ventana.deiconify()])
+                boton_atras.config(bg="dark khaki")
+                boton_atras.place(x=0, y=638, width=50, height=25)
+
+                boton_cerrar = Button(cuidados_a_ventana,
+                                      text="Cerrar",
+                                      command=cuidados_a_ventana.destroy)
+                boton_cerrar.config(bg="light coral")
+                boton_cerrar.place(x=310, y=640, width=50, height=25)
+
+            # BOTONES PARA CADA UNA DE LA INFORMACION DESEADA
+
+            boton_a_riego = Button(aloe_ventana,
+                                   text="¿Cómo regar esta planta?",
+                                   command=riego_a_ventana)
+            boton_a_riego.config(bg="dark sea green")
+            boton_a_riego.place(x=115, y=65, width=139, height=25)
+
+            boton_a_info = Button(aloe_ventana,
+                                  text="Información sobre esta planta",
+                                  command=info_a_ventana)
+            boton_a_info.config(bg="dark sea green")
+            boton_a_info.place(x=100, y=145, width=165, height=25)
+
+            boton_a_beneficios = Button(aloe_ventana,
+                                        text="Beneficios de tener esta planta",
+                                        command=beneficios_a_ventana)
+            boton_a_beneficios.config(bg="dark sea green")
+            boton_a_beneficios.place(x=100, y=225, width=167, height=25)
+
+            boton_a_cuidados = Button(aloe_ventana,
+                                      text="Cuidados de esta planta",
+                                      command=cuidados_a_ventana)
+            boton_a_cuidados.config(bg="dark sea green")
+            boton_a_cuidados.place(x=115, y=305, width=133, height=25)
+
+            # BOTON PARA CERRAR
+
+            boton_cerrar = Button(aloe_ventana,
+                                  text="Cerrar",
+                                  command=aloe_ventana.destroy)
+            boton_cerrar.config(bg="light coral")
+            boton_cerrar.place(x=310, y=640, width=50, height=25)
+
         # BOTONES TERCERA VENTANA
 
         boton_ficus = Button(tercera_ventana,
