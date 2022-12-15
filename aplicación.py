@@ -38,7 +38,7 @@ from PIL import Image, ImageTk
 ventana_principal = Tk()
 ventana_principal.title("Aplicación")
 ventana_principal.geometry("360x660")
-
+ventana_principal.resizable(width=False, height=False)
 # CAMBIOS DE COLORES PARA LA VENTANA PRINCIPAL
 ventana_principal.config(bg="yellow green")
 
