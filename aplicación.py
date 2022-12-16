@@ -78,11 +78,11 @@ def ventana_2():
                               text="Poseo informacion de los siguientes\n"
                                    "géneros de plantas",
                               font=35)
-    dialogo_robot_2_1.place(anchor="c", relx=0.5, y=35, width=300, height=45)
+    dialogo_robot_2_1.place(anchor="c", relx=0.5, y=35, width=280, height=45)
     dialogo_robot_2_1.config(bg="dark sea green")
     dialogo_robot_2_2 = Label(segunda_ventana,
                               text="¿Cual te gustaria seleccionar?", font=35)
-    dialogo_robot_2_2.place(anchor="c", relx=0.5, y=75, width=200, height=25)
+    dialogo_robot_2_2.place(anchor="c", relx=0.5, y=75, width=220, height=25)
     dialogo_robot_2_2.config(bg="dark sea green")
 
     numero_pagina = Label(segunda_ventana, text="1/2")
@@ -112,7 +112,9 @@ def ventana_2():
 
         boton_cerrar = Button(epipremnum_ventana,
                               text="Cerrar",
-                              command=lambda: [epipremnum_ventana.destroy(), segunda_ventana.destroy() , ventana_principal.destroy()])
+                              command=lambda: [epipremnum_ventana.destroy(),
+                                               segunda_ventana.destroy(),
+                                               ventana_principal.destroy()])
         boton_cerrar.config(bg="light coral")
         boton_cerrar.place(x=310, y=640, width=50, height=25)
         epipremnum_ventana.config(bg="yellow green")
@@ -137,7 +139,9 @@ def ventana_2():
             dialogo_robot_e_2.place(x=6, y=10, width=350, height=70)
             boton_atras = Button(riego_e_ventana,
                                  text="Atrás",
-                                 command=lambda: [riego_e_ventana.destroy(), epipremnum_ventana.deiconify()])
+                                 command=lambda:
+                                 [riego_e_ventana.destroy(),
+                                  epipremnum_ventana.deiconify()])
             boton_atras.config(bg="dark khaki")
             boton_atras.place(x=0, y=638, width=50, height=25)
 
@@ -167,7 +171,9 @@ def ventana_2():
 
             boton_atras = Button(info_e_ventana,
                                  text="Atrás",
-                                 command=lambda: [info_e_ventana.destroy(), epipremnum_ventana.deiconify()])
+                                 command=lambda:
+                                 [info_e_ventana.destroy(),
+                                  epipremnum_ventana.deiconify()])
             boton_atras.config(bg="dark khaki")
             boton_atras.place(x=0, y=638, width=50, height=25)
 
@@ -198,7 +204,9 @@ def ventana_2():
 
             boton_atras = Button(beneficios_e_ventana,
                                  text="Atrás",
-                                 command=lambda: [beneficios_e_ventana.destroy(), epipremnum_ventana.deiconify()])
+                                 command=lambda:
+                                 [beneficios_e_ventana.destroy(),
+                                  epipremnum_ventana.deiconify()])
             boton_atras.config(bg="dark khaki")
             boton_atras.place(x=0, y=638, width=50, height=25)
 
@@ -222,7 +230,7 @@ def ventana_2():
                                            "siempre debes manter la tierra\n"
                                            "de esa manera,evita mantenerla a "
                                            "luz directa del sol ya que\n"
-                                           "esto no le gusta, mantenla cerca\n "
+                                           "esto no le gusta, mantenla cerca\n"
                                            "de la ventana evitando lo anterior"
                                            " dicho.")
             dialogo_robot_e_5.config(bg="dark sea green")
@@ -230,7 +238,9 @@ def ventana_2():
 
             boton_atras = Button(cuidados_e_ventana,
                                  text="Atrás",
-                                 command=lambda: [cuidados_e_ventana.destroy(), epipremnum_ventana.deiconify()])
+                                 command=lambda:
+                                 [cuidados_e_ventana.destroy(),
+                                  epipremnum_ventana.deiconify()])
             boton_atras.config(bg="dark khaki")
             boton_atras.place(x=0, y=638, width=50, height=25)
 
@@ -304,7 +314,9 @@ def ventana_2():
 
             boton_atras = Button(riego_c_ventana,
                                  text="Atrás",
-                                 command=lambda: [riego_c_ventana.destroy(), coryphanta_ventana.deiconify()])
+                                 command=lambda:
+                                 [riego_c_ventana.destroy(),
+                                  coryphanta_ventana.deiconify()])
             boton_atras.config(bg="dark khaki")
             boton_atras.place(x=0, y=638, width=50, height=25)
 
@@ -317,7 +329,7 @@ def ventana_2():
         def info_c_ventana():
             info_c_ventana = Tk()
             info_c_ventana.title("Aplicación")
-            info_c_ventana.geometry("360x660") 
+            info_c_ventana.geometry("360x660")
             info_c_ventana.config(bg="yellow green")
             coryphanta_ventana.withdraw()
 
@@ -334,7 +346,9 @@ def ventana_2():
 
             boton_atras = Button(info_c_ventana,
                                  text="Atrás",
-                                 command=lambda: [info_c_ventana.destroy(), coryphanta_ventana.deiconify()])
+                                 command=lambda:
+                                 [info_c_ventana.destroy(),
+                                  coryphanta_ventana.deiconify()])
             boton_atras.config(bg="dark khaki")
             boton_atras.place(x=0, y=638, width=50, height=25)
 
@@ -367,7 +381,9 @@ def ventana_2():
 
             boton_atras = Button(beneficios_c_ventana,
                                  text="Atrás",
-                                 command=lambda: [beneficios_c_ventana.destroy(), coryphanta_ventana.deiconify()])
+                                 command=lambda:
+                                 [beneficios_c_ventana.destroy(),
+                                  coryphanta_ventana.deiconify()])
             boton_atras.config(bg="dark khaki")
             boton_atras.place(x=0, y=638, width=50, height=25)
 
@@ -400,7 +416,9 @@ def ventana_2():
 
             boton_atras = Button(cuidados_c_ventana,
                                  text="Atrás",
-                                 command=lambda: [cuidados_c_ventana.destroy(), coryphanta_ventana.deiconify()])
+                                 command=lambda:
+                                 [cuidados_c_ventana.destroy(),
+                                  coryphanta_ventana.deiconify()])
             boton_atras.config(bg="dark khaki")
             boton_atras.place(x=0, y=638, width=50, height=25)
 
@@ -505,7 +523,9 @@ def ventana_2():
 
                 boton_atras = Button(riego_f_ventana,
                                      text="Atrás",
-                                     command=lambda: [riego_f_ventana.destroy(), ficus_ventana.deiconify()])
+                                     command=lambda:
+                                     [riego_f_ventana.destroy(),
+                                      ficus_ventana.deiconify()])
                 boton_atras.config(bg="dark khaki")
                 boton_atras.place(x=0, y=638, width=50, height=25)
 
@@ -537,7 +557,9 @@ def ventana_2():
 
                 boton_atras = Button(info_f_ventana,
                                      text="Atrás",
-                                     command=lambda: [info_f_ventana.destroy(), ficus_ventana.deiconify()])
+                                     command=lambda:
+                                     [info_f_ventana.destroy(),
+                                      ficus_ventana.deiconify()])
                 boton_atras.config(bg="dark khaki")
                 boton_atras.place(x=0, y=638, width=50, height=25)
 
@@ -569,7 +591,9 @@ def ventana_2():
 
                 boton_atras = Button(beneficios_f_ventana,
                                      text="Atrás",
-                                     command=lambda: [beneficios_f_ventana.destroy(), ficus_ventana.deiconify()])
+                                     command=lambda:
+                                     [beneficios_f_ventana.destroy(),
+                                      ficus_ventana.deiconify()])
                 boton_atras.config(bg="dark khaki")
                 boton_atras.place(x=0, y=638, width=50, height=25)
 
@@ -600,7 +624,9 @@ def ventana_2():
 
                 boton_atras = Button(cuidados_f_ventana,
                                      text="Atrás",
-                                     command=lambda: [cuidados_f_ventana.destroy(), ficus_ventana.deiconify()])
+                                     command=lambda:
+                                     [cuidados_f_ventana.destroy(),
+                                      ficus_ventana.deiconify()])
                 boton_atras.config(bg="dark khaki")
                 boton_atras.place(x=0, y=638, width=50, height=25)
 
@@ -683,7 +709,9 @@ def ventana_2():
 
                 boton_atras = Button(riego_a_ventana,
                                      text="Atrás",
-                                     command=lambda: [riego_a_ventana.destroy(), aloe_ventana.deiconify()])
+                                     command=lambda:
+                                     [riego_a_ventana.destroy(),
+                                      aloe_ventana.deiconify()])
                 boton_atras.config(bg="dark khaki")
                 boton_atras.place(x=0, y=638, width=50, height=25)
 
@@ -715,7 +743,9 @@ def ventana_2():
 
                 boton_atras = Button(info_a_ventana,
                                      text="Atrás",
-                                     command=lambda: [info_a_ventana.destroy(), aloe_ventana.deiconify()])
+                                     command=lambda:
+                                     [info_a_ventana.destroy(),
+                                      aloe_ventana.deiconify()])
                 boton_atras.config(bg="dark khaki")
                 boton_atras.place(x=0, y=638, width=50, height=25)
 
@@ -747,7 +777,9 @@ def ventana_2():
 
                 boton_atras = Button(beneficios_a_ventana,
                                      text="Atrás",
-                                     command=lambda: [beneficios_a_ventana.destroy(), aloe_ventana.deiconify()])
+                                     command=lambda:
+                                     [beneficios_a_ventana.destroy(),
+                                      aloe_ventana.deiconify()])
                 boton_atras.config(bg="dark khaki")
                 boton_atras.place(x=0, y=638, width=50, height=25)
 
@@ -780,7 +812,9 @@ def ventana_2():
 
                 boton_atras = Button(cuidados_a_ventana,
                                      text="Atrás",
-                                     command=lambda: [cuidados_a_ventana.destroy(), aloe_ventana.deiconify()])
+                                     command=lambda:
+                                     [cuidados_a_ventana.destroy(),
+                                      aloe_ventana.deiconify()])
                 boton_atras.config(bg="dark khaki")
                 boton_atras.place(x=0, y=638, width=50, height=25)
 
@@ -867,7 +901,9 @@ def ventana_2():
 
     boton_cerrar = Button(segunda_ventana,
                           text="Cerrar",
-                          command=segunda_ventana.destroy)
+                          command=lambda:
+                          [segunda_ventana.destroy(),
+                           ventana_principal.destroy()])
     boton_cerrar.config(bg="light coral")
     boton_cerrar.place(x=310, y=640, width=50, height=25)
 
@@ -889,11 +925,11 @@ def ventana_2():
 # BOTONES VENTANA PRINCIPAL
 
 
-boton_cerrar = Button(ventana_principal,
-                      text="Cerrar",
-                      command=ventana_principal.destroy)
-boton_cerrar.config(bg="light coral")
-boton_cerrar.place(x=310, y=640, width=50, height=25)
+boton_cerrar1 = Button(ventana_principal,
+                       text="Cerrar",
+                       command=ventana_principal.destroy)
+boton_cerrar1.config(bg="light coral")
+boton_cerrar1.place(x=310, y=640, width=50, height=25)
 
 boton_continuar = Button(ventana_principal,
                          text="Continuar",
