@@ -43,41 +43,46 @@ ventana_principal.config(bg="yellow green")
 # CAMBIO DE ICONO DE LA APP POR DEFINIR
 
 # BIENVENIDA Y DIALOGOS DEL ROBOT EN VENTANA PRINCIPAL
-bienvenida = Label(ventana_principal, text="Hola! bienvenido a EcoAqua")
+bienvenida = Label(ventana_principal, text="Hola! bienvenido a EcoAqua",
+                   font=30)
 bienvenida.config(bg="dark sea green")
-bienvenida.place(x=80, y=30, width=200, height=25)
+bienvenida.place(anchor="c", relx=0.5, y=30, width=200, height=25)
 
-dialogo_robot_1_1 = Label(ventana_principal, text="Soy Coryphanter 3000")
-dialogo_robot_1_1.place(x=110, y=60, width=150, height=25)
+dialogo_robot_1_1 = Label(ventana_principal, text="Soy Coryphanter 3000",
+                          font=30)
+dialogo_robot_1_1.place(anchor="c", relx=0.5, y=60, width=175, height=25)
 dialogo_robot_1_1.config(bg="dark sea green")
 
 dialogo_robot_1_2 = Label(ventana_principal,
-                          text="Estoy aquí para ayudarte "
-                               "en el cuidado de tu planta")
-dialogo_robot_1_2.place(x=40, y=90, width=285, height=25)
+                          text="Estoy aquí para ayudarte\n"
+                               "en el cuidado de tu planta",
+                          font=30)
+dialogo_robot_1_2.place(anchor="c", relx=0.5, y=95, width=250, height=40)
 dialogo_robot_1_2.config(bg="dark sea green")
 
-dialogo_robot_1_3 = Label(ventana_principal, text="¿Te gustaría continuar?")
-dialogo_robot_1_3.place(x=80, y=300, width=200, height=25)
+dialogo_robot_1_3 = Label(ventana_principal, text="¿Te gustaría continuar?",
+                          font=30)
+dialogo_robot_1_3.place(anchor="c", relx=0.5, y=300, width=250, height=25)
 dialogo_robot_1_3.config(bg="dark sea green")
 
 # SEGUNDA VENTANA
 
 
-def segunda_ventana():
+def ventana_2():
     segunda_ventana = Tk()
     segunda_ventana.title("Aplicación")
     segunda_ventana.geometry("360x660")
     segunda_ventana.config(bg="yellow green")
 
     dialogo_robot_2_1 = Label(segunda_ventana,
-                              text="Poseo informacion de los siguientes "
-                                   "géneros de plantas")
-    dialogo_robot_2_1.place(x=35, y=10, width=300, height=25)
+                              text="Poseo informacion de los siguientes\n"
+                                   "géneros de plantas",
+                              font=35)
+    dialogo_robot_2_1.place(anchor="c", relx=0.5, y=35, width=300, height=45)
     dialogo_robot_2_1.config(bg="dark sea green")
     dialogo_robot_2_2 = Label(segunda_ventana,
-                              text="¿Cual te gustaria seleccionar?")
-    dialogo_robot_2_2.place(x=80, y=30, width=200, height=25)
+                              text="¿Cual te gustaria seleccionar?", font=35)
+    dialogo_robot_2_2.place(anchor="c", relx=0.5, y=75, width=200, height=25)
     dialogo_robot_2_2.config(bg="dark sea green")
 
     numero_pagina = Label(segunda_ventana, text="1/2")
@@ -107,7 +112,7 @@ def segunda_ventana():
 
         boton_cerrar = Button(epipremnum_ventana,
                               text="Cerrar",
-                              command=epipremnum_ventana.destroy)
+                              command=lambda: [epipremnum_ventana.destroy(), segunda_ventana.destroy() , ventana_principal.destroy()])
         boton_cerrar.config(bg="light coral")
         boton_cerrar.place(x=310, y=640, width=50, height=25)
         epipremnum_ventana.config(bg="yellow green")
@@ -892,9 +897,10 @@ boton_cerrar.place(x=310, y=640, width=50, height=25)
 
 boton_continuar = Button(ventana_principal,
                          text="Continuar",
-                         command=segunda_ventana)
+                         command=ventana_2,
+                         font=35)
 boton_continuar.config(bg="dark sea green")
-boton_continuar.place(x=130, y=330, width=100, height=25)
+boton_continuar.place(anchor="c", relx=0.5, y=345, width=100, height=35)
 
 # IMAGEN INICIAL
 
