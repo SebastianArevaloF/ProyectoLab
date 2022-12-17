@@ -530,6 +530,8 @@ def ventana_2():
 
         segunda_ventana.withdraw()
 
+        # VENTANA FICUS
+
         def ficus_ventana():
             ficus_ventana = Tk()
             ficus_ventana.title("Aplicación")
@@ -548,6 +550,8 @@ def ventana_2():
                                                   tercera_ventana.deiconify()])
             boton_atras.config(bg="dark khaki")
             boton_atras.place(x=0, y=638, width=50, height=25)
+
+            # RIEGO FICUS
 
             def riego_f_ventana():
                 riego_f_ventana = Tk()
@@ -580,9 +584,16 @@ def ventana_2():
 
                 boton_cerrar = Button(riego_f_ventana,
                                       text="Cerrar",
-                                      command=riego_f_ventana.destroy)
+                                      command=lambda:
+                                      [riego_f_ventana.destroy(),
+                                       ficus_ventana.destroy(),
+                                       tercera_ventana.destroy(),
+                                       segunda_ventana.destroy(),
+                                       ventana_principal.destroy()])
                 boton_cerrar.config(bg="light coral")
                 boton_cerrar.place(x=310, y=640, width=50, height=25)
+
+            # INFORMACIÓN FICUS
 
             def info_f_ventana():
                 info_f_ventana = Tk()
@@ -615,9 +626,16 @@ def ventana_2():
 
                 boton_cerrar = Button(info_f_ventana,
                                       text="Cerrar",
-                                      command=info_f_ventana.destroy)
+                                      command=lambda:
+                                      [info_f_ventana.destroy(),
+                                       ficus_ventana.destroy(),
+                                       tercera_ventana.destroy(),
+                                       segunda_ventana.destroy(),
+                                       ventana_principal.destroy()])
                 boton_cerrar.config(bg="light coral")
                 boton_cerrar.place(x=310, y=640, width=50, height=25)
+
+            # BENEFICIOS FICUS
 
             def beneficios_f_ventana():
                 beneficios_f_ventana = Tk()
@@ -650,9 +668,16 @@ def ventana_2():
 
                 boton_cerrar = Button(beneficios_f_ventana,
                                       text="Cerrar",
-                                      command=beneficios_f_ventana.destroy)
+                                      command=lambda:
+                                      [beneficios_f_ventana.destroy(),
+                                       ficus_ventana.destroy(),
+                                       tercera_ventana.destroy(),
+                                       segunda_ventana.destroy(),
+                                       ventana_principal.destroy()])
                 boton_cerrar.config(bg="light coral")
                 boton_cerrar.place(x=310, y=640, width=50, height=25)
+
+            # CUIDADOS FICUS
 
             def cuidados_f_ventana():
                 cuidados_f_ventana = Tk()
@@ -684,7 +709,12 @@ def ventana_2():
 
                 boton_cerrar = Button(cuidados_f_ventana,
                                       text="Cerrar",
-                                      command=cuidados_f_ventana.destroy)
+                                      command=lambda:
+                                      [cuidados_f_ventana.destroy(),
+                                       ficus_ventana.destroy(),
+                                       tercera_ventana.destroy(),
+                                       segunda_ventana.destroy(),
+                                       ventana_principal.destroy()])
                 boton_cerrar.config(bg="light coral")
                 boton_cerrar.place(x=310, y=640, width=50, height=25)
 
@@ -717,9 +747,15 @@ def ventana_2():
             # BOTON PARA CERRAR
             boton_cerrar = Button(ficus_ventana,
                                   text="Cerrar",
-                                  command=ficus_ventana.destroy)
+                                  command=lambda:
+                                  [ficus_ventana.destroy(),
+                                   tercera_ventana.destroy(),
+                                   segunda_ventana.destroy(),
+                                   ventana_principal.destroy()])
             boton_cerrar.config(bg="light coral")
             boton_cerrar.place(x=310, y=640, width=50, height=25)
+
+        # VENTANA ALOE
 
         def aloe_ventana():
             aloe_ventana = Tk()
@@ -739,6 +775,8 @@ def ventana_2():
                                                   tercera_ventana.deiconify()])
             boton_atras.config(bg="dark khaki")
             boton_atras.place(x=0, y=638, width=50, height=25)
+
+            # RIEGO ALOE
 
             def riego_a_ventana():
                 riego_a_ventana = Tk()
@@ -769,9 +807,16 @@ def ventana_2():
 
                 boton_cerrar = Button(riego_a_ventana,
                                       text="Cerrar",
-                                      command=riego_a_ventana.destroy)
+                                      command=lambda:
+                                      [riego_a_ventana.destroy(),
+                                       aloe_ventana.destroy(),
+                                       tercera_ventana.destroy(),
+                                       segunda_ventana.destroy(),
+                                       ventana_principal.destroy()])
                 boton_cerrar.config(bg="light coral")
                 boton_cerrar.place(x=310, y=640, width=50, height=25)
+
+            # INFORMACIÓN ALOE
 
             def info_a_ventana():
                 info_a_ventana = Tk()
@@ -803,9 +848,16 @@ def ventana_2():
 
                 boton_cerrar = Button(info_a_ventana,
                                       text="Cerrar",
-                                      command=info_a_ventana.destroy)
+                                      command=lambda:
+                                      [info_a_ventana.destroy(),
+                                       aloe_ventana.destroy(),
+                                       tercera_ventana.destroy(),
+                                       segunda_ventana.destroy(),
+                                       ventana_principal.destroy()])
                 boton_cerrar.config(bg="light coral")
                 boton_cerrar.place(x=310, y=640, width=50, height=25)
+
+            # BENEFICIOS ALOE
 
             def beneficios_a_ventana():
                 beneficios_a_ventana = Tk()
@@ -837,9 +889,16 @@ def ventana_2():
 
                 boton_cerrar = Button(beneficios_a_ventana,
                                       text="Cerrar",
-                                      command=beneficios_a_ventana.destroy)
+                                      command=lambda:
+                                      [beneficios_a_ventana.destroy(),
+                                       aloe_ventana.destroy(),
+                                       tercera_ventana.destroy(),
+                                       segunda_ventana.destroy(),
+                                       ventana_principal.destroy()])
                 boton_cerrar.config(bg="light coral")
                 boton_cerrar.place(x=310, y=640, width=50, height=25)
+
+            # CUIDADOS ALOE
 
             def cuidados_a_ventana():
                 cuidados_a_ventana = Tk()
@@ -872,7 +931,12 @@ def ventana_2():
 
                 boton_cerrar = Button(cuidados_a_ventana,
                                       text="Cerrar",
-                                      command=cuidados_a_ventana.destroy)
+                                      command=lambda:
+                                      [cuidados_a_ventana.destroy(),
+                                       aloe_ventana.destroy(),
+                                       tercera_ventana.destroy(),
+                                       segunda_ventana.destroy(),
+                                       ventana_principal.destroy()])
                 boton_cerrar.config(bg="light coral")
                 boton_cerrar.place(x=310, y=640, width=50, height=25)
 
@@ -906,7 +970,11 @@ def ventana_2():
 
             boton_cerrar = Button(aloe_ventana,
                                   text="Cerrar",
-                                  command=aloe_ventana.destroy)
+                                  command=lambda:
+                                  [aloe_ventana.destroy(),
+                                   tercera_ventana.destroy(),
+                                   segunda_ventana.destroy(),
+                                   ventana_principal.destroy()])
             boton_cerrar.config(bg="light coral")
             boton_cerrar.place(x=310, y=640, width=50, height=25)
 
