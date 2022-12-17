@@ -14,6 +14,28 @@
 # (Epipremnum,Coryphanta,Ficus y Aloe).
 
 # CONSTANTES
+RIEGO_E = ("Los riegos deben ser frecuentes en la\n"
+           "epoca cálida manteniendo humedad alta\n"
+           "rociando las hojas y se deben reducir\n"
+           "a partir de otoño, en invierno se deben\n"
+           "mantener escasos la temperatura ideal\n"
+           "del agua pararegarla son los 20°C a 25°C.")
+INFOR_E = ("La Epipremnum, tambien conocida como\n"
+           "potos, perteneciente a la familia Araceae\n "
+           "puede tener tallos dehasta 4cm de diámetro,\n"
+           "esta no florece de manera natural, si no,\n"
+           "de manera inducida.")
+BENEFI_E = ("Este genero tan curioso de plantas\n"
+            "es perfecto para poder decorar cualquier\n"
+            "parte de tu casa, como también ayuda\n "
+            "considerablemente a eliminar de las\n"
+            "toxinas de aire que no podemos apreciar\n"
+            "a simple vista.")
+CUIDAD_E = ("A esta curiosa planta, le gusta mucho\n"
+            "mantenerse en un ambiente humedo,\n"
+            "evita mantenerla a luz directa del sol\n"
+            "ya que esto no le gusta, mantenla cerca\n"
+            "de la ventana evitando lo anterior dicho.")
 '''
 Para la simplificacion de cada variable relacionada al dialogo
 Se especificaran las siguientes indicaciones:
@@ -126,17 +148,10 @@ def ventana_2():
             riego_e_ventana.config(bg="yellow green")
             epipremnum_ventana.withdraw()
 
-            dialogo_robot_e_2 = Label(riego_e_ventana,
-                                      text="Los riegos deben ser frecuentes en"
-                                           " la epoca cálida,\n"+"manteniendo "
-                                           "humedad alta rociando las hojas y"
-                                           " se deben reducir\n"+"a partir de "
-                                           "otoño, en invierno se deben "
-                                           "mantener escasos,\n"+"la "
-                                           "temperatura ideal del agua "
-                                           "pararegarla son los 20°C a 25°C.")
+            dialogo_robot_e_2 = Label(riego_e_ventana, text=RIEGO_E, font=20)
             dialogo_robot_e_2.config(bg="dark sea green")
-            dialogo_robot_e_2.place(x=6, y=10, width=350, height=70)
+            dialogo_robot_e_2.place(anchor="c", relx=0.5, rely=0.105,
+                                    width=325, height=125)
             boton_atras = Button(riego_e_ventana,
                                  text="Atrás",
                                  command=lambda:
@@ -147,7 +162,11 @@ def ventana_2():
 
             boton_cerrar = Button(riego_e_ventana,
                                   text="Cerrar",
-                                  command=riego_e_ventana.destroy)
+                                  command=lambda:
+                                  [riego_e_ventana.destroy(),
+                                   epipremnum_ventana.destroy(),
+                                   segunda_ventana.destroy(),
+                                   ventana_principal.destroy()])
             boton_cerrar.config(bg="light coral")
             boton_cerrar.place(x=310, y=640, width=50, height=25)
 
@@ -158,16 +177,10 @@ def ventana_2():
             info_e_ventana.config(bg="yellow green")
             epipremnum_ventana.withdraw()
 
-            dialogo_robot_e_3 = Label(info_e_ventana,
-                                      text="La Epipremnum, tambien conocida "
-                                           "como potos,\n"+"perteneciente a la"
-                                           " familia Araceae puede tener "
-                                           "tallos de\n"+"hasta 4cm de "
-                                           "diámetro!, esta no florece de "
-                                           "manera natural,\n"+"si no, de "
-                                           "manera inducida.")
+            dialogo_robot_e_3 = Label(info_e_ventana, text=INFOR_E, font=20)
             dialogo_robot_e_3.config(bg="dark sea green")
-            dialogo_robot_e_3.place(x=15, y=10, width=330, height=70)
+            dialogo_robot_e_3.place(anchor="c", relx=0.5, rely=0.105,
+                                    width=325, height=125)
 
             boton_atras = Button(info_e_ventana,
                                  text="Atrás",
@@ -179,7 +192,11 @@ def ventana_2():
 
             boton_cerrar = Button(info_e_ventana,
                                   text="Cerrar",
-                                  command=info_e_ventana.destroy)
+                                  command=lambda:
+                                  [info_e_ventana.destroy(),
+                                   epipremnum_ventana.destroy(),
+                                   segunda_ventana.destroy(),
+                                   ventana_principal.destroy()])
             boton_cerrar.config(bg="light coral")
             boton_cerrar.place(x=310, y=640, width=50, height=25)
 
@@ -191,16 +208,10 @@ def ventana_2():
             epipremnum_ventana.withdraw()
 
             dialogo_robot_e_4 = Label(beneficios_e_ventana,
-                                      text="Este genero tan curioso de "
-                                           "plantas\n"+"es perfecto para poder"
-                                           " decorar cualquier parte de tu "
-                                           "casa,\n"+"como también ayuda "
-                                           "considerablemente a eliminar\n"
-                                           "de las toxinas de aire que no "
-                                           "podemos apreciar a\n"+"simple "
-                                           "vista!")
+                                      text=BENEFI_E, font=20)
             dialogo_robot_e_4.config(bg="dark sea green")
-            dialogo_robot_e_4.place(x=22, y=10, width=320, height=80)
+            dialogo_robot_e_4.place(anchor="c", relx=0.5, rely=0.105,
+                                    width=325, height=125)
 
             boton_atras = Button(beneficios_e_ventana,
                                  text="Atrás",
@@ -212,7 +223,11 @@ def ventana_2():
 
             boton_cerrar = Button(beneficios_e_ventana,
                                   text="Cerrar",
-                                  command=beneficios_e_ventana.destroy)
+                                  command=lambda:
+                                  [beneficios_e_ventana.destroy(),
+                                   epipremnum_ventana.destroy(),
+                                   segunda_ventana.destroy(),
+                                   ventana_principal.destroy()])
             boton_cerrar.config(bg="light coral")
             boton_cerrar.place(x=310, y=640, width=50, height=25)
 
@@ -224,17 +239,10 @@ def ventana_2():
             epipremnum_ventana.withdraw()
 
             dialogo_robot_e_5 = Label(cuidados_e_ventana,
-                                      text="A esta curiosa planta, le gusta "
-                                           "mucho mantenerse en un\n"
-                                           "ambiente humedo, es por esto que "
-                                           "siempre debes manter la tierra\n"
-                                           "de esa manera,evita mantenerla a "
-                                           "luz directa del sol ya que\n"
-                                           "esto no le gusta, mantenla cerca\n"
-                                           "de la ventana evitando lo anterior"
-                                           " dicho.")
+                                      text=CUIDAD_E, font=20)
             dialogo_robot_e_5.config(bg="dark sea green")
-            dialogo_robot_e_5.place(x=6, y=10, width=350, height=80)
+            dialogo_robot_e_5.place(anchor="c", relx=0.5, rely=0.105,
+                                    width=325, height=125)
 
             boton_atras = Button(cuidados_e_ventana,
                                  text="Atrás",
@@ -243,10 +251,13 @@ def ventana_2():
                                   epipremnum_ventana.deiconify()])
             boton_atras.config(bg="dark khaki")
             boton_atras.place(x=0, y=638, width=50, height=25)
-
             boton_cerrar = Button(cuidados_e_ventana,
                                   text="Cerrar",
-                                  command=cuidados_e_ventana.destroy)
+                                  command=lambda:
+                                  [cuidados_e_ventana.destroy(),
+                                   epipremnum_ventana.destroy(),
+                                   segunda_ventana.destroy(),
+                                   ventana_principal.destroy()])
             boton_cerrar.config(bg="light coral")
             boton_cerrar.place(x=310, y=640, width=50, height=25)
 
@@ -310,7 +321,8 @@ def ventana_2():
                                            "suspenderse\n"+"en pos del cuidado"
                                            " de la planta.")
             dialogo_robot_c_2.config(bg="dark sea green")
-            dialogo_robot_c_2.place(x=6, y=10, width=350, height=70)
+            dialogo_robot_c_2.place(anchor="c", relx=0.5, rely=0.105,
+                                    width=325, height=125)
 
             boton_atras = Button(riego_c_ventana,
                                  text="Atrás",
@@ -342,7 +354,8 @@ def ventana_2():
                                            "5-6 cm,\n"+"cuando se desarrolla "
                                            "forma una flor central grande.")
             dialogo_robot_c_3.config(bg="dark sea green")
-            dialogo_robot_c_3.place(x=6, y=10, width=350, height=70)
+            dialogo_robot_c_3.place(anchor="c", relx=0.5, rely=0.105,
+                                    width=325, height=125)
 
             boton_atras = Button(info_c_ventana,
                                  text="Atrás",
@@ -377,7 +390,8 @@ def ventana_2():
                                            " puede dedicar\n"+"todo su tiempo "
                                            "a una planta.")
             dialogo_robot_c_4.config(bg="dark sea green")
-            dialogo_robot_c_4.place(x=15, y=10, width=330, height=100)
+            dialogo_robot_c_4.place(anchor="c", relx=0.5, rely=0.105,
+                                    width=325, height=125)
 
             boton_atras = Button(beneficios_c_ventana,
                                  text="Atrás",
@@ -412,7 +426,8 @@ def ventana_2():
                                            "lo mejor para su perfecto "
                                            "desarrollo.")
             dialogo_robot_c_5.config(bg="dark sea green")
-            dialogo_robot_c_5.place(x=0, y=10, width=360, height=80)
+            dialogo_robot_c_5.place(anchor="c", relx=0.5, rely=0.105,
+                                    width=325, height=125)
 
             boton_atras = Button(cuidados_c_ventana,
                                  text="Atrás",
@@ -519,7 +534,8 @@ def ventana_2():
                                                " cuidado de no escarchar las "
                                                "raices.")
                 dialogo_robot_f_2.config(bg="dark sea green")
-                dialogo_robot_f_2.place(x=35, y=10, width=300, height=75)
+                dialogo_robot_f_2.place(anchor="c", relx=0.5, rely=0.105,
+                                        width=325, height=125)
 
                 boton_atras = Button(riego_f_ventana,
                                      text="Atrás",
@@ -553,7 +569,8 @@ def ventana_2():
                                                "llegan al\n"+"metro de altitud"
                                                ", tanto como a los 60 metros.")
                 dialogo_robot_f_3.config(bg="dark sea green")
-                dialogo_robot_f_3.place(x=29, y=10, width=310, height=75)
+                dialogo_robot_f_3.place(anchor="c", relx=0.5, rely=0.105,
+                                        width=325, height=125)
 
                 boton_atras = Button(info_f_ventana,
                                      text="Atrás",
@@ -587,7 +604,8 @@ def ventana_2():
                                                "para tratar diversas picaduras"
                                                " de insectos.")
                 dialogo_robot_f_4.config(bg="dark sea green")
-                dialogo_robot_f_4.place(x=37, y=10, width=290, height=80)
+                dialogo_robot_f_4.place(anchor="c", relx=0.5, rely=0.105,
+                                        width=325, height=125)
 
                 boton_atras = Button(beneficios_f_ventana,
                                      text="Atrás",
@@ -620,7 +638,8 @@ def ventana_2():
                                                "limpiar sus hojas con cierta "
                                                "frecuencia.\n")
                 dialogo_robot_f_5.config(bg="dark sea green")
-                dialogo_robot_f_5.place(x=35, y=10, width=290, height=80)
+                dialogo_robot_f_5.place(anchor="c", relx=0.5, rely=0.105,
+                                        width=325, height=125)
 
                 boton_atras = Button(cuidados_f_ventana,
                                      text="Atrás",
