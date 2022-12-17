@@ -13,6 +13,13 @@
 # de 4 géneros específico de plantas
 # (Epipremnum,Coryphanta,Ficus y Aloe).
 
+# IMPORTACION DE LIBRERIAS
+# Se importa el modulo tkinter, con respectivas funiones
+# para desarrollo de interfaz
+from tkinter import Toplevel, Button, Tk, Label
+# Se importa el modulo PIL, para imagenes
+from PIL import Image, ImageTk
+
 # CONSTANTES
 # DATOS EPIPREMNUM
 RIEGO_E = ("Los riegos deben ser frecuentes en la\n"
@@ -125,15 +132,6 @@ dialogo_robot_"NUMERO DE LA VENTANA"_"NUMERO DE DIALOGO"
 Se escribira dialogo_robot_x_y,
 Siendo x la primera letra del genero e y el numero de dialogo
 '''
-# IMPORTACION DE FUNCIONES
-# Se importa el modulo tkinter, con respectivas funiones
-# para desarrollo de interfaz
-from tkinter import Toplevel, Button, Tk, Label
-# Se importa el modulo PIL, para imagenes
-from PIL import Image, ImageTk
-# DEFINICION DE FUNCIONES
-# VARIABLES
-# FOTOS
 
 # VENTANA PRINCIPAL
 ventana_principal = Tk()
@@ -563,27 +561,26 @@ def ventana_2():
         boton_cerrar.place(x=310, y=640, width=50, height=25)
 
     # TERCERA VENTANA
-    def tercera_ventana():
+    def ventana_3():
         tercera_ventana = Toplevel()
         tercera_ventana.title("Aplicación")
         tercera_ventana.geometry("360x660")
         tercera_ventana.config(bg="yellow green")
 
         dialogo_robot_3_1 = Label(tercera_ventana,
-                                  text="Poseo informacion de los siguientes "
-                                       "géneros de plantas")
-        dialogo_robot_3_1.place(x=35, y=10, width=300, height=25)
+                                  text="Poseo informacion de los siguientes\n"
+                                       "géneros de plantas",
+                                  font=35)
+        dialogo_robot_3_1.place(anchor="c", relx=0.5, y=35, width=280, height=45)
         dialogo_robot_3_1.config(bg="dark sea green")
         dialogo_robot_3_2 = Label(tercera_ventana,
-                                  text="¿Cual te gustaria seleccionar?")
-        dialogo_robot_3_2.place(x=80, y=30, width=200, height=25)
+                                  text="¿Cual te gustaria seleccionar?",  font=35)
+        dialogo_robot_3_2.place(anchor="c", relx=0.5, y=75, width=220, height=25)
         dialogo_robot_3_2.config(bg="dark sea green")
 
         numero_pagina = Label(tercera_ventana, text="2/2")
         numero_pagina.config(bg="dark sea green")
         numero_pagina.place(x=0, y=0, width=30, height=20)
-
-        segunda_ventana.withdraw()
 
         # VENTANA FICUS
 
@@ -976,17 +973,35 @@ def ventana_2():
 
         # BOTONES TERCERA VENTANA
 
+        foto_3 = Image.open("‍Ficus.png")
+        foto_3 = foto_3.resize((215, 215))
+        foto_3 = ImageTk.PhotoImage(foto_3)
+
+        foto_4 = Image.open("Aloe.png")
+        foto_4 = foto_4.resize((215, 215))
+        foto_4 = ImageTk.PhotoImage(foto_4)
+
+        texto_ficus = Label(tercera_ventana, text="Género ficus",
+                            font="Helvetica 12 italic",
+                            background="yellow green")
+        texto_ficus.place(anchor="c", relx=0.5, y=105)
         boton_ficus = Button(tercera_ventana,
-                             text="Género Ficus",
+                             image=foto_3,
                              command=ficus_ventana)
         boton_ficus.config(bg="dark sea green")
-        boton_ficus.place(x=120, y=100, width=125, height=25)
-
+        boton_ficus.place(anchor="c", relx=0.5, rely=0.3,
+                          width=225, height=225)
+        boton_ficus.pack(side="top", pady=115)
+        texto_aloe = Label(tercera_ventana, text="Género aloe",
+                           font="Helvetica 12 italic",
+                           background="yellow green")
+        texto_aloe.place(anchor="c", relx=0.5, y=370)
         boton_aloe = Button(tercera_ventana,
-                            text="Género Aloe",
+                            image=foto_4,
                             command=aloe_ventana)
         boton_aloe.config(bg="dark sea green")
-        boton_aloe.place(x=120, y=350, width=125, height=25)
+        boton_aloe.place(anchor="c", relx=0.5, rely=0.75,
+                         width=225, height=225)
 
         boton_cerrar = Button(tercera_ventana,
                               text="Cerrar",
@@ -1003,6 +1018,9 @@ def ventana_2():
         boton_atras.config(bg="dark khaki")
         boton_atras.place(x=0, y=638, width=50, height=25)
 
+        segunda_ventana.withdraw()
+        tercera_ventana.mainloop()
+
     # BOTONES SEGUNDA VENTANA
 
     foto_1 = Image.open("Epi.png")
@@ -1014,7 +1032,8 @@ def ventana_2():
     foto_2 = ImageTk.PhotoImage(foto_2)
 
     texto_epipremnum = Label(segunda_ventana, text="Género epipremnum",
-                             font="Helvetica 12 italic", background="yellow green")
+                             font="Helvetica 12 italic",
+                             background="yellow green")
     texto_epipremnum.place(anchor="c", relx=0.5, y=105)
     boton_epipremnum = Button(segunda_ventana,
                               image=foto_1,
@@ -1024,7 +1043,9 @@ def ventana_2():
                            width=225, height=225)
     boton_epipremnum.pack(side="top", pady=115)
     texto_coryphanta = Label(segunda_ventana, text="Género coryphanta",
-                             font="Helvetica 12 italic", background="yellow green")
+                             font="Helvetica 12 italic",
+
+                             background="yellow green")
     texto_coryphanta.place(anchor="c", relx=0.5, y=370)
     boton_coryphanta = Button(segunda_ventana,
                               image=foto_2,
@@ -1050,7 +1071,7 @@ def ventana_2():
 
     boton_sig_pag = Button(segunda_ventana,
                            text="Siguiente pagina",
-                           command=tercera_ventana)
+                           command=ventana_3)
     boton_sig_pag.config(bg="dark khaki")
     boton_sig_pag.place(x=50, y=638, width=100, height=25)
 
