@@ -123,6 +123,8 @@ CUIDAD_A = ("Estas plantas necesitan mucha luz\n"
             "a 10°C.Se pueden retirar las hojas y\n"
             "espigas florales que se hayan secado\n"
             "para evitar plagas.")
+# IMAGENES
+
 '''
 Para la simplificacion de cada variable relacionada al dialogo
 Se especificaran las siguientes indicaciones:
@@ -141,6 +143,21 @@ ventana_principal.resizable(width=False, height=False)
 # CAMBIOS DE COLORES PARA LA VENTANA PRINCIPAL
 ventana_principal.config(bg="yellow green")
 
+foto_regar = Image.open("Regar.png")
+foto_regar = foto_regar.resize((100, 100))
+foto_regar = ImageTk.PhotoImage(foto_regar)
+
+foto_informacion = Image.open("Informacion.png")
+foto_informacion = foto_informacion.resize((100, 100))
+foto_informacion = ImageTk.PhotoImage(foto_informacion)
+
+foto_cuidados = Image.open("Cuidados.png")
+foto_cuidados = foto_cuidados.resize((100, 100))
+foto_cuidados = ImageTk.PhotoImage(foto_cuidados)
+
+foto_beneficios = Image.open("Beneficios.png")
+foto_beneficios = foto_beneficios.resize((100, 100))
+foto_beneficios = ImageTk.PhotoImage(foto_beneficios)
 # CAMBIO DE ICONO DE LA APP POR DEFINIR
 
 # BIENVENIDA Y DIALOGOS DEL ROBOT EN VENTANA PRINCIPAL
@@ -200,10 +217,10 @@ def ventana_2():
         epipremnum_ventana.geometry("360x660")
         segunda_ventana.withdraw()
 
-        dialogo_robot_e_1 = Label(epipremnum_ventana,
+        dialogo_robot_e_1 = Label(epipremnum_ventana, font="Arial 17",
                                   text="¿Qué te gustaría saber?")
         dialogo_robot_e_1.config(bg="dark sea green")
-        dialogo_robot_e_1.place(x=120, y=20, width=130, height=25)
+        dialogo_robot_e_1.place(anchor="c", relx=0.5, y=40, width=250, height=30)
 
         boton_atras = Button(epipremnum_ventana,
                              text="Atrás",
@@ -350,29 +367,29 @@ def ventana_2():
             boton_cerrar.place(x=310, y=640, width=50, height=25)
 
         # BOTONES PARA CADA UNA DE LA INFORMACION DESEADA Y BOTON PARA CERRAR
-        boton_e_riego = Button(epipremnum_ventana,
-                               text="¿Cómo regar esta planta?",
+        boton_e_riego = Button(epipremnum_ventana, image=foto_regar,
+                               text="RIEGO", font="Arial 8 bold", compound="bottom",
                                command=riego_e_ventana)
         boton_e_riego.config(bg="dark sea green")
-        boton_e_riego.place(x=115, y=65, width=139, height=25)
+        boton_e_riego.place(anchor="c", relx=0.5, y=165, width=115, height=115)
 
-        boton_e_info = Button(epipremnum_ventana,
-                              text="Información sobre esta planta",
+        boton_e_info = Button(epipremnum_ventana, image=foto_informacion,
+                               text="INFORMACIÓN", font="Arial 8 bold", compound="bottom",
                               command=info_e_ventana)
         boton_e_info.config(bg="dark sea green")
-        boton_e_info.place(x=100, y=145, width=165, height=25)
+        boton_e_info.place(anchor="c", relx=0.5, y=290, width=115, height=115)
 
-        boton_e_beneficios = Button(epipremnum_ventana,
-                                    text="Beneficios de tener esta planta",
+        boton_e_beneficios = Button(epipremnum_ventana, image=foto_beneficios,
+                               text="BENEFICIOS", font="Arial 8 bold", compound="bottom",
                                     command=beneficios_e_ventana)
         boton_e_beneficios.config(bg="dark sea green")
-        boton_e_beneficios.place(x=100, y=225, width=167, height=25)
+        boton_e_beneficios.place(anchor="c", relx=0.5, y=415, width=115, height=115)
 
-        boton_e_cuidados = Button(epipremnum_ventana,
-                                  text="Cuidados de esta planta",
+        boton_e_cuidados = Button(epipremnum_ventana, image=foto_cuidados,
+                               text="CUIDADOS", font="Arial 8 bold", compound="bottom",
                                   command=cuidados_e_ventana)
         boton_e_cuidados.config(bg="dark sea green")
-        boton_e_cuidados.place(x=115, y=305, width=133, height=25)
+        boton_e_cuidados.place(anchor="c", relx=0.5, y=540, width=115, height=115)
 
     # VENTANA CORYPHANTA
 
@@ -571,11 +588,13 @@ def ventana_2():
                                   text="Poseo informacion de los siguientes\n"
                                        "géneros de plantas",
                                   font=35)
-        dialogo_robot_3_1.place(anchor="c", relx=0.5, y=35, width=280, height=45)
+        dialogo_robot_3_1.place(anchor="c", relx=0.5, y=35, width=280,
+                                height=45)
         dialogo_robot_3_1.config(bg="dark sea green")
-        dialogo_robot_3_2 = Label(tercera_ventana,
-                                  text="¿Cual te gustaria seleccionar?",  font=35)
-        dialogo_robot_3_2.place(anchor="c", relx=0.5, y=75, width=220, height=25)
+        dialogo_robot_3_2 = Label(tercera_ventana, font=35,
+                                  text="¿Cual te gustaria seleccionar?")
+        dialogo_robot_3_2.place(anchor="c", relx=0.5, y=75, width=220,
+                                height=25)
         dialogo_robot_3_2.config(bg="dark sea green")
 
         numero_pagina = Label(tercera_ventana, text="2/2")
@@ -973,20 +992,20 @@ def ventana_2():
 
         # BOTONES TERCERA VENTANA
 
-        foto_3 = Image.open("‍Ficus.png")
-        foto_3 = foto_3.resize((215, 215))
-        foto_3 = ImageTk.PhotoImage(foto_3)
+        foto_ficus = Image.open("‍Ficus.png")
+        foto_ficus = foto_ficus.resize((215, 215))
+        foto_ficus = ImageTk.PhotoImage(foto_ficus)
 
-        foto_4 = Image.open("Aloe.png")
-        foto_4 = foto_4.resize((215, 215))
-        foto_4 = ImageTk.PhotoImage(foto_4)
+        foto_aloe = Image.open("Aloe.png")
+        foto_aloe = foto_aloe.resize((215, 215))
+        foto_aloe = ImageTk.PhotoImage(foto_aloe)
 
         texto_ficus = Label(tercera_ventana, text="Género ficus",
                             font="Helvetica 12 italic",
                             background="yellow green")
         texto_ficus.place(anchor="c", relx=0.5, y=105)
         boton_ficus = Button(tercera_ventana,
-                             image=foto_3,
+                             image=foto_ficus,
                              command=ficus_ventana)
         boton_ficus.config(bg="dark sea green")
         boton_ficus.place(anchor="c", relx=0.5, rely=0.3,
@@ -997,7 +1016,7 @@ def ventana_2():
                            background="yellow green")
         texto_aloe.place(anchor="c", relx=0.5, y=370)
         boton_aloe = Button(tercera_ventana,
-                            image=foto_4,
+                            image=foto_aloe,
                             command=aloe_ventana)
         boton_aloe.config(bg="dark sea green")
         boton_aloe.place(anchor="c", relx=0.5, rely=0.75,
@@ -1023,20 +1042,20 @@ def ventana_2():
 
     # BOTONES SEGUNDA VENTANA
 
-    foto_1 = Image.open("Epi.png")
-    foto_1 = foto_1.resize((215, 215))
-    foto_1 = ImageTk.PhotoImage(foto_1)
+    foto_epipremnum = Image.open("Epi.png")
+    foto_epipremnum = foto_epipremnum.resize((215, 215))
+    foto_epipremnum = ImageTk.PhotoImage(foto_epipremnum)
 
-    foto_2 = Image.open("Cory.png")
-    foto_2 = foto_2.resize((215, 215))
-    foto_2 = ImageTk.PhotoImage(foto_2)
+    foto_coryphanta = Image.open("Cory.png")
+    foto_coryphanta = foto_coryphanta.resize((215, 215))
+    foto_coryphanta = ImageTk.PhotoImage(foto_coryphanta)
 
     texto_epipremnum = Label(segunda_ventana, text="Género epipremnum",
                              font="Helvetica 12 italic",
                              background="yellow green")
     texto_epipremnum.place(anchor="c", relx=0.5, y=105)
     boton_epipremnum = Button(segunda_ventana,
-                              image=foto_1,
+                              image=foto_epipremnum,
                               command=epipremnum_ventana)
     boton_epipremnum.config(bg="dark sea green")
     boton_epipremnum.place(anchor="c", relx=0.5, rely=0.3,
@@ -1048,7 +1067,7 @@ def ventana_2():
                              background="yellow green")
     texto_coryphanta.place(anchor="c", relx=0.5, y=370)
     boton_coryphanta = Button(segunda_ventana,
-                              image=foto_2,
+                              image=foto_coryphanta,
                               command=coryphanta_ventana)
     boton_coryphanta.config(bg="dark sea green")
     boton_coryphanta.place(anchor="c", relx=0.5, rely=0.75,
