@@ -36,6 +36,32 @@ CUIDAD_E = ("A esta curiosa planta, le gusta mucho\n"
             "evita mantenerla a luz directa del sol\n"
             "ya que esto no le gusta, mantenla cerca\n"
             "de la ventana evitando lo anterior dicho.")
+RIEGO_CO = ("Los riegos deben ser de forma moderada\n"
+            "en primavera y verano, siempre manteniendo\n"
+            "el suelo seco de esta misma,en la epoca fria,\n "
+            " los riegos deben suspenderseen pos del\n"
+            "cuidado de la planta.")
+INFORM_C = ("La Coryphanta, tambien conocida como\n"
+            "cactus, es un genero nativo de Mexico,\n "
+            "siendo uno de los mas extensos.\n"
+            "Esta puede crecer aproximadamente\n "
+            "hasta 5-6 cm, cuando se desarrolla\n"
+            "forma una flor central grande.")
+BENEFI_C = ("Este puntiagudo genero de plantas, son\n"
+            "excelentes purificadores de aire, siendo\n "
+            "esto perfecto a la hora de cuidar nuestra\n"
+            "salud, tambien son plantas que requieren\n "
+            "muy poco cuidado debido a su poca\n "
+            "necesidad de agua, siendo estas perfectas\n"
+            "para gente que no puede dedicar todo su\n"
+            "tiempo a una planta.")
+CUIDAD_C = ("A esta pequeña planta, le encanta tener\n"
+            "luz directa, aunque tambien pueden recibir\n"
+            "por periodos causando el mismo efecto de\n"
+            "estar todo el dia en la luz solar,la tierra\n"
+            "organica mezclada con fibra de coco, hojas\n"
+            "secas, corteza y turba son lo mejor para su\n "
+            "perfecto desarrollo.")
 '''
 Para la simplificacion de cada variable relacionada al dialogo
 Se especificaran las siguientes indicaciones:
@@ -114,6 +140,7 @@ def ventana_2():
 # SE DEFINE UNA FUNCION PARA LA VENTANA DEL GENERO EN ESPECIFICO Y 4 EXTRAS
 # DENTRO DE LA YA MENCIONADA, ASÍ PARA DAR PASO A LA VENTANA DE INFORMACION
 # QUE PUEDA DESEAR EL USUARIO
+    # VENTANA EPIPREMNUM
     def epipremnum_ventana():
         epipremnum_ventana = Tk()
         epipremnum_ventana.title("Aplicación")
@@ -140,6 +167,8 @@ def ventana_2():
         boton_cerrar.config(bg="light coral")
         boton_cerrar.place(x=310, y=640, width=50, height=25)
         epipremnum_ventana.config(bg="yellow green")
+
+        # RIEGO EPIPREMNUM
 
         def riego_e_ventana():
             riego_e_ventana = Tk()
@@ -169,6 +198,8 @@ def ventana_2():
                                    ventana_principal.destroy()])
             boton_cerrar.config(bg="light coral")
             boton_cerrar.place(x=310, y=640, width=50, height=25)
+
+        # INFORMACIÓN EPIPREMNUM
 
         def info_e_ventana():
             info_e_ventana = Tk()
@@ -200,6 +231,8 @@ def ventana_2():
             boton_cerrar.config(bg="light coral")
             boton_cerrar.place(x=310, y=640, width=50, height=25)
 
+        # BENEFICIOS EPIPREMNUM
+
         def beneficios_e_ventana():
             beneficios_e_ventana = Tk()
             beneficios_e_ventana.title("Aplicación")
@@ -230,6 +263,8 @@ def ventana_2():
                                    ventana_principal.destroy()])
             boton_cerrar.config(bg="light coral")
             boton_cerrar.place(x=310, y=640, width=50, height=25)
+
+        # CUIDADOS EPIPREMNUM
 
         def cuidados_e_ventana():
             cuidados_e_ventana = Tk()
@@ -286,6 +321,8 @@ def ventana_2():
         boton_e_cuidados.config(bg="dark sea green")
         boton_e_cuidados.place(x=115, y=305, width=133, height=25)
 
+    # VENTANA CORYPHANTA
+
     def coryphanta_ventana():
         coryphanta_ventana = Tk()
         coryphanta_ventana.title("Aplicación")
@@ -305,6 +342,8 @@ def ventana_2():
         boton_atras.config(bg="dark khaki")
         boton_atras.place(x=0, y=638, width=50, height=25)
 
+        # RIEGO CORYPHANTA
+
         def riego_c_ventana():
             riego_c_ventana = Tk()
             riego_c_ventana.title("Aplicación")
@@ -313,13 +352,7 @@ def ventana_2():
             coryphanta_ventana.withdraw()
 
             dialogo_robot_c_2 = Label(riego_c_ventana,
-                                      text="Los riegos deben ser de forma "
-                                           "moderada en primavera\n"+"y verano"
-                                           ", siempre manteniendo el suelo "
-                                           "seco de esta misma,\n"+"en la "
-                                           "epoca fria, los riegos deben "
-                                           "suspenderse\n"+"en pos del cuidado"
-                                           " de la planta.")
+                                      text=RIEGO_CO, font=20)
             dialogo_robot_c_2.config(bg="dark sea green")
             dialogo_robot_c_2.place(anchor="c", relx=0.5, rely=0.105,
                                     width=325, height=125)
@@ -334,9 +367,15 @@ def ventana_2():
 
             boton_cerrar = Button(riego_c_ventana,
                                   text="Cerrar",
-                                  command=riego_c_ventana.destroy)
+                                  command=lambda:
+                                  [riego_c_ventana.destroy(),
+                                   coryphanta_ventana.destroy(),
+                                   segunda_ventana.destroy(),
+                                   ventana_principal.destroy()])
             boton_cerrar.config(bg="light coral")
             boton_cerrar.place(x=310, y=640, width=50, height=25)
+
+        # INFORMACIÓN CORYPHANTA
 
         def info_c_ventana():
             info_c_ventana = Tk()
@@ -346,13 +385,7 @@ def ventana_2():
             coryphanta_ventana.withdraw()
 
             dialogo_robot_c_3 = Label(info_c_ventana,
-                                      text="La Coryphanta, tambien conocida "
-                                           "como cactus,\n"+"es un genero "
-                                           "nativo de Mexico, siendo uno de "
-                                           "los mas extensos.\n"+"Esta puede "
-                                           "crecer aproximadamente hasta "
-                                           "5-6 cm,\n"+"cuando se desarrolla "
-                                           "forma una flor central grande.")
+                                      text=INFORM_C, font=20)
             dialogo_robot_c_3.config(bg="dark sea green")
             dialogo_robot_c_3.place(anchor="c", relx=0.5, rely=0.105,
                                     width=325, height=125)
@@ -367,9 +400,15 @@ def ventana_2():
 
             boton_cerrar = Button(info_c_ventana,
                                   text="Cerrar",
-                                  command=info_c_ventana.destroy)
+                                  command=lambda:
+                                  [info_c_ventana.destroy(),
+                                   coryphanta_ventana.destroy(),
+                                   segunda_ventana.destroy(),
+                                   ventana_principal.destroy()])
             boton_cerrar.config(bg="light coral")
             boton_cerrar.place(x=310, y=640, width=50, height=25)
+
+        # BENEFICIOS CORYPHANTA
 
         def beneficios_c_ventana():
             beneficios_c_ventana = Tk()
@@ -379,19 +418,10 @@ def ventana_2():
             coryphanta_ventana.withdraw()
 
             dialogo_robot_c_4 = Label(beneficios_c_ventana,
-                                      text="Este puntiagudo genero de plantas,"
-                                           " son excelentes\n"+"purificadores "
-                                           "de aire, siendo esto perfecto a la"
-                                           "hora de\n"+"cuidar nuestra salud, "
-                                           "tambien son plantas que requieren"
-                                           "\n"+"muy poco cuidado debido a su "
-                                           "poca necesidad de agua,\n"+"siendo"
-                                           " estas perfectas para gente que no"
-                                           " puede dedicar\n"+"todo su tiempo "
-                                           "a una planta.")
+                                      text=BENEFI_C, font=20)
             dialogo_robot_c_4.config(bg="dark sea green")
-            dialogo_robot_c_4.place(anchor="c", relx=0.5, rely=0.105,
-                                    width=325, height=125)
+            dialogo_robot_c_4.place(anchor="c", relx=0.5, rely=0.13,
+                                    width=325, height=150)
 
             boton_atras = Button(beneficios_c_ventana,
                                  text="Atrás",
@@ -403,9 +433,15 @@ def ventana_2():
 
             boton_cerrar = Button(beneficios_c_ventana,
                                   text="Cerrar",
-                                  command=beneficios_c_ventana.destroy)
+                                  command=lambda:
+                                  [beneficios_c_ventana.destroy(),
+                                   coryphanta_ventana.destroy(),
+                                   segunda_ventana.destroy(),
+                                   ventana_principal.destroy()])
             boton_cerrar.config(bg="light coral")
             boton_cerrar.place(x=310, y=640, width=50, height=25)
+
+        # CUIDADOS CORYPHANTA
 
         def cuidados_c_ventana():
             cuidados_c_ventana = Tk()
@@ -415,19 +451,10 @@ def ventana_2():
             coryphanta_ventana.withdraw()
 
             dialogo_robot_c_5 = Label(cuidados_c_ventana,
-                                      text="A esta pequeña planta, le encanta "
-                                           "tener luz directa,\n"+"aunque "
-                                           "tambien pueden recibir por "
-                                           "periodos causando el mismo\n"
-                                           "efecto de estar todo el dia en la "
-                                           "luz solar,\n"+"la tierra organica "
-                                           "mezclada con fibra de coco,\n"
-                                           "hojas secas, corteza y turba son "
-                                           "lo mejor para su perfecto "
-                                           "desarrollo.")
+                                      text=CUIDAD_C, font=20)
             dialogo_robot_c_5.config(bg="dark sea green")
             dialogo_robot_c_5.place(anchor="c", relx=0.5, rely=0.105,
-                                    width=325, height=125)
+                                    width=325, height=135)
 
             boton_atras = Button(cuidados_c_ventana,
                                  text="Atrás",
@@ -439,7 +466,11 @@ def ventana_2():
 
             boton_cerrar = Button(cuidados_c_ventana,
                                   text="Cerrar",
-                                  command=cuidados_c_ventana.destroy)
+                                  command=lambda:
+                                  [cuidados_c_ventana.destroy(),
+                                   coryphanta_ventana.destroy(),
+                                   segunda_ventana.destroy(),
+                                   ventana_principal.destroy()])
             boton_cerrar.config(bg="light coral")
             boton_cerrar.place(x=310, y=640, width=50, height=25)
 
@@ -470,7 +501,9 @@ def ventana_2():
 
         boton_cerrar = Button(coryphanta_ventana,
                               text="Cerrar",
-                              command=coryphanta_ventana.destroy)
+                              command=lambda: [coryphanta_ventana.destroy(),
+                                               segunda_ventana.destroy(),
+                                               ventana_principal.destroy()])
         boton_cerrar.config(bg="light coral")
         boton_cerrar.place(x=310, y=640, width=50, height=25)
 
@@ -893,7 +926,9 @@ def ventana_2():
 
         boton_cerrar = Button(tercera_ventana,
                               text="Cerrar",
-                              command=tercera_ventana.destroy)
+                              command=lambda: [tercera_ventana.destroy(),
+                                               segunda_ventana.destroy(),
+                                               ventana_principal.destroy()])
         boton_cerrar.config(bg="light coral")
         boton_cerrar.place(x=310, y=640, width=50, height=25)
 
