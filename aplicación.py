@@ -14,6 +14,7 @@
 # (Epipremnum,Coryphanta,Ficus y Aloe).
 
 # CONSTANTES
+# DATOS EPIPREMNUM
 RIEGO_E = ("Los riegos deben ser frecuentes en la\n"
            "epoca cálida manteniendo humedad alta\n"
            "rociando las hojas y se deben reducir\n"
@@ -36,6 +37,7 @@ CUIDAD_E = ("A esta curiosa planta, le gusta mucho\n"
             "evita mantenerla a luz directa del sol\n"
             "ya que esto no le gusta, mantenla cerca\n"
             "de la ventana evitando lo anterior dicho.")
+# DATOS CORYPHANYTA
 RIEGO_CO = ("Los riegos deben ser de forma moderada\n"
             "en primavera y verano, siempre manteniendo\n"
             "el suelo seco de esta misma,en la epoca fria,\n "
@@ -62,6 +64,58 @@ CUIDAD_C = ("A esta pequeña planta, le encanta tener\n"
             "organica mezclada con fibra de coco, hojas\n"
             "secas, corteza y turba son lo mejor para su\n "
             "perfecto desarrollo.")
+# DATOS FICUS
+RIEGO_FI = ("Necesitan un riego de aproximadamente dos\n"
+            "veces por semana en verano, una en invierno\n"
+            "y en regiones húmedas: cada 8 o 10 días.\n"
+            "Se debe evitar el agua muy fría y también\n"
+            "tener mucho cuidado de no escarchar\n"
+            "las raices.")
+INFOR_FI = ("Provienen de bosques tropicales. Sus\n"
+            "ramas son grandes y sus hojas bastante\n"
+            "puntiagudas, lo que añade un toque de \n"
+            "'jungla' tropicalal ambiente. Además,\n"
+            "en su variedad existen plantas que llegan\n"
+            "al metro de altitud, tanto como a los\n"
+            "15 metros.")
+BENEFI_F = ("Son plantas que se adaptan muy bien\n"
+            "al clima. Mejoran la calidad del aire\n"
+            "absorbiendo tóxicos. Además, algunas\n"
+            "de las plantas del género contienen\n"
+            " propiedades medicinales, siendo usada\n"
+            "para tratar diversas picaduras de insectos.")
+CUIDAD_F = ("Estas plantas necesitan grandes\n"
+            "dosis de luz, pero sin que sea directa\n"
+            "necesitan un ambiente cálido y humedo,\n"
+            "por lo que esrecomendable pulverizar y\n"
+            "limpiar sus hojas con cierta, frecuencia.")
+# DATOS ALOE
+RIEGO_AL = ("Es recomendable regar a un aloe cada\n"
+            "15 o 20 días, excepto por invierno que\n"
+            "se pueden reducir a 1 por mes, siempre\n"
+            "utilizando poca agua y vertiéndola\n"
+            "directamente sobre la tierra, sin dejar\n"
+            "la maceta encharcada.")
+INFOR_AL = ("Son plantas siempreverdes, con hojas\n"
+            "afiladas en su apice y margenes espinosos.\n"
+            "Es un genero que tiene la capacidad de\n"
+            "conservar el agua de lluvia, lo que le\n"
+            "permite sobrevivir durante largos\n "
+            "períodos de tiempo en condiciones de sequia.")
+BENEFI_A = ("Son plantas que tienen diversos pros\n"
+            "para la salud, como los siguientes:\n"
+            "-Posee vitaminas que son\n"
+            "beneficiosaspara la salud humana\n"
+            "-Propiedades antiinflamatorias\n"
+            "-Accion con efecto calmante\n"
+            "de gastritis y esofagitis.")
+CUIDAD_A = ("Estas plantas necesitan mucha luz\n"
+            "para crecer sanas y florecer al máximo,\n"
+            "siempre manteniendo en consideracion\n"
+            "la temperatura que no debe ser inferior\n"
+            "a 10°C.Se pueden retirar las hojas y\n"
+            "espigas florales que se hayan secado\n"
+            "para evitar plagas.")
 '''
 Para la simplificacion de cada variable relacionada al dialogo
 Se especificaran las siguientes indicaciones:
@@ -453,7 +507,7 @@ def ventana_2():
             dialogo_robot_c_5 = Label(cuidados_c_ventana,
                                       text=CUIDAD_C, font=20)
             dialogo_robot_c_5.config(bg="dark sea green")
-            dialogo_robot_c_5.place(anchor="c", relx=0.5, rely=0.105,
+            dialogo_robot_c_5.place(anchor="c", relx=0.5, rely=0.115,
                                     width=325, height=135)
 
             boton_atras = Button(cuidados_c_ventana,
@@ -561,15 +615,7 @@ def ventana_2():
                 ficus_ventana.withdraw()
 
                 dialogo_robot_f_2 = Label(riego_f_ventana,
-                                          text="Necesitan un riego de "
-                                               "aproximadamente dos veces\n"
-                                               "por semana en verano, una en "
-                                               "invierno y en\n"+"regiones "
-                                               "húmedas: cada 8 o 10 días.\n"
-                                               "Se debe evitar el agua muy "
-                                               "fría y también\n"+"tener mucho"
-                                               " cuidado de no escarchar las "
-                                               "raices.")
+                                          text=RIEGO_FI, font=20)
                 dialogo_robot_f_2.config(bg="dark sea green")
                 dialogo_robot_f_2.place(anchor="c", relx=0.5, rely=0.105,
                                         width=325, height=125)
@@ -603,15 +649,7 @@ def ventana_2():
                 ficus_ventana.withdraw()
 
                 dialogo_robot_f_3 = Label(info_f_ventana,
-                                          text="Provienen de bosques "
-                                               "tropicales.\n"+"Sus ramas son "
-                                               "grandes y sus hojas bastante "
-                                               "puntiagudas,\n"+"lo que añade "
-                                               "un toque de 'jungla' tropical "
-                                               "al ambiente.\n"+"Además, en su"
-                                               " variedad existen plantas que "
-                                               "llegan al\n"+"metro de altitud"
-                                               ", tanto como a los 60 metros.")
+                                          text=INFOR_FI, font=20)
                 dialogo_robot_f_3.config(bg="dark sea green")
                 dialogo_robot_f_3.place(anchor="c", relx=0.5, rely=0.105,
                                         width=325, height=125)
@@ -645,15 +683,7 @@ def ventana_2():
                 ficus_ventana.withdraw()
 
                 dialogo_robot_f_4 = Label(beneficios_f_ventana,
-                                          text="Son plantas que se adaptan muy"
-                                               " bien al clima.\n"+"Mejoran la"
-                                               " calidad del aire absorbiendo "
-                                               "tóxicos.\n"+"Además, algunas "
-                                               "de las plantas del género "
-                                               "contienen\n"+"propiedades "
-                                               "medicinales, siendo usada\n"
-                                               "para tratar diversas picaduras"
-                                               " de insectos.")
+                                          text=BENEFI_F, font=20)
                 dialogo_robot_f_4.config(bg="dark sea green")
                 dialogo_robot_f_4.place(anchor="c", relx=0.5, rely=0.105,
                                         width=325, height=125)
@@ -687,14 +717,7 @@ def ventana_2():
                 ficus_ventana.withdraw()
 
                 dialogo_robot_f_5 = Label(cuidados_f_ventana,
-                                          text="Estas plantas necesitan "
-                                               "grandes dosis de luz,\n"+"pero"
-                                               " sin que sea directa, "
-                                               "necesitan un ambiente\n"
-                                               "cálido y humedo, por lo que es"
-                                               "recomendable\n"+"pulverizar y "
-                                               "limpiar sus hojas con cierta "
-                                               "frecuencia.\n")
+                                          text=CUIDAD_F, font=20)
                 dialogo_robot_f_5.config(bg="dark sea green")
                 dialogo_robot_f_5.place(anchor="c", relx=0.5, rely=0.105,
                                         width=325, height=125)
@@ -786,16 +809,10 @@ def ventana_2():
                 aloe_ventana.withdraw()
 
                 dialogo_robot_a_2 = Label(riego_a_ventana,
-                                          text="Es recomendable regar a un "
-                                               "aloe cada 15 o 20 días,\n"
-                                               "excepto por invierno que se "
-                                               "pueden reducir a 1 por mes,\n"
-                                               "siempre utilizando poca agua y"
-                                               " vertiéndola\n"+"directamente "
-                                               "sobre la tierra, sin dejar la"
-                                               " maceta encharcada.")
+                                          text=RIEGO_AL, font=20)
                 dialogo_robot_a_2.config(bg="dark sea green")
-                dialogo_robot_a_2.place(x=25, y=10, width=320, height=75)
+                dialogo_robot_a_2.place(anchor="c", relx=0.5, rely=0.105,
+                                        width=325, height=125)
 
                 boton_atras = Button(riego_a_ventana,
                                      text="Atrás",
@@ -826,17 +843,10 @@ def ventana_2():
                 aloe_ventana.withdraw()
 
                 dialogo_robot_a_3 = Label(info_a_ventana,
-                                          text="Son plantas siempreverdes, con"
-                                               " hojas\n"+"afiladas en su "
-                                               "apice y margenes espinosos.\n"
-                                               "Es un genero que tiene la "
-                                               "capacidad de conservar el\n"
-                                               "agua de lluvia, lo que le "
-                                               "permite sobrevivir durante\n"
-                                               "largos períodos de tiempo en "
-                                               "condiciones de sequia!")
+                                          text=INFOR_AL, font=20)
                 dialogo_robot_a_3.config(bg="dark sea green")
-                dialogo_robot_a_3.place(x=29, y=10, width=310, height=80)
+                dialogo_robot_a_3.place(anchor="c", relx=0.5, rely=0.105,
+                                        width=325, height=125)
 
                 boton_atras = Button(info_a_ventana,
                                      text="Atrás",
@@ -867,17 +877,10 @@ def ventana_2():
                 aloe_ventana.withdraw()
 
                 dialogo_robot_a_4 = Label(beneficios_a_ventana,
-                                          text="Son plantas que tienen "
-                                               "diversos pros para la salud,\n"
-                                               "como los siguientes:\n"
-                                               "-Posee vitaminas que son "
-                                               "beneficiosas para la salud "
-                                               "humana\n"+"-Propiedades "
-                                               "antiinflamatorias\n"
-                                               "-Accion con efecto calmante "
-                                               "de gastritis y esofagitis.")
+                                          text=BENEFI_A, font=20)
                 dialogo_robot_a_4.config(bg="dark sea green")
-                dialogo_robot_a_4.place(x=17, y=10, width=330, height=80)
+                dialogo_robot_a_4.place(anchor="c", relx=0.5, rely=0.115,
+                                        width=325, height=135)
 
                 boton_atras = Button(beneficios_a_ventana,
                                      text="Atrás",
@@ -908,18 +911,10 @@ def ventana_2():
                 aloe_ventana.withdraw()
 
                 dialogo_robot_a_5 = Label(cuidados_a_ventana,
-                                          text="Estas plantas necesitan mucha "
-                                               "luz\n"+"para crecer sanas y "
-                                               "florecer al máximo, siempre "
-                                               "manteniendo\n"+"en "
-                                               "consideracion la temperatura, "
-                                               "no debe ser inferior a 10°C.\n"
-                                               "Se pueden retirar las hojas y "
-                                               "espigas florales\n"+"que se "
-                                               "hayan secado para evitar "
-                                               "plagas.")
+                                          text=CUIDAD_A, font=20)
                 dialogo_robot_a_5.config(bg="dark sea green")
-                dialogo_robot_a_5.place(x=15, y=10, width=333, height=80)
+                dialogo_robot_a_5.place(anchor="c", relx=0.5, rely=0.115,
+                                        width=325, height=135)
 
                 boton_atras = Button(cuidados_a_ventana,
                                      text="Atrás",
