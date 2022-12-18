@@ -300,6 +300,7 @@ def ventana_2():
             dialogo_robot_e_2.config(bg="dark sea green")
             dialogo_robot_e_2.place(anchor="c", relx=0.5, rely=0.105,
                                     width=325, height=125)
+
             boton_atras = Button(riego_e_ventana,
                                  text="Atrás",
                                  command=lambda:
