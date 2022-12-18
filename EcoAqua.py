@@ -213,7 +213,7 @@ foto_beneficios = ImageTk.PhotoImage(foto_beneficios)
 bienvenida = Label(ventana_principal, text="Hola! bienvenido a EcoAqua",
                    font=30)
 bienvenida.config(bg="dark sea green")
-bienvenida.place(anchor="c", relx=0.5, y=30, width=200, height=25)
+bienvenida.place(anchor="c", relx=0.5, y=30, width=215, height=25)
 
 dialogo_robot_1_1 = Label(ventana_principal, text="Soy Coryphanter 3000",
                           font=30)
@@ -224,12 +224,12 @@ dialogo_robot_1_2 = Label(ventana_principal,
                           text="Estoy aquí para ayudarte\n"
                                "en el cuidado de tu planta",
                           font=30)
-dialogo_robot_1_2.place(anchor="c", relx=0.5, y=95, width=250, height=40)
+dialogo_robot_1_2.place(anchor="c", relx=0.5, y=100, width=195, height=40)
 dialogo_robot_1_2.config(bg="dark sea green")
 
 dialogo_robot_1_3 = Label(ventana_principal, text="¿Te gustaría continuar?",
                           font=30)
-dialogo_robot_1_3.place(anchor="c", relx=0.5, y=300, width=250, height=25)
+dialogo_robot_1_3.place(anchor="c", relx=0.5, y=305, width=180, height=25)
 dialogo_robot_1_3.config(bg="dark sea green")
 
 # SEGUNDA VENTANA
@@ -303,7 +303,7 @@ def ventana_2():
             dialogo_robot_e_2 = Label(riego_e_ventana, text=RIEGO_E, font=20)
             dialogo_robot_e_2.config(bg="dark sea green")
             dialogo_robot_e_2.place(anchor="c", relx=0.5, rely=0.105,
-                                    width=325, height=125)
+                                    width=335, height=125)
 
             boton_atras = Button(riego_e_ventana,
                                  text="Atrás",
@@ -336,7 +336,7 @@ def ventana_2():
             dialogo_robot_e_3 = Label(info_e_ventana, text=INFOR_E, font=20)
             dialogo_robot_e_3.config(bg="dark sea green")
             dialogo_robot_e_3.place(anchor="c", relx=0.5, rely=0.105,
-                                    width=325, height=125)
+                                    width=325, height=110)
 
             boton_atras = Button(info_e_ventana,
                                  text="Atrás",
@@ -404,7 +404,7 @@ def ventana_2():
                                       text=CUIDAD_E, font=20)
             dialogo_robot_e_5.config(bg="dark sea green")
             dialogo_robot_e_5.place(anchor="c", relx=0.5, rely=0.105,
-                                    width=325, height=125)
+                                    width=305, height=105)
 
             boton_atras = Button(cuidados_e_ventana,
                                  text="Atrás",
@@ -516,7 +516,7 @@ def ventana_2():
                                       text=RIEGO_CO, font=20)
             dialogo_robot_c_2.config(bg="dark sea green")
             dialogo_robot_c_2.place(anchor="c", relx=0.5, rely=0.105,
-                                    width=325, height=125)
+                                    width=325, height=110)
 
             boton_atras = Button(riego_c_ventana,
                                  text="Atrás",
@@ -550,7 +550,7 @@ def ventana_2():
                                       text=INFORM_C, font=20)
             dialogo_robot_c_3.config(bg="dark sea green")
             dialogo_robot_c_3.place(anchor="c", relx=0.5, rely=0.105,
-                                    width=325, height=125)
+                                    width=305, height=125)
 
             boton_atras = Button(info_c_ventana,
                                  text="Atrás",
@@ -584,7 +584,7 @@ def ventana_2():
                                       text=BENEFI_C, font=20)
             dialogo_robot_c_4.config(bg="dark sea green")
             dialogo_robot_c_4.place(anchor="c", relx=0.5, rely=0.13,
-                                    width=325, height=150)
+                                    width=325, height=160)
 
             boton_atras = Button(beneficios_c_ventana,
                                  text="Atrás",
@@ -618,7 +618,7 @@ def ventana_2():
                                       text=CUIDAD_C, font=20)
             dialogo_robot_c_5.config(bg="dark sea green")
             dialogo_robot_c_5.place(anchor="c", relx=0.5, rely=0.115,
-                                    width=325, height=135)
+                                    width=325, height=140)
 
             boton_atras = Button(cuidados_c_ventana,
                                  text="Atrás",
@@ -761,7 +761,7 @@ def ventana_2():
                                           text=RIEGO_FI, font=20)
                 dialogo_robot_f_2.config(bg="dark sea green")
                 dialogo_robot_f_2.place(anchor="c", relx=0.5, rely=0.105,
-                                        width=325, height=125)
+                                        width=335, height=125)
 
                 boton_atras = Button(riego_f_ventana,
                                      text="Atrás",
@@ -795,8 +795,8 @@ def ventana_2():
                 dialogo_robot_f_3 = Label(info_f_ventana,
                                           text=INFOR_FI, font=20)
                 dialogo_robot_f_3.config(bg="dark sea green")
-                dialogo_robot_f_3.place(anchor="c", relx=0.5, rely=0.105,
-                                        width=325, height=125)
+                dialogo_robot_f_3.place(anchor="c", relx=0.5, rely=0.110,
+                                        width=325, height=135)
 
                 boton_atras = Button(info_f_ventana,
                                      text="Atrás",
@@ -866,7 +866,7 @@ def ventana_2():
                                           text=CUIDAD_F, font=20)
                 dialogo_robot_f_5.config(bg="dark sea green")
                 dialogo_robot_f_5.place(anchor="c", relx=0.5, rely=0.105,
-                                        width=325, height=125)
+                                        width=310, height=110)
 
                 boton_atras = Button(cuidados_f_ventana,
                                      text="Atrás",
@@ -986,7 +986,7 @@ def ventana_2():
                                           text=RIEGO_AL, font=20)
                 dialogo_robot_a_2.config(bg="dark sea green")
                 dialogo_robot_a_2.place(anchor="c", relx=0.5, rely=0.105,
-                                        width=325, height=125)
+                                        width=305, height=125)
 
                 boton_atras = Button(riego_a_ventana,
                                      text="Atrás",
@@ -1021,7 +1021,7 @@ def ventana_2():
                                           text=INFOR_AL, font=20)
                 dialogo_robot_a_3.config(bg="dark sea green")
                 dialogo_robot_a_3.place(anchor="c", relx=0.5, rely=0.105,
-                                        width=325, height=125)
+                                        width=335, height=125)
 
                 boton_atras = Button(info_a_ventana,
                                      text="Atrás",
@@ -1055,8 +1055,8 @@ def ventana_2():
                 dialogo_robot_a_4 = Label(beneficios_a_ventana,
                                           text=BENEFI_A, font=20)
                 dialogo_robot_a_4.config(bg="dark sea green")
-                dialogo_robot_a_4.place(anchor="c", relx=0.5, rely=0.115,
-                                        width=325, height=135)
+                dialogo_robot_a_4.place(anchor="c", relx=0.5, rely=0.120,
+                                        width=285, height=140)
 
                 boton_atras = Button(beneficios_a_ventana,
                                      text="Atrás",
@@ -1090,8 +1090,8 @@ def ventana_2():
                 dialogo_robot_a_5 = Label(cuidados_a_ventana,
                                           text=CUIDAD_A, font=20)
                 dialogo_robot_a_5.config(bg="dark sea green")
-                dialogo_robot_a_5.place(anchor="c", relx=0.5, rely=0.115,
-                                        width=325, height=135)
+                dialogo_robot_a_5.place(anchor="c", relx=0.5, rely=0.120,
+                                        width=305, height=140)
 
                 boton_atras = Button(cuidados_a_ventana,
                                      text="Atrás",
