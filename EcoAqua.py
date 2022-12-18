@@ -412,6 +412,14 @@ def ventana_2():
         boton_atras.config(bg="dark khaki")
         boton_atras.place(x=0, y=638, width=50, height=25)
 
+        boton_cerrar = Button(coryphanta_ventana,
+                              text="Cerrar",
+                              command=lambda: [coryphanta_ventana.destroy(),
+                                               segunda_ventana.destroy(),
+                                               ventana_principal.destroy()])
+        boton_cerrar.config(bg="light coral")
+        boton_cerrar.place(x=310, y=640, width=50, height=25)
+
         # RIEGO CORYPHANTA
 
         def riego_c_ventana():
@@ -545,37 +553,29 @@ def ventana_2():
             boton_cerrar.place(x=310, y=640, width=50, height=25)
 
         # BOTONES PARA CADA UNA DE LA INFORMACION DESEADA Y BOTON PARA CERRAR
-        boton_c_riego = Button(coryphanta_ventana,
-                               text="¿Cómo regar esta planta?",
+        boton_c_riego = Button(coryphanta_ventana, image=foto_regar,
+                               text="RIEGO", font="Arial 8 bold", compound="bottom",
                                command=riego_c_ventana)
         boton_c_riego.config(bg="dark sea green")
-        boton_c_riego.place(x=115, y=65, width=139, height=25)
+        boton_c_riego.place(anchor="c", relx=0.5, y=165, width=115, height=115)
 
-        boton_c_info = Button(coryphanta_ventana,
-                              text="Información sobre esta planta",
+        boton_c_info = Button(coryphanta_ventana, image=foto_informacion,
+                               text="INFORMACIÓN", font="Arial 8 bold", compound="bottom",
                               command=info_c_ventana)
         boton_c_info.config(bg="dark sea green")
-        boton_c_info.place(x=100, y=145, width=165, height=25)
+        boton_c_info.place(anchor="c", relx=0.5, y=290, width=115, height=115)
 
-        boton_c_beneficios = Button(coryphanta_ventana,
-                                    text="Beneficios de tener esta planta",
+        boton_c_beneficios = Button(coryphanta_ventana, image=foto_beneficios,
+                               text="BENEFICIOS", font="Arial 8 bold", compound="bottom",
                                     command=beneficios_c_ventana)
         boton_c_beneficios.config(bg="dark sea green")
-        boton_c_beneficios.place(x=100, y=225, width=167, height=25)
+        boton_c_beneficios.place(anchor="c", relx=0.5, y=415, width=115, height=115)
 
-        boton_c_cuidados = Button(coryphanta_ventana,
-                                  text="Cuidados de esta planta",
+        boton_c_cuidados = Button(coryphanta_ventana, image=foto_cuidados,
+                               text="CUIDADOS", font="Arial 8 bold", compound="bottom",
                                   command=cuidados_c_ventana)
         boton_c_cuidados.config(bg="dark sea green")
-        boton_c_cuidados.place(x=115, y=305, width=133, height=25)
-
-        boton_cerrar = Button(coryphanta_ventana,
-                              text="Cerrar",
-                              command=lambda: [coryphanta_ventana.destroy(),
-                                               segunda_ventana.destroy(),
-                                               ventana_principal.destroy()])
-        boton_cerrar.config(bg="light coral")
-        boton_cerrar.place(x=310, y=640, width=50, height=25)
+        boton_c_cuidados.place(anchor="c", relx=0.5, y=540, width=115, height=115)
 
     # TERCERA VENTANA
     def ventana_3():
