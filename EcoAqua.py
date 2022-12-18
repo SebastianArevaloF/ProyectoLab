@@ -240,6 +240,7 @@ def ventana_2():
     segunda_ventana.title("Aplicación")
     segunda_ventana.geometry("360x660")
     segunda_ventana.config(bg="yellow green")
+    segunda_ventana.resizable(width=False, height=False)
 
     dialogo_robot_2_1 = Label(segunda_ventana,
                               text="Poseo información de los siguientes\n"
@@ -264,6 +265,7 @@ def ventana_2():
         epipremnum_ventana = Toplevel()
         epipremnum_ventana.title("Aplicación")
         epipremnum_ventana.geometry("360x660")
+        epipremnum_ventana.resizable(width=False, height=False)
         segunda_ventana.withdraw()
 
         dialogo_robot_e_1 = Label(epipremnum_ventana, font="Arial 17",
@@ -295,6 +297,7 @@ def ventana_2():
             riego_e_ventana.title("Aplicación")
             riego_e_ventana.geometry("360x660")
             riego_e_ventana.config(bg="yellow green")
+            riego_e_ventana.resizable(width=False, height=False)
             epipremnum_ventana.withdraw()
 
             dialogo_robot_e_2 = Label(riego_e_ventana, text=RIEGO_E, font=20)
@@ -327,6 +330,7 @@ def ventana_2():
             info_e_ventana.title("Aplicación")
             info_e_ventana.geometry("360x660")
             info_e_ventana.config(bg="yellow green")
+            info_e_ventana.resizable(width=False, height=False)
             epipremnum_ventana.withdraw()
 
             dialogo_robot_e_3 = Label(info_e_ventana, text=INFOR_E, font=20)
@@ -359,6 +363,7 @@ def ventana_2():
             beneficios_e_ventana.title("Aplicación")
             beneficios_e_ventana.geometry("360x660")
             beneficios_e_ventana.config(bg="yellow green")
+            beneficios_e_ventana.resizable(width=False, height=False)
             epipremnum_ventana.withdraw()
 
             dialogo_robot_e_4 = Label(beneficios_e_ventana,
@@ -392,6 +397,7 @@ def ventana_2():
             cuidados_e_ventana.title("Aplicación")
             cuidados_e_ventana.geometry("360x660")
             cuidados_e_ventana.config(bg="yellow green")
+            cuidados_e_ventana.resizable(width=False, height=False)
             epipremnum_ventana.withdraw()
 
             dialogo_robot_e_5 = Label(cuidados_e_ventana,
@@ -472,12 +478,14 @@ def ventana_2():
         coryphanta_ventana.title("Aplicación")
         coryphanta_ventana.geometry("360x660")
         coryphanta_ventana.config(bg="yellow green")
+        coryphanta_ventana.resizable(width=False, height=False)
         segunda_ventana.withdraw()
 
-        dialogo_robot_c_1 = Label(coryphanta_ventana,
+        dialogo_robot_c_1 = Label(coryphanta_ventana, font="Arial 17",
                                   text="¿Qué te gustaría saber?")
         dialogo_robot_c_1.config(bg="dark sea green")
-        dialogo_robot_c_1.place(x=120, y=20, width=130, height=25)
+        dialogo_robot_c_1.place(anchor="c", relx=0.5, y=40, width=250,
+                                height=30)
 
         boton_atras = Button(coryphanta_ventana,
                              text="Atrás",
@@ -501,6 +509,7 @@ def ventana_2():
             riego_c_ventana.title("Aplicación")
             riego_c_ventana.geometry("360x660")
             riego_c_ventana.config(bg="yellow green")
+            riego_c_ventana.resizable(width=False, height=False)
             coryphanta_ventana.withdraw()
 
             dialogo_robot_c_2 = Label(riego_c_ventana,
@@ -534,6 +543,7 @@ def ventana_2():
             info_c_ventana.title("Aplicación")
             info_c_ventana.geometry("360x660")
             info_c_ventana.config(bg="yellow green")
+            info_c_ventana.resizable(width=False, height=False)
             coryphanta_ventana.withdraw()
 
             dialogo_robot_c_3 = Label(info_c_ventana,
@@ -567,6 +577,7 @@ def ventana_2():
             beneficios_c_ventana.title("Aplicación")
             beneficios_c_ventana.geometry("360x660")
             beneficios_c_ventana.config(bg="yellow green")
+            beneficios_c_ventana.resizable(width=False, height=False)
             coryphanta_ventana.withdraw()
 
             dialogo_robot_c_4 = Label(beneficios_c_ventana,
@@ -600,6 +611,7 @@ def ventana_2():
             cuidados_c_ventana.title("Aplicación")
             cuidados_c_ventana.geometry("360x660")
             cuidados_c_ventana.config(bg="yellow green")
+            cuidados_c_ventana.resizable(width=False, height=False)
             coryphanta_ventana.withdraw()
 
             dialogo_robot_c_5 = Label(cuidados_c_ventana,
@@ -683,6 +695,7 @@ def ventana_2():
         tercera_ventana.title("Aplicación")
         tercera_ventana.geometry("360x660")
         tercera_ventana.config(bg="yellow green")
+        tercera_ventana.resizable(width=False, height=False)
 
         dialogo_robot_3_1 = Label(tercera_ventana,
                                   text="Poseo información de los siguientes\n"
@@ -708,12 +721,14 @@ def ventana_2():
             ficus_ventana.title("Aplicación")
             ficus_ventana.geometry("360x660")
             ficus_ventana.config(bg="yellow green")
+            ficus_ventana.resizable(width=False, height=False)
             tercera_ventana.withdraw()
 
-            dialogo_robot_f_1 = Label(ficus_ventana,
+            dialogo_robot_f_1 = Label(ficus_ventana, font="Arial 17",
                                       text="¿Qué te gustaría saber?")
             dialogo_robot_f_1.config(bg="dark sea green")
-            dialogo_robot_f_1.place(x=120, y=20, width=130, height=25)
+            dialogo_robot_f_1.place(anchor="c", relx=0.5, y=40, width=250,
+                                    height=30)
 
             boton_atras = Button(ficus_ventana,
                                  text="Atrás",
@@ -739,6 +754,7 @@ def ventana_2():
                 riego_f_ventana.title("Aplicación")
                 riego_f_ventana.geometry("360x660")
                 riego_f_ventana.config(bg="yellow green")
+                riego_f_ventana.resizable(width=False, height=False)
                 ficus_ventana.withdraw()
 
                 dialogo_robot_f_2 = Label(riego_f_ventana,
@@ -773,6 +789,7 @@ def ventana_2():
                 info_f_ventana.title("Aplicación")
                 info_f_ventana.geometry("360x660")
                 info_f_ventana.config(bg="yellow green")
+                info_f_ventana.resizable(width=False, height=False)
                 ficus_ventana.withdraw()
 
                 dialogo_robot_f_3 = Label(info_f_ventana,
@@ -807,6 +824,7 @@ def ventana_2():
                 beneficios_f_ventana.title("Aplicación")
                 beneficios_f_ventana.geometry("360x660")
                 beneficios_f_ventana.config(bg="yellow green")
+                beneficios_f_ventana.resizable(width=False, height=False)
                 ficus_ventana.withdraw()
 
                 dialogo_robot_f_4 = Label(beneficios_f_ventana,
@@ -841,6 +859,7 @@ def ventana_2():
                 cuidados_f_ventana.title("Aplicación")
                 cuidados_f_ventana.geometry("360x660")
                 cuidados_f_ventana.config(bg="yellow green")
+                cuidados_f_ventana.resizable(width=False, height=False)
                 ficus_ventana.withdraw()
 
                 dialogo_robot_f_5 = Label(cuidados_f_ventana,
@@ -927,12 +946,14 @@ def ventana_2():
             aloe_ventana.title("Aplicación")
             aloe_ventana.geometry("360x660")
             aloe_ventana.config(bg="yellow green")
+            aloe_ventana.resizable(width=False, height=False)
             tercera_ventana.withdraw()
 
-            dialogo_robot_a_1 = Label(aloe_ventana,
+            dialogo_robot_a_1 = Label(aloe_ventana, font="Arial 17",
                                       text="¿Qué te gustaría saber?")
             dialogo_robot_a_1.config(bg="dark sea green")
-            dialogo_robot_a_1.place(x=120, y=20, width=130, height=25)
+            dialogo_robot_a_1.place(anchor="c", relx=0.5, y=40, width=250,
+                                    height=30)
 
             boton_atras = Button(aloe_ventana,
                                  text="Atrás",
@@ -958,6 +979,7 @@ def ventana_2():
                 riego_a_ventana.title("Aplicación")
                 riego_a_ventana.geometry("360x660")
                 riego_a_ventana.config(bg="yellow green")
+                riego_a_ventana.resizable(width=False, height=False)
                 aloe_ventana.withdraw()
 
                 dialogo_robot_a_2 = Label(riego_a_ventana,
@@ -992,6 +1014,7 @@ def ventana_2():
                 info_a_ventana.title("Aplicación")
                 info_a_ventana.geometry("360x660")
                 info_a_ventana.config(bg="yellow green")
+                info_a_ventana.resizable(width=False, height=False)
                 aloe_ventana.withdraw()
 
                 dialogo_robot_a_3 = Label(info_a_ventana,
@@ -1026,6 +1049,7 @@ def ventana_2():
                 beneficios_a_ventana.title("Aplicación")
                 beneficios_a_ventana.geometry("360x660")
                 beneficios_a_ventana.config(bg="yellow green")
+                beneficios_a_ventana.resizable(width=False, height=False)
                 aloe_ventana.withdraw()
 
                 dialogo_robot_a_4 = Label(beneficios_a_ventana,
@@ -1060,6 +1084,7 @@ def ventana_2():
                 cuidados_a_ventana.title("Aplicación")
                 cuidados_a_ventana.geometry("360x660")
                 cuidados_a_ventana.config(bg="yellow green")
+                cuidados_a_ventana.resizable(width=False, height=False)
                 aloe_ventana.withdraw()
 
                 dialogo_robot_a_5 = Label(cuidados_a_ventana,
