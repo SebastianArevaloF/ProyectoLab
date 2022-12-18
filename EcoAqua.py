@@ -72,40 +72,40 @@ def CreateToolTip(widget, text):
 # CONSTANTES
 # DATOS EPIPREMNUM
 RIEGO_E = ("Los riegos deben ser frecuentes en la\n"
-           "epoca cálida manteniendo humedad alta\n"
+           "epoca cálida, manteniendo humedad alta,\n"
            "rociando las hojas y se deben reducir\n"
-           "a partir de otoño, en invierno se deben\n"
-           "mantener escasos la temperatura ideal\n"
-           "del agua pararegarla son los 20°C a 25°C.")
+           "a partir de otoño. En invierno se deben\n"
+           "mantener escasos. La temperatura ideal\n"
+           "del agua para regarla es entre los 20°C a 25°C.")
 INFOR_E = ("La Epipremnum, tambien conocida como\n"
            "potos, perteneciente a la familia Araceae\n "
-           "puede tener tallos dehasta 4cm de diámetro,\n"
-           "esta no florece de manera natural, si no,\n"
+           "puede tener tallos de hasta 4cm de diámetro,\n"
+           "esta no florece de manera natural, sino\n"
            "de manera inducida.")
-BENEFI_E = ("Este genero tan curioso de plantas\n"
+BENEFI_E = ("Este género tan curioso de plantas\n"
             "es perfecto para poder decorar cualquier\n"
-            "parte de tu casa, como también ayuda\n "
-            "considerablemente a eliminar de las\n"
-            "toxinas de aire que no podemos apreciar\n"
+            "parte de tu casa, también ayuda\n "
+            "considerablemente a eliminar las\n"
+            "toxinas del aire que no podemos apreciar\n"
             "a simple vista.")
 CUIDAD_E = ("A esta curiosa planta, le gusta mucho\n"
-            "mantenerse en un ambiente humedo,\n"
-            "evita mantenerla a luz directa del sol\n"
+            "mantenerse en un ambiente húmedo,\n"
+            "evita mantenerla a la luz directa del sol\n"
             "ya que esto no le gusta, mantenla cerca\n"
             "de la ventana evitando lo anterior dicho.")
 # DATOS CORYPHANYTA
 RIEGO_CO = ("Los riegos deben ser de forma moderada\n"
             "en primavera y verano, siempre manteniendo\n"
-            "el suelo seco de esta misma,en la epoca fria,\n "
-            " los riegos deben suspenderseen pos del\n"
+            "el suelo seco de esta misma. En la epoca fría,\n"
+            "los riegos deben suspenderse en pos del\n"
             "cuidado de la planta.")
 INFORM_C = ("La Coryphanta, tambien conocida como\n"
-            "cactus, es un genero nativo de Mexico,\n "
+            "cactus, es un género nativo de México,\n "
             "siendo uno de los mas extensos.\n"
             "Esta puede crecer aproximadamente\n "
-            "hasta 5-6 cm, cuando se desarrolla\n"
+            "hasta 5-6 cm. Cuando se desarrolla\n"
             "forma una flor central grande.")
-BENEFI_C = ("Este puntiagudo genero de plantas, son\n"
+BENEFI_C = ("Este puntiagudo género de plantas, son\n"
             "excelentes purificadores de aire, siendo\n "
             "esto perfecto a la hora de cuidar nuestra\n"
             "salud, tambien son plantas que requieren\n "
@@ -114,10 +114,10 @@ BENEFI_C = ("Este puntiagudo genero de plantas, son\n"
             "para gente que no puede dedicar todo su\n"
             "tiempo a una planta.")
 CUIDAD_C = ("A esta pequeña planta, le encanta tener\n"
-            "luz directa, aunque tambien pueden recibir\n"
+            "luz directa, aunque también pueden recibir\n"
             "por periodos causando el mismo efecto de\n"
-            "estar todo el dia en la luz solar,la tierra\n"
-            "organica mezclada con fibra de coco, hojas\n"
+            "estar todo el dia en la luz solar. La tierra\n"
+            "orgánica mezclada con fibra de coco, hojas\n"
             "secas, corteza y turba son lo mejor para su\n "
             "perfecto desarrollo.")
 # DATOS FICUS
@@ -125,25 +125,25 @@ RIEGO_FI = ("Necesitan un riego de aproximadamente dos\n"
             "veces por semana en verano, una en invierno\n"
             "y en regiones húmedas: cada 8 o 10 días.\n"
             "Se debe evitar el agua muy fría y también\n"
-            "tener mucho cuidado de no escarchar\n"
+            "tener mucho cuidado de no encharcar\n"
             "las raices.")
 INFOR_FI = ("Provienen de bosques tropicales. Sus\n"
             "ramas son grandes y sus hojas bastante\n"
             "puntiagudas, lo que añade un toque de \n"
-            "'jungla' tropical ambiente. Además,\n"
+            "'jungla' tropical al ambiente. Además,\n"
             "en su variedad existen plantas que llegan\n"
-            "al metro de altitud, tanto como a los\n"
-            "15 metros.")
+            "al metro de altitud, y otras que llegan\n"
+            "a los 15 metros.")
 BENEFI_F = ("Son plantas que se adaptan muy bien\n"
             "al clima. Mejoran la calidad del aire\n"
-            "absorbiendo tóxicos. Además, algunas\n"
+            "absorbiendo toxinas. Además, algunas\n"
             "de las plantas del género contienen\n"
-            " propiedades medicinales, siendo usada\n"
+            " propiedades medicinales, siendo usadas\n"
             "para tratar diversas picaduras de insectos.")
 CUIDAD_F = ("Estas plantas necesitan grandes\n"
             "dosis de luz, pero sin que sea directa\n"
-            "necesitan un ambiente cálido y humedo,\n"
-            "por lo que esrecomendable pulverizar y\n"
+            "necesitan un ambiente cálido y húmedo,\n"
+            "por lo que es recomendable pulverizar y\n"
             "limpiar sus hojas con cierta, frecuencia.")
 # DATOS ALOE
 RIEGO_AL = ("Es recomendable regar a un aloe cada\n"
@@ -153,21 +153,21 @@ RIEGO_AL = ("Es recomendable regar a un aloe cada\n"
             "directamente sobre la tierra, sin dejar\n"
             "la maceta encharcada.")
 INFOR_AL = ("Son plantas siempreverdes, con hojas\n"
-            "afiladas en su apice y margenes espinosos.\n"
-            "Es un genero que tiene la capacidad de\n"
+            "afiladas en su ápice y márgenes espinosos.\n"
+            "Es un género que tiene la capacidad de\n"
             "conservar el agua de lluvia, lo que le\n"
             "permite sobrevivir durante largos\n "
-            "períodos de tiempo en condiciones de sequia.")
+            "períodos de tiempo en condiciones de sequía.")
 BENEFI_A = ("Son plantas que tienen diversos pros\n"
             "para la salud, como los siguientes:\n"
             "-Posee vitaminas que son\n"
-            "beneficiosaspara la salud humana\n"
+            "beneficiosas para la salud humana\n"
             "-Propiedades antiinflamatorias\n"
-            "-Accion con efecto calmante\n"
+            "-Acción con efecto calmante\n"
             "de gastritis y esofagitis.")
 CUIDAD_A = ("Estas plantas necesitan mucha luz\n"
             "para crecer sanas y florecer al máximo,\n"
-            "siempre manteniendo en consideracion\n"
+            "siempre manteniendo en consideración\n"
             "la temperatura que no debe ser inferior\n"
             "a 10°C.Se pueden retirar las hojas y\n"
             "espigas florales que se hayan secado\n"
@@ -242,13 +242,13 @@ def ventana_2():
     segunda_ventana.config(bg="yellow green")
 
     dialogo_robot_2_1 = Label(segunda_ventana,
-                              text="Poseo informacion de los siguientes\n"
+                              text="Poseo información de los siguientes\n"
                                    "géneros de plantas",
                               font=35)
     dialogo_robot_2_1.place(anchor="c", relx=0.5, y=35, width=280, height=45)
     dialogo_robot_2_1.config(bg="dark sea green")
     dialogo_robot_2_2 = Label(segunda_ventana,
-                              text="¿Cual te gustaria seleccionar?", font=35)
+                              text="¿Cuál te gustaría seleccionar?", font=35)
     dialogo_robot_2_2.place(anchor="c", relx=0.5, y=75, width=220, height=25)
     dialogo_robot_2_2.config(bg="dark sea green")
 
@@ -269,7 +269,8 @@ def ventana_2():
         dialogo_robot_e_1 = Label(epipremnum_ventana, font="Arial 17",
                                   text="¿Qué te gustaría saber?")
         dialogo_robot_e_1.config(bg="dark sea green")
-        dialogo_robot_e_1.place(anchor="c", relx=0.5, y=40, width=250, height=30)
+        dialogo_robot_e_1.place(anchor="c", relx=0.5, y=40, width=250,
+                                height=30)
 
         boton_atras = Button(epipremnum_ventana,
                              text="Atrás",
@@ -418,45 +419,51 @@ def ventana_2():
 
         # BOTON RIEGO EPIPREMNUM
         boton_e_riego = Button(epipremnum_ventana, image=foto_regar,
-                               text="RIEGO", font="Arial 8 bold", compound="bottom",
+                               text="RIEGO", font="Arial 8 bold",
+                               compound="bottom",
                                command=riego_e_ventana)
         boton_e_riego.config(bg="dark sea green")
         boton_e_riego.place(anchor="c", relx=0.5, y=165, width=115, height=115)
 
-        CreateToolTip(boton_e_riego, text='Diversos consejos\n'
-                 'para un correcto riego\n'
-                 'de tu planta!.')
+        CreateToolTip(boton_e_riego, text='¡Diversos consejos\n'
+                      'para un correcto riego\n'
+                      'de tu planta!')
         # BOTON INFORMACION EPIPREMNUM
 
         boton_e_info = Button(epipremnum_ventana, image=foto_informacion,
-                               text="INFORMACIÓN", font="Arial 8 bold", compound="bottom",
+                              text="INFORMACIÓN", font="Arial 8 bold",
+                              compound="bottom",
                               command=info_e_ventana)
         boton_e_info.config(bg="dark sea green")
         boton_e_info.place(anchor="c", relx=0.5, y=290, width=115, height=115)
 
-        CreateToolTip(boton_e_info, text='Informacion variada\n'
-                 'e interesante\n'
-                 'sobre tu planta!.')
+        CreateToolTip(boton_e_info, text='¡Información variada\n'
+                      'e interesante\n'
+                      'sobre tu planta!')
 
         # BOTON BENEFICIOS EPIPREMNUM
         boton_e_beneficios = Button(epipremnum_ventana, image=foto_beneficios,
-                               text="BENEFICIOS", font="Arial 8 bold", compound="bottom",
+                                    text="BENEFICIOS", font="Arial 8 bold",
+                                    compound="bottom",
                                     command=beneficios_e_ventana)
         boton_e_beneficios.config(bg="dark sea green")
-        boton_e_beneficios.place(anchor="c", relx=0.5, y=415, width=115, height=115)
+        boton_e_beneficios.place(anchor="c", relx=0.5, y=415, width=115,
+                                 height=115)
 
-        CreateToolTip(boton_e_beneficios, text='Beneficios variados\n'
-                 'que te da tu planta!')
+        CreateToolTip(boton_e_beneficios, text='¡Beneficios variados\n'
+                                               'que te da tu planta!')
 
         # BOTON CUIDADOS EPIPREMNUM
         boton_e_cuidados = Button(epipremnum_ventana, image=foto_cuidados,
-                               text="CUIDADOS", font="Arial 8 bold", compound="bottom",
+                                  text="CUIDADOS", font="Arial 8 bold",
+                                  compound="bottom",
                                   command=cuidados_e_ventana)
         boton_e_cuidados.config(bg="dark sea green")
-        boton_e_cuidados.place(anchor="c", relx=0.5, y=540, width=115, height=115)
+        boton_e_cuidados.place(anchor="c", relx=0.5, y=540, width=115,
+                               height=115)
 
-        CreateToolTip(boton_e_cuidados, text='Cuidados especificos\n'
-                 'para tu planta!.')
+        CreateToolTip(boton_e_cuidados, text='¡Cuidados específicos\n'
+                      'para tu planta!')
 
     # VENTANA CORYPHANTA
 
@@ -621,48 +628,54 @@ def ventana_2():
 
         # BOTON RIEGO CORYPHANTA
         boton_c_riego = Button(coryphanta_ventana, image=foto_regar,
-                               text="RIEGO", font="Arial 8 bold", compound="bottom",
+                               text="RIEGO", font="Arial 8 bold",
+                               compound="bottom",
                                command=riego_c_ventana)
         boton_c_riego.config(bg="dark sea green")
         boton_c_riego.place(anchor="c", relx=0.5, y=165, width=115, height=115)
 
-        CreateToolTip(boton_c_riego, text='Diversos consejos\n'
-                 'para un correcto riego\n'
-                 'de tu planta!.')
+        CreateToolTip(boton_c_riego, text='¡Diversos consejos\n'
+                      'para un correcto riego\n'
+                      'de tu planta!')
 
         # BOTON CUIDADOS CORYPHANTA
 
         boton_c_info = Button(coryphanta_ventana, image=foto_informacion,
-                               text="INFORMACIÓN", font="Arial 8 bold", compound="bottom",
+                              text="INFORMACIÓN", font="Arial 8 bold",
+                              compound="bottom",
                               command=info_c_ventana)
         boton_c_info.config(bg="dark sea green")
         boton_c_info.place(anchor="c", relx=0.5, y=290, width=115, height=115)
 
-        CreateToolTip(boton_c_info, text='Informacion variada\n'
-                 'e interesante\n'
-                 'sobre tu planta!.')
+        CreateToolTip(boton_c_info, text='¡Información variada\n'
+                      'e interesante\n'
+                      'sobre tu planta!')
 
         # BOTON BENEFICIOS CORYPHANTA
 
         boton_c_beneficios = Button(coryphanta_ventana, image=foto_beneficios,
-                               text="BENEFICIOS", font="Arial 8 bold", compound="bottom",
+                                    text="BENEFICIOS", font="Arial 8 bold",
+                                    compound="bottom",
                                     command=beneficios_c_ventana)
         boton_c_beneficios.config(bg="dark sea green")
-        boton_c_beneficios.place(anchor="c", relx=0.5, y=415, width=115, height=115)
+        boton_c_beneficios.place(anchor="c", relx=0.5, y=415, width=115,
+                                 height=115)
 
-        CreateToolTip(boton_c_beneficios, text='Beneficios variados\n'
-                 'que te da tu planta!')
+        CreateToolTip(boton_c_beneficios, text='¡Beneficios variados\n'
+                      'que te da tu planta!')
 
         # BOTON CUIDADOS CORYPHANTA
 
         boton_c_cuidados = Button(coryphanta_ventana, image=foto_cuidados,
-                               text="CUIDADOS", font="Arial 8 bold", compound="bottom",
+                                  text="CUIDADOS", font="Arial 8 bold",
+                                  compound="bottom",
                                   command=cuidados_c_ventana)
         boton_c_cuidados.config(bg="dark sea green")
-        boton_c_cuidados.place(anchor="c", relx=0.5, y=540, width=115, height=115)
+        boton_c_cuidados.place(anchor="c", relx=0.5, y=540, width=115,
+                               height=115)
 
-        CreateToolTip(boton_c_cuidados, text='Cuidados especificos\n'
-                 'para tu planta!.')
+        CreateToolTip(boton_c_cuidados, text='¡Cuidados específicos\n'
+                      'para tu planta!')
 
     # TERCERA VENTANA
     def ventana_3():
@@ -672,14 +685,14 @@ def ventana_2():
         tercera_ventana.config(bg="yellow green")
 
         dialogo_robot_3_1 = Label(tercera_ventana,
-                                  text="Poseo informacion de los siguientes\n"
+                                  text="Poseo información de los siguientes\n"
                                        "géneros de plantas",
                                   font=35)
         dialogo_robot_3_1.place(anchor="c", relx=0.5, y=35, width=280,
                                 height=45)
         dialogo_robot_3_1.config(bg="dark sea green")
         dialogo_robot_3_2 = Label(tercera_ventana, font=35,
-                                  text="¿Cual te gustaria seleccionar?")
+                                  text="¿Cuál te gustaría seleccionar?")
         dialogo_robot_3_2.place(anchor="c", relx=0.5, y=75, width=220,
                                 height=25)
         dialogo_robot_3_2.config(bg="dark sea green")
@@ -857,47 +870,55 @@ def ventana_2():
 
             # BOTON RIEGO FICUS
             boton_f_riego = Button(ficus_ventana, image=foto_regar,
-                               text="RIEGO", font="Arial 8 bold", compound="bottom",
-                               command=riego_f_ventana)
+                                   text="RIEGO", font="Arial 8 bold",
+                                   compound="bottom",
+                                   command=riego_f_ventana)
             boton_f_riego.config(bg="dark sea green")
-            boton_f_riego.place(anchor="c", relx=0.5, y=165, width=115, height=115)
+            boton_f_riego.place(anchor="c", relx=0.5, y=165, width=115,
+                                height=115)
 
-            CreateToolTip(boton_f_riego, text='Diversos consejos\n'
-                 'para un correcto riego\n'
-                 'de tu planta!.')
+            CreateToolTip(boton_f_riego, text='¡Diversos consejos\n'
+                          'para un correcto riego\n'
+                          'de tu planta!')
 
             # BOTON INFORMACION FICUS
             boton_f_info = Button(ficus_ventana, image=foto_informacion,
-                                text="INFORMACIÓN", font="Arial 8 bold", compound="bottom",
-                                command=info_f_ventana)
+                                  text="INFORMACIÓN", font="Arial 8 bold",
+                                  compound="bottom",
+                                  command=info_f_ventana)
             boton_f_info.config(bg="dark sea green")
-            boton_f_info.place(anchor="c", relx=0.5, y=290, width=115, height=115)
+            boton_f_info.place(anchor="c", relx=0.5, y=290, width=115,
+                               height=115)
 
-            CreateToolTip(boton_f_info, text='Informacion variada\n'
-                 'e interesante\n'
-                 'sobre tu planta!.')
+            CreateToolTip(boton_f_info, text='¡Información variada\n'
+                          'e interesante\n'
+                          'sobre tu planta!')
 
             # BOTON BENEFICIOS FICUS
 
             boton_f_beneficios = Button(ficus_ventana, image=foto_beneficios,
-                                text="BENEFICIOS", font="Arial 8 bold", compound="bottom",
+                                        text="BENEFICIOS", font="Arial 8 bold",
+                                        compound="bottom",
                                         command=beneficios_f_ventana)
             boton_f_beneficios.config(bg="dark sea green")
-            boton_f_beneficios.place(anchor="c", relx=0.5, y=415, width=115, height=115)
+            boton_f_beneficios.place(anchor="c", relx=0.5, y=415, width=115,
+                                     height=115)
 
-            CreateToolTip(boton_f_beneficios, text='Beneficios variados\n'
-                 'que te da tu planta!')
+            CreateToolTip(boton_f_beneficios, text='¡Beneficios variados\n'
+                          'que te da tu planta!')
 
             # BOTON CUIDADOS FICUS
 
             boton_f_cuidados = Button(ficus_ventana, image=foto_cuidados,
-                                text="CUIDADOS", font="Arial 8 bold", compound="bottom",
-                                    command=cuidados_f_ventana)
+                                      text="CUIDADOS", font="Arial 8 bold",
+                                      compound="bottom",
+                                      command=cuidados_f_ventana)
             boton_f_cuidados.config(bg="dark sea green")
-            boton_f_cuidados.place(anchor="c", relx=0.5, y=540, width=115, height=115)
+            boton_f_cuidados.place(anchor="c", relx=0.5, y=540, width=115,
+                                   height=115)
 
-            CreateToolTip(boton_f_cuidados, text='Cuidados especificos\n'
-                 'para tu planta!.')
+            CreateToolTip(boton_f_cuidados, text='¡Cuidados específicos\n'
+                          'para tu planta!')
 
         # VENTANA ALOE
 
@@ -1069,48 +1090,56 @@ def ventana_2():
             # BOTON RIEGO ALOE
 
             boton_a_riego = Button(aloe_ventana, image=foto_regar,
-                               text="RIEGO", font="Arial 8 bold", compound="bottom",
-                               command=riego_a_ventana)
+                                   text="RIEGO", font="Arial 8 bold",
+                                   compound="bottom",
+                                   command=riego_a_ventana)
             boton_a_riego.config(bg="dark sea green")
-            boton_a_riego.place(anchor="c", relx=0.5, y=165, width=115, height=115)
+            boton_a_riego.place(anchor="c", relx=0.5, y=165, width=115,
+                                height=115)
 
-            CreateToolTip(boton_a_riego, text='Diversos consejos\n'
-                 'para un correcto riego\n'
-                 'de tu planta!.')
+            CreateToolTip(boton_a_riego, text='¡Diversos consejos\n'
+                          'para un correcto riego\n'
+                          'de tu planta!')
 
             # BOTON INFORMACION ALOE
 
             boton_a_info = Button(aloe_ventana, image=foto_informacion,
-                                text="INFORMACIÓN", font="Arial 8 bold", compound="bottom",
-                                command=info_a_ventana)
+                                  text="INFORMACIÓN", font="Arial 8 bold",
+                                  compound="bottom",
+                                  command=info_a_ventana)
             boton_a_info.config(bg="dark sea green")
-            boton_a_info.place(anchor="c", relx=0.5, y=290, width=115, height=115)
+            boton_a_info.place(anchor="c", relx=0.5, y=290, width=115,
+                               height=115)
 
-            CreateToolTip(boton_a_info, text='Informacion variada\n'
-                 'e interesante\n'
-                 'sobre tu planta!.')
+            CreateToolTip(boton_a_info, text='¡Información variada\n'
+                          'e interesante\n'
+                          'sobre tu planta!')
 
             # BOTON BENEFICIOS ALOE
 
             boton_a_beneficios = Button(aloe_ventana, image=foto_beneficios,
-                                text="BENEFICIOS", font="Arial 8 bold", compound="bottom",
+                                        text="BENEFICIOS", font="Arial 8 bold",
+                                        compound="bottom",
                                         command=beneficios_a_ventana)
             boton_a_beneficios.config(bg="dark sea green")
-            boton_a_beneficios.place(anchor="c", relx=0.5, y=415, width=115, height=115)
+            boton_a_beneficios.place(anchor="c", relx=0.5, y=415, width=115,
+                                     height=115)
 
-            CreateToolTip(boton_a_beneficios, text='Beneficios variados\n'
-                 'que te da tu planta!')
+            CreateToolTip(boton_a_beneficios, text='¡Beneficios variados\n'
+                          'que te da tu planta!')
 
             # BOTON CUIDADOS ALOE
 
             boton_a_cuidados = Button(aloe_ventana, image=foto_cuidados,
-                                text="CUIDADOS", font="Arial 8 bold", compound="bottom",
-                                    command=cuidados_a_ventana)
+                                      text="CUIDADOS", font="Arial 8 bold",
+                                      compound="bottom",
+                                      command=cuidados_a_ventana)
             boton_a_cuidados.config(bg="dark sea green")
-            boton_a_cuidados.place(anchor="c", relx=0.5, y=540, width=115, height=115)
+            boton_a_cuidados.place(anchor="c", relx=0.5, y=540, width=115,
+                                   height=115)
 
-            CreateToolTip(boton_a_cuidados, text='Cuidados especificos\n'
-                 'para tu planta!.')
+            CreateToolTip(boton_a_cuidados, text='¡Cuidados específicos\n'
+                          'para tu planta!')
 
         # BOTONES TERCERA VENTANA
 
@@ -1211,7 +1240,7 @@ def ventana_2():
     boton_atras.place(x=0, y=638, width=50, height=25)
 
     boton_sig_pag = Button(segunda_ventana,
-                           text="Siguiente pagina",
+                           text="Siguiente página",
                            command=ventana_3)
     boton_sig_pag.config(bg="dark khaki")
     boton_sig_pag.place(x=50, y=638, width=100, height=25)
