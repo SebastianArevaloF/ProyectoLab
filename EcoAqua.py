@@ -81,7 +81,7 @@ RIEGO_FI = ("Necesitan un riego de aproximadamente dos\n"
 INFOR_FI = ("Provienen de bosques tropicales. Sus\n"
             "ramas son grandes y sus hojas bastante\n"
             "puntiagudas, lo que añade un toque de \n"
-            "'jungla' tropicalal ambiente. Además,\n"
+            "'jungla' tropical ambiente. Además,\n"
             "en su variedad existen plantas que llegan\n"
             "al metro de altitud, tanto como a los\n"
             "15 metros.")
@@ -622,6 +622,16 @@ def ventana_2():
             boton_atras.config(bg="dark khaki")
             boton_atras.place(x=0, y=638, width=50, height=25)
 
+            boton_cerrar = Button(ficus_ventana,
+                                  text="Cerrar",
+                                  command=lambda:
+                                  [ficus_ventana.destroy(),
+                                   tercera_ventana.destroy(),
+                                   segunda_ventana.destroy(),
+                                   ventana_principal.destroy()])
+            boton_cerrar.config(bg="light coral")
+            boton_cerrar.place(x=310, y=640, width=50, height=25)
+
             # RIEGO FICUS
 
             def riego_f_ventana():
@@ -759,41 +769,29 @@ def ventana_2():
                 boton_cerrar.place(x=310, y=640, width=50, height=25)
 
             # BOTONES PARA CADA UNA DE LA INFORMACION DESEADA
-
-            boton_f_riego = Button(ficus_ventana,
-                                   text="¿Cómo regar esta planta?",
-                                   command=riego_f_ventana)
+            boton_f_riego = Button(ficus_ventana, image=foto_regar,
+                               text="RIEGO", font="Arial 8 bold", compound="bottom",
+                               command=riego_f_ventana)
             boton_f_riego.config(bg="dark sea green")
-            boton_f_riego.place(x=115, y=65, width=139, height=25)
+            boton_f_riego.place(anchor="c", relx=0.5, y=165, width=115, height=115)
 
-            boton_f_info = Button(ficus_ventana,
-                                  text="Información sobre esta planta",
-                                  command=info_f_ventana)
+            boton_f_info = Button(ficus_ventana, image=foto_informacion,
+                                text="INFORMACIÓN", font="Arial 8 bold", compound="bottom",
+                                command=info_f_ventana)
             boton_f_info.config(bg="dark sea green")
-            boton_f_info.place(x=100, y=145, width=165, height=25)
+            boton_f_info.place(anchor="c", relx=0.5, y=290, width=115, height=115)
 
-            boton_f_beneficios = Button(ficus_ventana,
-                                        text="Beneficios de tener esta planta",
+            boton_f_beneficios = Button(ficus_ventana, image=foto_beneficios,
+                                text="BENEFICIOS", font="Arial 8 bold", compound="bottom",
                                         command=beneficios_f_ventana)
             boton_f_beneficios.config(bg="dark sea green")
-            boton_f_beneficios.place(x=100, y=225, width=167, height=25)
+            boton_f_beneficios.place(anchor="c", relx=0.5, y=415, width=115, height=115)
 
-            boton_f_cuidados = Button(ficus_ventana,
-                                      text="Cuidados de esta planta",
-                                      command=cuidados_f_ventana)
+            boton_f_cuidados = Button(ficus_ventana, image=foto_cuidados,
+                                text="CUIDADOS", font="Arial 8 bold", compound="bottom",
+                                    command=cuidados_f_ventana)
             boton_f_cuidados.config(bg="dark sea green")
-            boton_f_cuidados.place(x=115, y=305, width=133, height=25)
-
-            # BOTON PARA CERRAR
-            boton_cerrar = Button(ficus_ventana,
-                                  text="Cerrar",
-                                  command=lambda:
-                                  [ficus_ventana.destroy(),
-                                   tercera_ventana.destroy(),
-                                   segunda_ventana.destroy(),
-                                   ventana_principal.destroy()])
-            boton_cerrar.config(bg="light coral")
-            boton_cerrar.place(x=310, y=640, width=50, height=25)
+            boton_f_cuidados.place(anchor="c", relx=0.5, y=540, width=115, height=115)
 
         # VENTANA ALOE
 
@@ -815,6 +813,16 @@ def ventana_2():
                                                   tercera_ventana.deiconify()])
             boton_atras.config(bg="dark khaki")
             boton_atras.place(x=0, y=638, width=50, height=25)
+
+            boton_cerrar = Button(aloe_ventana,
+                                  text="Cerrar",
+                                  command=lambda:
+                                  [aloe_ventana.destroy(),
+                                   tercera_ventana.destroy(),
+                                   segunda_ventana.destroy(),
+                                   ventana_principal.destroy()])
+            boton_cerrar.config(bg="light coral")
+            boton_cerrar.place(x=310, y=640, width=50, height=25)
 
             # RIEGO ALOE
 
@@ -953,42 +961,29 @@ def ventana_2():
                 boton_cerrar.place(x=310, y=640, width=50, height=25)
 
             # BOTONES PARA CADA UNA DE LA INFORMACION DESEADA
-
-            boton_a_riego = Button(aloe_ventana,
-                                   text="¿Cómo regar esta planta?",
-                                   command=riego_a_ventana)
+            boton_a_riego = Button(aloe_ventana, image=foto_regar,
+                               text="RIEGO", font="Arial 8 bold", compound="bottom",
+                               command=riego_a_ventana)
             boton_a_riego.config(bg="dark sea green")
-            boton_a_riego.place(x=115, y=65, width=139, height=25)
+            boton_a_riego.place(anchor="c", relx=0.5, y=165, width=115, height=115)
 
-            boton_a_info = Button(aloe_ventana,
-                                  text="Información sobre esta planta",
-                                  command=info_a_ventana)
+            boton_a_info = Button(aloe_ventana, image=foto_informacion,
+                                text="INFORMACIÓN", font="Arial 8 bold", compound="bottom",
+                                command=info_a_ventana)
             boton_a_info.config(bg="dark sea green")
-            boton_a_info.place(x=100, y=145, width=165, height=25)
+            boton_a_info.place(anchor="c", relx=0.5, y=290, width=115, height=115)
 
-            boton_a_beneficios = Button(aloe_ventana,
-                                        text="Beneficios de tener esta planta",
+            boton_a_beneficios = Button(aloe_ventana, image=foto_beneficios,
+                                text="BENEFICIOS", font="Arial 8 bold", compound="bottom",
                                         command=beneficios_a_ventana)
             boton_a_beneficios.config(bg="dark sea green")
-            boton_a_beneficios.place(x=100, y=225, width=167, height=25)
+            boton_a_beneficios.place(anchor="c", relx=0.5, y=415, width=115, height=115)
 
-            boton_a_cuidados = Button(aloe_ventana,
-                                      text="Cuidados de esta planta",
-                                      command=cuidados_a_ventana)
+            boton_a_cuidados = Button(aloe_ventana, image=foto_cuidados,
+                                text="CUIDADOS", font="Arial 8 bold", compound="bottom",
+                                    command=cuidados_a_ventana)
             boton_a_cuidados.config(bg="dark sea green")
-            boton_a_cuidados.place(x=115, y=305, width=133, height=25)
-
-            # BOTON PARA CERRAR
-
-            boton_cerrar = Button(aloe_ventana,
-                                  text="Cerrar",
-                                  command=lambda:
-                                  [aloe_ventana.destroy(),
-                                   tercera_ventana.destroy(),
-                                   segunda_ventana.destroy(),
-                                   ventana_principal.destroy()])
-            boton_cerrar.config(bg="light coral")
-            boton_cerrar.place(x=310, y=640, width=50, height=25)
+            boton_a_cuidados.place(anchor="c", relx=0.5, y=540, width=115, height=115)
 
         # BOTONES TERCERA VENTANA
 
