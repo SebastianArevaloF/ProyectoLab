@@ -16,9 +16,58 @@
 # IMPORTACION DE LIBRERIAS
 # Se importa el modulo tkinter, con respectivas funiones
 # para desarrollo de interfaz
-from tkinter import Toplevel, Button, Tk, Label
+from tkinter import Toplevel, Button, Tk, Label, LEFT, SOLID
 # Se importa el modulo PIL, para imagenes
 from PIL import Image, ImageTk
+# Clase ToolTip, para creacion de
+# Una ventana de informacion resumida
+# Cuando el usuario ponga el cursor en una imagen
+
+
+class ToolTip(object):
+
+    def __init__(self, widget):
+        self.widget = widget
+        self.tipwindow = None
+        self.id = None
+        self.x = self.y = 0
+
+    def showtip(self, text):
+        "Display text in tooltip window"
+        self.text = text
+        if self.tipwindow or not self.text:
+            return
+        x, y, cx, cy = self.widget.bbox("insert")
+        x = x + self.widget.winfo_rootx() + 57
+        y = y + cy + self.widget.winfo_rooty() + 27
+        self.tipwindow = tw = Toplevel(self.widget)
+        tw.wm_overrideredirect(1)
+        tw.wm_geometry("+%d+%d" % (x, y))
+        label = Label(tw, text=self.text, justify=LEFT,
+                      background="#ffffe0", relief=SOLID, borderwidth=1,
+                      font=("tahoma", "8", "normal"))
+        label.pack(ipadx=1)
+
+    def hidetip(self):
+        tw = self.tipwindow
+        self.tipwindow = None
+        if tw:
+            tw.destroy()
+
+
+def CreateToolTip(widget, text):
+
+    toolTip = ToolTip(widget)
+
+    def enter(event):
+
+        toolTip.showtip(text)
+
+    def leave(event):
+        toolTip.hidetip()
+    widget.bind('<Enter>', enter)
+    widget.bind('<Leave>', leave)
+
 
 # CONSTANTES
 # DATOS EPIPREMNUM
@@ -366,12 +415,17 @@ def ventana_2():
             boton_cerrar.config(bg="light coral")
             boton_cerrar.place(x=310, y=640, width=50, height=25)
 
-        # BOTONES PARA CADA UNA DE LA INFORMACION DESEADA Y BOTON PARA CERRAR
+        # BOTON RIEGO EPIPREMNUM
         boton_e_riego = Button(epipremnum_ventana, image=foto_regar,
                                text="RIEGO", font="Arial 8 bold", compound="bottom",
                                command=riego_e_ventana)
         boton_e_riego.config(bg="dark sea green")
         boton_e_riego.place(anchor="c", relx=0.5, y=165, width=115, height=115)
+
+        CreateToolTip(boton_e_riego, text='Diversos consejos\n'
+                 'para un correcto riego\n'
+                 'de tu planta!.')
+        # BOTON INFORMACION EPIPREMNUM
 
         boton_e_info = Button(epipremnum_ventana, image=foto_informacion,
                                text="INFORMACIÓN", font="Arial 8 bold", compound="bottom",
@@ -379,17 +433,29 @@ def ventana_2():
         boton_e_info.config(bg="dark sea green")
         boton_e_info.place(anchor="c", relx=0.5, y=290, width=115, height=115)
 
+        CreateToolTip(boton_e_info, text='Informacion variada\n'
+                 'e interesante\n'
+                 'sobre tu planta!.')
+
+        # BOTON BENEFICIOS EPIPREMNUM
         boton_e_beneficios = Button(epipremnum_ventana, image=foto_beneficios,
                                text="BENEFICIOS", font="Arial 8 bold", compound="bottom",
                                     command=beneficios_e_ventana)
         boton_e_beneficios.config(bg="dark sea green")
         boton_e_beneficios.place(anchor="c", relx=0.5, y=415, width=115, height=115)
 
+        CreateToolTip(boton_e_beneficios, text='Beneficios variados\n'
+                 'que te da tu planta!')
+
+        # BOTON CUIDADOS EPIPREMNUM
         boton_e_cuidados = Button(epipremnum_ventana, image=foto_cuidados,
                                text="CUIDADOS", font="Arial 8 bold", compound="bottom",
                                   command=cuidados_e_ventana)
         boton_e_cuidados.config(bg="dark sea green")
         boton_e_cuidados.place(anchor="c", relx=0.5, y=540, width=115, height=115)
+
+        CreateToolTip(boton_e_cuidados, text='Cuidados especificos\n'
+                 'para tu planta!.')
 
     # VENTANA CORYPHANTA
 
@@ -552,12 +618,18 @@ def ventana_2():
             boton_cerrar.config(bg="light coral")
             boton_cerrar.place(x=310, y=640, width=50, height=25)
 
-        # BOTONES PARA CADA UNA DE LA INFORMACION DESEADA Y BOTON PARA CERRAR
+        # BOTON RIEGO CORYPHANTA
         boton_c_riego = Button(coryphanta_ventana, image=foto_regar,
                                text="RIEGO", font="Arial 8 bold", compound="bottom",
                                command=riego_c_ventana)
         boton_c_riego.config(bg="dark sea green")
         boton_c_riego.place(anchor="c", relx=0.5, y=165, width=115, height=115)
+
+        CreateToolTip(boton_c_riego, text='Diversos consejos\n'
+                 'para un correcto riego\n'
+                 'de tu planta!.')
+
+        # BOTON CUIDADOS CORYPHANTA
 
         boton_c_info = Button(coryphanta_ventana, image=foto_informacion,
                                text="INFORMACIÓN", font="Arial 8 bold", compound="bottom",
@@ -565,17 +637,31 @@ def ventana_2():
         boton_c_info.config(bg="dark sea green")
         boton_c_info.place(anchor="c", relx=0.5, y=290, width=115, height=115)
 
+        CreateToolTip(boton_c_info, text='Informacion variada\n'
+                 'e interesante\n'
+                 'sobre tu planta!.')
+
+        # BOTON BENEFICIOS CORYPHANTA
+
         boton_c_beneficios = Button(coryphanta_ventana, image=foto_beneficios,
                                text="BENEFICIOS", font="Arial 8 bold", compound="bottom",
                                     command=beneficios_c_ventana)
         boton_c_beneficios.config(bg="dark sea green")
         boton_c_beneficios.place(anchor="c", relx=0.5, y=415, width=115, height=115)
 
+        CreateToolTip(boton_c_beneficios, text='Beneficios variados\n'
+                 'que te da tu planta!')
+
+        # BOTON CUIDADOS CORYPHANTA
+
         boton_c_cuidados = Button(coryphanta_ventana, image=foto_cuidados,
                                text="CUIDADOS", font="Arial 8 bold", compound="bottom",
                                   command=cuidados_c_ventana)
         boton_c_cuidados.config(bg="dark sea green")
         boton_c_cuidados.place(anchor="c", relx=0.5, y=540, width=115, height=115)
+
+        CreateToolTip(boton_c_cuidados, text='Cuidados especificos\n'
+                 'para tu planta!.')
 
     # TERCERA VENTANA
     def ventana_3():
@@ -768,18 +854,29 @@ def ventana_2():
                 boton_cerrar.config(bg="light coral")
                 boton_cerrar.place(x=310, y=640, width=50, height=25)
 
-            # BOTONES PARA CADA UNA DE LA INFORMACION DESEADA
+            # BOTON RIEGO FICUS
             boton_f_riego = Button(ficus_ventana, image=foto_regar,
                                text="RIEGO", font="Arial 8 bold", compound="bottom",
                                command=riego_f_ventana)
             boton_f_riego.config(bg="dark sea green")
             boton_f_riego.place(anchor="c", relx=0.5, y=165, width=115, height=115)
 
+            CreateToolTip(boton_f_riego, text='Diversos consejos\n'
+                 'para un correcto riego\n'
+                 'de tu planta!.')
+
+            # BOTON INFORMACION FICUS
             boton_f_info = Button(ficus_ventana, image=foto_informacion,
                                 text="INFORMACIÓN", font="Arial 8 bold", compound="bottom",
                                 command=info_f_ventana)
             boton_f_info.config(bg="dark sea green")
             boton_f_info.place(anchor="c", relx=0.5, y=290, width=115, height=115)
+
+            CreateToolTip(boton_f_info, text='Informacion variada\n'
+                 'e interesante\n'
+                 'sobre tu planta!.')
+
+            # BOTON BENEFICIOS FICUS
 
             boton_f_beneficios = Button(ficus_ventana, image=foto_beneficios,
                                 text="BENEFICIOS", font="Arial 8 bold", compound="bottom",
@@ -787,11 +884,19 @@ def ventana_2():
             boton_f_beneficios.config(bg="dark sea green")
             boton_f_beneficios.place(anchor="c", relx=0.5, y=415, width=115, height=115)
 
+            CreateToolTip(boton_f_beneficios, text='Beneficios variados\n'
+                 'que te da tu planta!')
+
+            # BOTON CUIDADOS FICUS
+
             boton_f_cuidados = Button(ficus_ventana, image=foto_cuidados,
                                 text="CUIDADOS", font="Arial 8 bold", compound="bottom",
                                     command=cuidados_f_ventana)
             boton_f_cuidados.config(bg="dark sea green")
             boton_f_cuidados.place(anchor="c", relx=0.5, y=540, width=115, height=115)
+
+            CreateToolTip(boton_f_cuidados, text='Cuidados especificos\n'
+                 'para tu planta!.')
 
         # VENTANA ALOE
 
@@ -960,12 +1065,19 @@ def ventana_2():
                 boton_cerrar.config(bg="light coral")
                 boton_cerrar.place(x=310, y=640, width=50, height=25)
 
-            # BOTONES PARA CADA UNA DE LA INFORMACION DESEADA
+            # BOTON RIEGO ALOE
+
             boton_a_riego = Button(aloe_ventana, image=foto_regar,
                                text="RIEGO", font="Arial 8 bold", compound="bottom",
                                command=riego_a_ventana)
             boton_a_riego.config(bg="dark sea green")
             boton_a_riego.place(anchor="c", relx=0.5, y=165, width=115, height=115)
+
+            CreateToolTip(boton_a_riego, text='Diversos consejos\n'
+                 'para un correcto riego\n'
+                 'de tu planta!.')
+
+            # BOTON INFORMACION ALOE
 
             boton_a_info = Button(aloe_ventana, image=foto_informacion,
                                 text="INFORMACIÓN", font="Arial 8 bold", compound="bottom",
@@ -973,17 +1085,31 @@ def ventana_2():
             boton_a_info.config(bg="dark sea green")
             boton_a_info.place(anchor="c", relx=0.5, y=290, width=115, height=115)
 
+            CreateToolTip(boton_a_info, text='Informacion variada\n'
+                 'e interesante\n'
+                 'sobre tu planta!.')
+
+            # BOTON BENEFICIOS ALOE
+
             boton_a_beneficios = Button(aloe_ventana, image=foto_beneficios,
                                 text="BENEFICIOS", font="Arial 8 bold", compound="bottom",
                                         command=beneficios_a_ventana)
             boton_a_beneficios.config(bg="dark sea green")
             boton_a_beneficios.place(anchor="c", relx=0.5, y=415, width=115, height=115)
 
+            CreateToolTip(boton_a_beneficios, text='Beneficios variados\n'
+                 'que te da tu planta!')
+
+            # BOTON CUIDADOS ALOE
+
             boton_a_cuidados = Button(aloe_ventana, image=foto_cuidados,
                                 text="CUIDADOS", font="Arial 8 bold", compound="bottom",
                                     command=cuidados_a_ventana)
             boton_a_cuidados.config(bg="dark sea green")
             boton_a_cuidados.place(anchor="c", relx=0.5, y=540, width=115, height=115)
+
+            CreateToolTip(boton_a_cuidados, text='Cuidados especificos\n'
+                 'para tu planta!.')
 
         # BOTONES TERCERA VENTANA
 
