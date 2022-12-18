@@ -181,7 +181,7 @@ Se especificaran las siguientes indicaciones:
 dialogo_robot_"NUMERO DE LA VENTANA"_"NUMERO DE DIALOGO"
 2)Para el dialogo del robot hablando sobre plantas
 Se escribira dialogo_robot_x_y,
-Siendo x la primera letra del genero e y el numero de dialogo
+Siendo "x" la primera letra del genero e "y" el numero de dialogo
 '''
 
 # VENTANA PRINCIPAL
